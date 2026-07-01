@@ -1,0 +1,77 @@
+Mods: {
+	ThoriumAccessoryExpansion: {
+		Buffs: {
+			UnholyKarma: {
+				Description: Mods.ThoriumAccessoryExpansion.Buffs.UnholyKarma.Description
+				DisplayName: Unholy Karma
+			}
+
+			LifeReganBuff: {
+				Description: Mods.ThoriumAccessoryExpansion.Buffs.LifeReganBuff.Description
+				DisplayName: Life Regan Buff
+			}
+
+			EternalBulwarkAbsorbBuff: {
+				Description: Mods.ThoriumAccessoryExpansion.Buffs.EternalBulwarkAbsorbBuff.Description
+				DisplayName: Eternal Bulwark Absorb Buff
+			}
+
+			DefenseBuff: {
+				Description: Mods.ThoriumAccessoryExpansion.Buffs.DefenseBuff.Description
+				DisplayName: Defense Buff
+			}
+
+			LifeDrainCooldown: {
+				Description: Mods.ThoriumAccessoryExpansion.Buffs.LifeDrainCooldown.Description
+				DisplayName: Life Drain Cooldown
+			}
+
+			SupremeWrath: {
+				DisplayName: Supreme Wrath
+				Description: Mods.ThoriumAccessoryExpansion.Buffs.SupremeWrath.Description
+			}
+		}
+
+		Items: {
+			BlazingLightBalloonBundle: {
+				DisplayName: Blazing Light Balloon Bundle
+				Tooltip: ""
+			}
+
+			BoneCovenant: {
+				DisplayName: Bone Covenant
+				Tooltip: ""
+			}
+
+			CursedCovenant: {
+				DisplayName: Cursed Covenant
+				Tooltip: ""
+			}
+
+			EternalBulwark: {
+				DisplayName: Eternal Bulwark
+				Tooltip: ""
+			}
+
+			FallenCovenant: {
+				DisplayName: Fallen Covenant
+				Tooltip: ""
+			}
+
+			HeresyCovenant: {
+				DisplayName: Heresy Covenant
+				Tooltip: ""
+			}
+
+			KarmaCovenant: {
+				DisplayName: Karma Covenant
+				Tooltip: ""
+			}
+
+			MichaelasAid: {
+				DisplayName: Michaelas Aid
+				Tooltip: ""
+			}
+		}
+	}
+}
