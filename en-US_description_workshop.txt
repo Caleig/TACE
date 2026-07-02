@@ -1,0 +1,3 @@
+[h1]An accessory-focused Thorium add-on[/h1]
+Designed to expand the accessory progression of Thorium's class system.
+Currently, it mainly focuses on the  Healer branch of the Dark-Healer class, with plans to potentially add more accessories for other classes in the future.
