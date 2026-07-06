@@ -8,12 +8,12 @@ Mods: {
 
 			LifeReganBuff: {
 				Description: Rapidly regenerating life
-				DisplayName: Life Regan Buff
+				DisplayName: Life Regen
 			}
 
 			EternalBulwarkAbsorbBuff: {
 				Description: Redirecting damage
-				DisplayName: Eternal Bulwark Absorb Buff
+				DisplayName: Damage Absorb
 			}
 
 			DefenseBuff: {
@@ -116,8 +116,8 @@ Mods: {
 				DisplayName: Karma Covenant
 				Tooltip:
 					'''
-					80 basic damage
-					For every 40 life of self-healing, unleashes a beam of damaging radiant energy
+					Your healing streak fuels an ancient crucible every 100 life up to 500 total
+					The crucible increases your radiant damage by 8% per 100 life in the crucible
 					Empowers certain radiant attacks with dark energy
 					Using radiant weapons costs an additional 3 life
 					Using radiant weapons steadily accumulates Fallen Charge
