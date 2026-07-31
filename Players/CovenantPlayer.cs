@@ -30,6 +30,8 @@ namespace ThoriumAccessoryExpansion.Players
         public int FallenRadianceTimer = 0;
 
         // ========== 各圣约独立数据（非层数） ==========
+        public int KarmaHealAccumulator = 0;
+        private int _karmaPreviousLife = 0;
         public int HeresyLifeRegenTimer = 0;
         public int EternalProtectionCooldown = 0;
         public bool EternalIsProtected = false;
@@ -41,6 +43,7 @@ namespace ThoriumAccessoryExpansion.Players
         // ========== 初始化 ==========
         public override void Initialize()
         {
+            _karmaPreviousLife = Player.statLife;
         }
 
         // ========== ResetEffects ==========
@@ -63,6 +66,7 @@ namespace ThoriumAccessoryExpansion.Players
             }
 
             if (!HeresyHasCovenant) HeresyLifeRegenTimer = 0;
+            if (!KarmaHasCovenant) KarmaHealAccumulator = 0;
         }
 
         public int GetMaxStacks() => GlobalMaxStacks;
@@ -80,10 +84,12 @@ namespace ThoriumAccessoryExpansion.Players
 
             FallenRadianceStacks = 0;
             FallenRadianceTimer = 0;
+            KarmaHealAccumulator = 0;
             HeresyLifeRegenTimer = 0;
             EternalProtectionCooldown = 0;
             EternalIsProtected = false;
 
+            _karmaPreviousLife = Player.statLife;
             _boneDebugTimer = 0;
             _boneLastDisplayedHealBonus = int.MinValue;
         }
@@ -138,7 +144,43 @@ namespace ThoriumAccessoryExpansion.Players
                 _boneLastDisplayedHealBonus = int.MinValue;
             }
 
-            
+            // ---- 业果圣约：治疗累加 ----
+            if (KarmaHasCovenant)
+            {
+                int currentLife = Player.statLife;
+                int lifeIncrease = currentLife - _karmaPreviousLife;
+                if (lifeIncrease > 0)
+                {
+                    KarmaHealAccumulator += lifeIncrease;
+
+                    while (KarmaHealAccumulator >= 30)
+                    {
+                        KarmaHealAccumulator -= 30;
+                        Projectile proj = Projectile.NewProjectileDirect(
+                            new EntitySource_ItemUse(Player, null),
+                            Player.Center,
+                            GetShootVelocity(Player),
+                            ModContent.ProjectileType<DarkHeartPro>(),
+                            0, 2f, Player.whoAmI
+                        );
+                        if (proj != null)
+                        {
+                            float baseDamage = 80f;
+                            float finalDamage = baseDamage * Player.GetDamage(ModContent.GetInstance<HealerDamage>()).ApplyTo(1f);
+                            proj.damage = (int)finalDamage;
+                            proj.DamageType = ModContent.GetInstance<HealerDamage>();
+                            if (Main.netMode == NetmodeID.Server)
+                                NetMessage.SendData(MessageID.SyncProjectile, -1, -1, null, proj.whoAmI);
+                        }
+                    }
+                }
+                _karmaPreviousLife = currentLife;
+            }
+            else
+            {
+                _karmaPreviousLife = Player.statLife;
+            }
+
             // ---- 赫瑞之孽：生命再生 ----
             if (HeresyHasCovenant && HeresyLifeRegenTimer > 0)
             {

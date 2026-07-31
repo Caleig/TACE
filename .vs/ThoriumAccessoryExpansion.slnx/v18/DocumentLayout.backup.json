@@ -3,88 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\systems\\covenantuisystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:systems\\covenantuisystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\magicsheath\\terramagicsheath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\magicsheath\\terramagicsheath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\players\\covenantplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:players\\covenantplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\magicsheath\\magicsheathplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\magicsheath\\magicsheathplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\michaelasaid\\supremewrath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\michaelasaid\\supremewrath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\magicsheath\\spiritblade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\magicsheath\\spiritblade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\karmacovenant\\unholykarma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\karmacovenant\\unholykarma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\magicsheath\\spiritmagicsheath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\magicsheath\\spiritmagicsheath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\michaelasaid\\michaelasaid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\michaelasaid\\michaelasaid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\magicsheath\\geodescroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\magicsheath\\geodescroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\karmacovenant\\karmacovenant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\karmacovenant\\karmacovenant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\magicsheath\\spiritmagicsheath.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\magicsheath\\spiritmagicsheath.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\heresycovenant\\heresycovenantglobalnpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\heresycovenant\\heresycovenantglobalnpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\magicsheath\\spiritblade.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\magicsheath\\spiritblade.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\heresycovenant\\heresycovenantglobalprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\heresycovenant\\heresycovenantglobalprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\magicsheath\\magicswordpro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\magicsheath\\magicswordpro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\heresycovenant\\heresycovenantglobalitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\heresycovenant\\heresycovenantglobalitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\heresycovenant\\heresycovenant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\heresycovenant\\heresycovenant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\fallencovenant\\fallencovenantglobalitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\fallencovenant\\fallencovenantglobalitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\fallencovenant\\fallencovenant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\fallencovenant\\fallencovenant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\eternalbulwark\\lifereganbuff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\eternalbulwark\\lifereganbuff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\eternalbulwark\\eternalbulwark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\eternalbulwark\\eternalbulwark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\eternalbulwark\\eternalbulwarkabsorbbuff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\eternalbulwark\\eternalbulwarkabsorbbuff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\cursedcovenant\\lifedraincooldown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\cursedcovenant\\lifedraincooldown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\cursedcovenant\\cursedcovenantglobalitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\cursedcovenant\\cursedcovenantglobalitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\cursedcovenant\\cursedcovenant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\cursedcovenant\\cursedcovenant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\bonecovenant\\bonecovenantglobalitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\bonecovenant\\bonecovenantglobalitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\bonecovenant\\bonecovenant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\bonecovenant\\bonecovenant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\blazinglightballoonbundle\\blazinglightballoonbundle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\blazinglightballoonbundle\\blazinglightballoonbundle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|c:\\users\\13599\\documents\\my games\\terraria\\tmodloader\\modsources\\thoriumaccessoryexpansion\\accessories\\magicsheath\\scrollplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D509E3D-63C8-48F0-5A63-D69C4F6CAC7C}|ThoriumAccessoryExpansion.csproj|solutionrelative:accessories\\magicsheath\\scrollplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,283 +46,127 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CovenantUISystem.cs",
-              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Systems\\CovenantUISystem.cs",
-              "RelativeDocumentMoniker": "Systems\\CovenantUISystem.cs",
-              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Systems\\CovenantUISystem.cs",
-              "RelativeToolTip": "Systems\\CovenantUISystem.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAYwE8AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T02:03:08.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CovenantPlayer.cs",
-              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Players\\CovenantPlayer.cs",
-              "RelativeDocumentMoniker": "Players\\CovenantPlayer.cs",
-              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Players\\CovenantPlayer.cs",
-              "RelativeToolTip": "Players\\CovenantPlayer.cs",
-              "ViewState": "AgIAACIBAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T02:02:53.146Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SupremeWrath.cs",
-              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MichaelasAid\\SupremeWrath.cs",
-              "RelativeDocumentMoniker": "Accessories\\MichaelasAid\\SupremeWrath.cs",
-              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MichaelasAid\\SupremeWrath.cs",
-              "RelativeToolTip": "Accessories\\MichaelasAid\\SupremeWrath.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T02:02:50.265Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UnholyKarma.cs",
-              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\KarmaCovenant\\UnholyKarma.cs",
-              "RelativeDocumentMoniker": "Accessories\\KarmaCovenant\\UnholyKarma.cs",
-              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\KarmaCovenant\\UnholyKarma.cs",
-              "RelativeToolTip": "Accessories\\KarmaCovenant\\UnholyKarma.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Title": "SpiritMagicSheath.cs",
+              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MagicSheath\\SpiritMagicSheath.cs",
+              "RelativeDocumentMoniker": "Accessories\\MagicSheath\\SpiritMagicSheath.cs",
+              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MagicSheath\\SpiritMagicSheath.cs",
+              "RelativeToolTip": "Accessories\\MagicSheath\\SpiritMagicSheath.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T02:02:47.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MichaelasAid.cs",
-              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MichaelasAid\\MichaelasAid.cs",
-              "RelativeDocumentMoniker": "Accessories\\MichaelasAid\\MichaelasAid.cs",
-              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MichaelasAid\\MichaelasAid.cs",
-              "RelativeToolTip": "Accessories\\MichaelasAid\\MichaelasAid.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T02:02:43.409Z",
+              "WhenOpened": "2026-07-31T14:03:08.105Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "KarmaCovenant.cs",
-              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\KarmaCovenant\\KarmaCovenant.cs",
-              "RelativeDocumentMoniker": "Accessories\\KarmaCovenant\\KarmaCovenant.cs",
-              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\KarmaCovenant\\KarmaCovenant.cs",
-              "RelativeToolTip": "Accessories\\KarmaCovenant\\KarmaCovenant.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T02:02:38.132Z",
-              "EditorCaption": ""
+              "Title": "SpiritMagicSheath.png - PNG [40x36, 32 \u4F4D, PNG]",
+              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MagicSheath\\SpiritMagicSheath.png",
+              "RelativeDocumentMoniker": "Accessories\\MagicSheath\\SpiritMagicSheath.png",
+              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MagicSheath\\SpiritMagicSheath.png - PNG [40x36, 32 \u4F4D, PNG]",
+              "RelativeToolTip": "Accessories\\MagicSheath\\SpiritMagicSheath.png - PNG [40x36, 32 \u4F4D, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2026-07-31T14:03:06.804Z",
+              "EditorCaption": " - PNG [40x36, 32 \u4F4D, PNG]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "HeresyCovenantGlobalNPC.cs",
-              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\HeresyCovenant\\HeresyCovenantGlobalNPC.cs",
-              "RelativeDocumentMoniker": "Accessories\\HeresyCovenant\\HeresyCovenantGlobalNPC.cs",
-              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\HeresyCovenant\\HeresyCovenantGlobalNPC.cs",
-              "RelativeToolTip": "Accessories\\HeresyCovenant\\HeresyCovenantGlobalNPC.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Title": "SpiritBlade.png - PNG [40x34, 32 \u4F4D, PNG]",
+              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MagicSheath\\SpiritBlade.png",
+              "RelativeDocumentMoniker": "Accessories\\MagicSheath\\SpiritBlade.png",
+              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MagicSheath\\SpiritBlade.png - PNG [40x34, 32 \u4F4D, PNG]",
+              "RelativeToolTip": "Accessories\\MagicSheath\\SpiritBlade.png - PNG [40x34, 32 \u4F4D, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2026-07-31T14:03:04.372Z",
+              "EditorCaption": " - PNG [40x34, 32 \u4F4D, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MagicSheathPlayer.cs",
+              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MagicSheath\\MagicSheathPlayer.cs",
+              "RelativeDocumentMoniker": "Accessories\\MagicSheath\\MagicSheathPlayer.cs",
+              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MagicSheath\\MagicSheathPlayer.cs",
+              "RelativeToolTip": "Accessories\\MagicSheath\\MagicSheathPlayer.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAgwHwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T02:02:35.271Z",
+              "WhenOpened": "2026-07-31T13:26:29.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SpiritBlade.cs",
+              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MagicSheath\\SpiritBlade.cs",
+              "RelativeDocumentMoniker": "Accessories\\MagicSheath\\SpiritBlade.cs",
+              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MagicSheath\\SpiritBlade.cs",
+              "RelativeToolTip": "Accessories\\MagicSheath\\SpiritBlade.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwB8AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-29T05:21:11.943Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "HeresyCovenantGlobalProjectile.cs",
-              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\HeresyCovenant\\HeresyCovenantGlobalProjectile.cs",
-              "RelativeDocumentMoniker": "Accessories\\HeresyCovenant\\HeresyCovenantGlobalProjectile.cs",
-              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\HeresyCovenant\\HeresyCovenantGlobalProjectile.cs",
-              "RelativeToolTip": "Accessories\\HeresyCovenant\\HeresyCovenantGlobalProjectile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "MagicSwordPro.cs",
+              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MagicSheath\\MagicSwordPro.cs",
+              "RelativeDocumentMoniker": "Accessories\\MagicSheath\\MagicSwordPro.cs",
+              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MagicSheath\\MagicSwordPro.cs",
+              "RelativeToolTip": "Accessories\\MagicSheath\\MagicSwordPro.cs",
+              "ViewState": "AgIAADsBAAAAAAAAAAAowEoBAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T02:02:34.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-28T13:18:29.09Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "HeresyCovenantGlobalItem.cs",
-              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\HeresyCovenant\\HeresyCovenantGlobalItem.cs",
-              "RelativeDocumentMoniker": "Accessories\\HeresyCovenant\\HeresyCovenantGlobalItem.cs",
-              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\HeresyCovenant\\HeresyCovenantGlobalItem.cs",
-              "RelativeToolTip": "Accessories\\HeresyCovenant\\HeresyCovenantGlobalItem.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Title": "ScrollPlayer.cs",
+              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MagicSheath\\ScrollPlayer.cs",
+              "RelativeDocumentMoniker": "Accessories\\MagicSheath\\ScrollPlayer.cs",
+              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MagicSheath\\ScrollPlayer.cs",
+              "RelativeToolTip": "Accessories\\MagicSheath\\ScrollPlayer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T02:02:31.867Z",
+              "WhenOpened": "2026-07-28T13:15:06.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GeodeScroll.cs",
+              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MagicSheath\\GeodeScroll.cs",
+              "RelativeDocumentMoniker": "Accessories\\MagicSheath\\GeodeScroll.cs",
+              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MagicSheath\\GeodeScroll.cs",
+              "RelativeToolTip": "Accessories\\MagicSheath\\GeodeScroll.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-28T12:52:38.643Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "HeresyCovenant.cs",
-              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\HeresyCovenant\\HeresyCovenant.cs",
-              "RelativeDocumentMoniker": "Accessories\\HeresyCovenant\\HeresyCovenant.cs",
-              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\HeresyCovenant\\HeresyCovenant.cs",
-              "RelativeToolTip": "Accessories\\HeresyCovenant\\HeresyCovenant.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "TerraMagicSheath.cs",
+              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MagicSheath\\TerraMagicSheath.cs",
+              "RelativeDocumentMoniker": "Accessories\\MagicSheath\\TerraMagicSheath.cs",
+              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\MagicSheath\\TerraMagicSheath.cs",
+              "RelativeToolTip": "Accessories\\MagicSheath\\TerraMagicSheath.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T02:02:26.954Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FallenCovenantGlobalItem.cs",
-              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\FallenCovenant\\FallenCovenantGlobalItem.cs",
-              "RelativeDocumentMoniker": "Accessories\\FallenCovenant\\FallenCovenantGlobalItem.cs",
-              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\FallenCovenant\\FallenCovenantGlobalItem.cs",
-              "RelativeToolTip": "Accessories\\FallenCovenant\\FallenCovenantGlobalItem.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T02:02:23.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FallenCovenant.cs",
-              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\FallenCovenant\\FallenCovenant.cs",
-              "RelativeDocumentMoniker": "Accessories\\FallenCovenant\\FallenCovenant.cs",
-              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\FallenCovenant\\FallenCovenant.cs",
-              "RelativeToolTip": "Accessories\\FallenCovenant\\FallenCovenant.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAYwAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T02:02:18.418Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "LifeReganBuff.cs",
-              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\EternalBulwark\\LifeReganBuff.cs",
-              "RelativeDocumentMoniker": "Accessories\\EternalBulwark\\LifeReganBuff.cs",
-              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\EternalBulwark\\LifeReganBuff.cs",
-              "RelativeToolTip": "Accessories\\EternalBulwark\\LifeReganBuff.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T02:02:08.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "EternalBulwarkAbsorbBuff.cs",
-              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\EternalBulwark\\EternalBulwarkAbsorbBuff.cs",
-              "RelativeDocumentMoniker": "Accessories\\EternalBulwark\\EternalBulwarkAbsorbBuff.cs",
-              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\EternalBulwark\\EternalBulwarkAbsorbBuff.cs",
-              "RelativeToolTip": "Accessories\\EternalBulwark\\EternalBulwarkAbsorbBuff.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T02:01:36.917Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "EternalBulwark.cs",
-              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\EternalBulwark\\EternalBulwark.cs",
-              "RelativeDocumentMoniker": "Accessories\\EternalBulwark\\EternalBulwark.cs",
-              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\EternalBulwark\\EternalBulwark.cs",
-              "RelativeToolTip": "Accessories\\EternalBulwark\\EternalBulwark.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T02:01:27.49Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "LifeDrainCooldown.cs",
-              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\CursedCovenant\\LifeDrainCooldown.cs",
-              "RelativeDocumentMoniker": "Accessories\\CursedCovenant\\LifeDrainCooldown.cs",
-              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\CursedCovenant\\LifeDrainCooldown.cs",
-              "RelativeToolTip": "Accessories\\CursedCovenant\\LifeDrainCooldown.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T02:01:16.54Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CursedCovenantGlobalItem.cs",
-              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\CursedCovenant\\CursedCovenantGlobalItem.cs",
-              "RelativeDocumentMoniker": "Accessories\\CursedCovenant\\CursedCovenantGlobalItem.cs",
-              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\CursedCovenant\\CursedCovenantGlobalItem.cs",
-              "RelativeToolTip": "Accessories\\CursedCovenant\\CursedCovenantGlobalItem.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T02:01:13.7Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CursedCovenant.cs",
-              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\CursedCovenant\\CursedCovenant.cs",
-              "RelativeDocumentMoniker": "Accessories\\CursedCovenant\\CursedCovenant.cs",
-              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\CursedCovenant\\CursedCovenant.cs",
-              "RelativeToolTip": "Accessories\\CursedCovenant\\CursedCovenant.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAQwAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T02:01:08.926Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "BoneCovenantGlobalItem.cs",
-              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\BoneCovenant\\BoneCovenantGlobalItem.cs",
-              "RelativeDocumentMoniker": "Accessories\\BoneCovenant\\BoneCovenantGlobalItem.cs",
-              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\BoneCovenant\\BoneCovenantGlobalItem.cs",
-              "RelativeToolTip": "Accessories\\BoneCovenant\\BoneCovenantGlobalItem.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T02:01:04.527Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "BoneCovenant.cs",
-              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\BoneCovenant\\BoneCovenant.cs",
-              "RelativeDocumentMoniker": "Accessories\\BoneCovenant\\BoneCovenant.cs",
-              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\BoneCovenant\\BoneCovenant.cs",
-              "RelativeToolTip": "Accessories\\BoneCovenant\\BoneCovenant.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAA1wAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T02:00:58.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "BlazingLightBalloonBundle.cs",
-              "DocumentMoniker": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\BlazingLightBalloonBundle\\BlazingLightBalloonBundle.cs",
-              "RelativeDocumentMoniker": "Accessories\\BlazingLightBalloonBundle\\BlazingLightBalloonBundle.cs",
-              "ToolTip": "C:\\Users\\13599\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ThoriumAccessoryExpansion\\Accessories\\BlazingLightBalloonBundle\\BlazingLightBalloonBundle.cs",
-              "RelativeToolTip": "Accessories\\BlazingLightBalloonBundle\\BlazingLightBalloonBundle.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAzwDQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T02:00:37.162Z",
+              "WhenOpened": "2026-07-28T12:50:22.82Z",
               "EditorCaption": ""
             }
           ]

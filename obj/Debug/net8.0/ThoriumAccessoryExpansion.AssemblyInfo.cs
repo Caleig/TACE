@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ThoriumAccessoryExpansion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6adf1926272543cd45c61b912295a46745bb6d11")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9741fcb7a5155698f8c01d339dd4af697d12b34")]
 [assembly: System.Reflection.AssemblyProductAttribute("ThoriumAccessoryExpansion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ThoriumAccessoryExpansion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
