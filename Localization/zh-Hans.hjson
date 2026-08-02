@@ -2,143 +2,47 @@ Mods: {
 	ThoriumAccessoryExpansion: {
 		Buffs: {
 			UnholyKarma: {
-				Description: 受到伤害提高10%
-				DisplayName: 不洁业果
 			}
 
 			LifeReganBuff: {
-				Description: 极速恢复生命
-				DisplayName: 生命再生
 			}
 
 			EternalBulwarkAbsorbBuff: {
-				Description: 正在转移伤害
-				DisplayName: 伤害吸收
 			}
 
 			DefenseBuff: {
-				Description: 受到伤害降低25%，生命恢复速度极快
-				DisplayName: 防御增强
 			}
 
 			LifeDrainCooldown: {
-				Description: 防止圣约在单次攻击中多次触发
-				DisplayName: 生命反噬冷却
 			}
 
 			SupremeWrath: {
-				DisplayName: 至高圣怒
-				Description: 攻击该目标获得的灵魂精华+1
 			}
 		}
 
 		Items: {
 			BlazingLightBalloonBundle: {
-				DisplayName: 狐火灵球
-				Tooltip:
-					'''
-					“四颗注入了妖狐迅捷之力的灵珠”
-					允许持有者四连跳
-					增加移动加速度和跳跃高度，使坠落伤害无效
-					按住下键可以快速下落
-					缓慢生成最多3个灵焰，允许你消耗灵焰向光标处冲刺
-					按下“饰品能力”键进行冲刺
-					装备时视为翅膀
-					'''
 			}
 
 			BoneCovenant: {
-				DisplayName: 骸骨圣约
-				Tooltip:
-					'''
-					用暗能量增幅一些光辉攻击
-					治疗法术会降低1点治疗量
-					使用光辉武器额外消耗1点生命
-					使用光辉武器持续获得堕落充能
-					堕落充能最多提升10点光辉伤害
-					'''
 			}
 
 			CursedCovenant: {
-				DisplayName: 诅咒圣约
-				Tooltip:
-					'''
-					用暗能量增幅一些光辉攻击
-					使用光辉武器额外消耗1点生命
-					使用光辉武器持续获得堕落充能
-					堕落充能最多提升5点光辉伤害
-					'''
 			}
 
 			EternalBulwark: {
-				DisplayName: 永恒壁垒
-				Tooltip:
-					'''
-					对击退免疫
-					当生命值高于25%时，吸收团队中玩家所受伤害的25%
-					敌人更有可能瞄准你
-					增加你的生命再生速率
-					低于25%生命值时受到伤害会在你周围环绕一个保护性泡泡
-					在泡泡中时，你每秒会恢复与治疗加成+5相同的生命值并降低25%受到的伤害
-					泡泡还能使你在15秒内完全抵消1次受到的伤害
-					此效果只能每45秒触发1次
-					'''
 			}
 
 			FallenCovenant: {
-				DisplayName: 堕落圣约
-				Tooltip:
-					'''
-					用暗能量增幅一些光辉攻击
-					治疗法术会降低1点治疗量
-					使用光辉武器额外消耗2点生命
-					使用光辉武器持续获得堕落充能
-					堕落充能最多提升12点光辉伤害
-					满层堕落充能提供12%光辉伤害和5%光辉暴击率
-					'''
 			}
 
 			HeresyCovenant: {
-				DisplayName: 赫瑞之孽
-				Tooltip:
-					'''
-					用暗能量增幅一些光辉攻击
-					增加20%光辉伤害
-					增加15%光辉暴击率
-					治疗法术会降低1点治疗量
-					光辉法术每消耗2点生命值，回复1点生命值
-					你击中的敌怪受到暗影焰和光之咒减益随时间造成的伤害增加100%
-					受到暗影焰和光之咒影响的敌怪额外受到15%伤害并增加自身生命恢复
-					'''
 			}
 
 			KarmaCovenant: {
-				DisplayName: 业果圣契
-				Tooltip:
-					'''
-你的每100点治疗连击会为远古坩埚注入燃料，上限500点
-坩埚内每100点生命值会增加你8%光辉伤害
-用暗能量增幅一些光辉攻击
-使用光辉武器额外消耗3点生命
-使用光辉武器持续获得堕落充能
-堕落充能最多提升15点光辉伤害
-满层堕落充能提供15%光辉伤害和8%光辉暴击率
-满层堕落充能时灵魂精华的治疗效果将共享给附近队友
-					'''
 			}
 
 			MichaelasAid: {
-				DisplayName: 米迦勒之助
-				Tooltip:
-					'''
-					“谁能似神？”
-					用神圣能量增幅你的光辉攻击
-					你击中的敌怪使你获得更多灵魂精华·
-					基于你的额外治疗量提供全面光辉加成
-					最大生命值和魔力值增加10
-					增加20%治疗速度
-					治疗法术会额外治疗2点生命值
-					'''
 			}
 		}
 	}

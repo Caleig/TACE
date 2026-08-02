@@ -116,8 +116,8 @@ Mods: {
 				DisplayName: 业果圣契
 				Tooltip:
 					'''
-					80点基础伤害
-					每40点自身治疗会释放一束伤害性光辉能量
+					你的每100点治疗连击会为远古坩埚注入燃料，上限500点
+					坩埚内每100点生命值会增加你8%光辉伤害
 					用暗能量增幅一些光辉攻击
 					使用光辉武器额外消耗3点生命
 					使用光辉武器持续获得堕落充能
@@ -142,48 +142,89 @@ Mods: {
 			}
 
 			SpiritBlade: {
-				// DisplayName: Spirit Blade
-				// Tooltip: ""
+				 DisplayName: 英灵的破刃
+				 Tooltip: 
+'''
+增加5点魔法伤害
+使蕴魔剑能穿透2个敌人
+'''
 			}
 
 			MagicSheath: {
-				// Tooltip: ""
-				// DisplayName: Magic Sheath
+				 Tooltip: 
+'''
+15点基础魔法伤害
+消耗魔力时较低概率生成1把蕴魔剑
+魔力低于25%后飞向鼠标方向
+蕴魔剑命中时回复魔力上限的10%
+最多同时存在2把蕴魔剑
+每存在1把，魔力值消耗增加5%
+'''
+				 DisplayName: 魔力剑鞘
 			}
 
 			SpiritMagicSheath: {
-				// DisplayName: Spirit Magic Sheath
-				// Tooltip: ""
+				 DisplayName: 英灵的蕴魔剑鞘 
+				 Tooltip: 
+'''
+30点基础魔法伤害
+消耗魔力时中等概率生成1把蕴魔剑
+魔力低于30%后飞向鼠标方向并穿透2个敌人
+蕴魔剑命中时回复魔力上限的15%
+最多同时存在3把蕴魔剑
+每存在1把，增加3点魔法伤害，魔力值消耗增加5%
+'''
 			}
 
 			TerraMagicSheath: {
-				// DisplayName: Terra Magic Sheath
-				// Tooltip: ""
+				 DisplayName: 泰拉蕴魔剑鞘
+				 Tooltip: 
+'''
+魔法伤害增加15%
+蕴魔剑伤害为手持武器的50%
+消耗魔力时较高概率生成1把泰拉蕴魔剑
+魔力低于35%后飞向鼠标方向并追踪敌人
+蕴魔剑命中时回复魔力上限的15%
+最多同时存在4把泰拉蕴魔剑
+每存在1把，增加4点魔法伤害，增加3防御，魔力值消耗增加蓝耗5%
+'''
 			}
 
 			BlazingScroll: {
-				// DisplayName: Blazing Scroll
-				// Tooltip: ""
+			 DisplayName: 爆炎刃契
+			 Tooltip: "蕴魔剑命中时造成范围伤害并点燃敌人"
 			}
 
 			EnergyScroll: {
-				// DisplayName: Energy Scroll
-				// Tooltip: ""
+				 DisplayName:能量刃契
+				 Tooltip: 
+'''
+蕴魔剑命中时向敌人输入花岗岩能量
+它们所受伤害增加5%
+'''
 			}
 
 			GeodeScroll: {
-				// DisplayName: Geode Scroll
-				// Tooltip: ""
+				 DisplayName: 地脉刃契
+				 Tooltip: 
+'''
+蕴魔剑命中时剥离敌人
+它们所受伤害增加10%
+'''
 			}
 
 			HolyScroll: {
-				// DisplayName: Holy Scroll
-				// Tooltip: ""
+				 DisplayName: 神圣刃契
+				 Tooltip: 
+'''
+蕴魔剑命中时用神圣之怒引燃敌人
+它们所受伤害增加15%
+'''
 			}
 
 			SoulScroll: {
-				// DisplayName: Soul Scroll
-				// Tooltip: ""
+				 DisplayName: 幽冥刃契
+				 Tooltip: "蕴魔剑命中时吸取敌怪生命"
 			}
 		}
 
