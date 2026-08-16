@@ -30,9 +30,18 @@ namespace ThoriumAccessoryExpansion.Accessories.MagicSheath
                 .AddTile(TileID.MythrilAnvil)
                 .Register();
         }
-
+        public override bool CanEquipAccessory(Player player, int slot, bool modded)
+        {
+            for (int i = 3; i < 8 + player.extraAccessorySlots; i++)
+            {
+                if (player.armor[i].type == ModContent.ItemType<SpiritMagicSheath>() || player.armor[i].type == ModContent.ItemType<MagicSheath>())
+                    return false;
+            }
+            return true;
+        }
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
+            player.GetDamage(DamageClass.Magic) += 0.15f;
             var mp = player.GetModPlayer<MagicSheathPlayer>();
             mp.SheathLevel = Math.Max(mp.SheathLevel, 3);
         }

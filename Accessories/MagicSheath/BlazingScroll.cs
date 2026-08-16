@@ -15,7 +15,7 @@ namespace ThoriumAccessoryExpansion.Accessories.MagicSheath
         public override void AddRecipes()
         {
             CreateRecipe()
-                .AddIngredient(ItemID.HellstoneBar, 10) // 狱炎锭（实际可能为狱石锭）
+                .AddIngredient(ItemID.HellstoneBar, 10)
                 .AddIngredient(ItemID.Silk, 5)
                 .AddTile(TileID.Loom)
                 .Register();

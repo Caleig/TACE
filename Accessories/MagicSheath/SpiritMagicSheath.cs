@@ -29,7 +29,15 @@ namespace ThoriumAccessoryExpansion.Accessories.MagicSheath
                 .AddTile(TileID.MythrilAnvil)
                 .Register();
         }
-
+        public override bool CanEquipAccessory(Player player, int slot, bool modded)
+        {
+            for (int i = 3; i < 8 + player.extraAccessorySlots; i++)
+            {
+                if (player.armor[i].type == ModContent.ItemType<MagicSheath>() || player.armor[i].type == ModContent.ItemType<TerraMagicSheath>())
+                    return false;
+            }
+            return true;
+        }
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
             var mp = player.GetModPlayer<MagicSheathPlayer>();

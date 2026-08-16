@@ -35,7 +35,7 @@ Mods: {
 		Items: {
 			BlazingLightBalloonBundle: {
 				DisplayName: Blazing Light Balloon Bundle
-				Tooltip: 
+				Tooltip:
 					'''
 					"Four spirit orbs infused with the swift power of a fox spirit"
 					Grants the ability to perform a quadruple jump
@@ -87,7 +87,7 @@ Mods: {
 
 			FallenCovenant: {
 				DisplayName: Fallen Covenant
-				Tooltip: 
+				Tooltip:
 					'''
 					Empowers certain radiant attacks with dark energy
 					Healing spells heal 1 less life
@@ -100,7 +100,7 @@ Mods: {
 
 			HeresyCovenant: {
 				DisplayName: Heresy Covenant
-				Tooltip: 
+				Tooltip:
 					'''
 					Empowers certain radiant attacks with dark energy
 					Increases radiant damage by 20%
@@ -143,7 +143,7 @@ Mods: {
 
 			SpiritBlade: {
 				DisplayName: Spirit Blade
-				Tooltip: 
+				Tooltip:
 					'''
 					+5 magic damage
 					Allows the Magic Sword to pierce through 2 enemies
@@ -165,7 +165,7 @@ Mods: {
 
 			SpiritMagicSheath: {
 				DisplayName: Spirit Magic Sheath
-				Tooltip: 
+				Tooltip:
 					'''
 					30 basic magic damage
 					Consuming mana has a medium chance to summon 1 Magic Sword
@@ -178,7 +178,7 @@ Mods: {
 
 			TerraMagicSheath: {
 				DisplayName: Terra Magic Sheath
-				Tooltip: 
+				Tooltip:
 					'''
 					+15% magic damage
 					Magic Swords deal 50% of the held weapon's damage
@@ -192,12 +192,12 @@ Mods: {
 
 			BlazingScroll: {
 				DisplayName: Blazing Scroll
-				Tooltip: "Magic Sword hits deal area damage and ignite enemies"
+				Tooltip: Magic Sword hits deal area damage and ignite enemies
 			}
 
 			EnergyScroll: {
 				DisplayName: Energy Scroll
-				Tooltip: 
+				Tooltip:
 					'''
 					Magic Sword hits infuse enemies with granite energy
 					Infused enemies take 5% increased damage
@@ -206,7 +206,7 @@ Mods: {
 
 			GeodeScroll: {
 				DisplayName: Geode Scroll
-				Tooltip: 
+				Tooltip:
 					'''
 					Magic Sword hits sunder enemies
 					Sundered enemies take 10% increased damage
@@ -215,7 +215,7 @@ Mods: {
 
 			HolyScroll: {
 				DisplayName: Holy Scroll
-				Tooltip: 
+				Tooltip:
 					'''
 					Magic Sword hits ignite enemies with Holy Glare
 					Enemies afflicted with Holy Glare take 15% increased damage
@@ -224,7 +224,7 @@ Mods: {
 
 			SoulScroll: {
 				DisplayName: Soul Scroll
-				Tooltip: "Magic Sword hits drain life from enemies"
+				Tooltip: Magic Sword hits drain life from enemies
 			}
 		}
 

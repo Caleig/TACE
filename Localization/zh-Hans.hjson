@@ -142,8 +142,8 @@ Mods: {
 			}
 
 			SpiritBlade: {
-				 DisplayName: 英灵的破刃
-				 Tooltip: 
+				DisplayName: 英灵的破刃
+				Tooltip:
 					'''
 					增加5点魔法伤害
 					使蕴魔剑能穿透2个敌人
@@ -151,7 +151,7 @@ Mods: {
 			}
 
 			MagicSheath: {
-				 Tooltip: 
+				Tooltip:
 					'''
 					15点基础魔法伤害
 					消耗魔力时较低概率生成1把蕴魔剑
@@ -160,12 +160,12 @@ Mods: {
 					最多同时存在2把蕴魔剑
 					每存在1把，魔力值消耗增加5%
 					'''
-				 DisplayName: 魔力剑鞘
+				DisplayName: 魔力剑鞘
 			}
 
 			SpiritMagicSheath: {
-				 DisplayName: 英灵的蕴魔剑鞘 
-				 Tooltip: 
+				DisplayName: 英灵的蕴魔剑鞘
+				Tooltip:
 					'''
 					30点基础魔法伤害
 					消耗魔力时中等概率生成1把蕴魔剑
@@ -177,8 +177,8 @@ Mods: {
 			}
 
 			TerraMagicSheath: {
-				 DisplayName: 泰拉蕴魔剑鞘
-				 Tooltip: 
+				DisplayName: 泰拉蕴魔剑鞘
+				Tooltip:
 					'''
 					魔法伤害增加15%
 					蕴魔剑伤害为手持武器的50%
@@ -191,13 +191,13 @@ Mods: {
 			}
 
 			BlazingScroll: {
-			 DisplayName: 爆炎刃契
-			 Tooltip: "蕴魔剑命中时造成范围伤害并点燃敌人"
+				DisplayName: 爆炎刃契
+				Tooltip: 蕴魔剑命中时造成范围伤害并点燃敌人
 			}
 
 			EnergyScroll: {
-				 DisplayName:能量刃契
-				 Tooltip: 
+				DisplayName: 能量刃契
+				Tooltip:
 					'''
 					蕴魔剑命中时向敌人输入花岗岩能量
 					它们所受伤害增加5%
@@ -205,8 +205,8 @@ Mods: {
 			}
 
 			GeodeScroll: {
-				 DisplayName: 地脉刃契
-				 Tooltip: 
+				DisplayName: 地脉刃契
+				Tooltip:
 					'''
 					蕴魔剑命中时剥离敌人
 					它们所受伤害增加10%
@@ -214,8 +214,8 @@ Mods: {
 			}
 
 			HolyScroll: {
-				 DisplayName: 神圣刃契
-				 Tooltip: 
+				DisplayName: 神圣刃契
+				Tooltip:
 					'''
 					蕴魔剑命中时用神圣之怒引燃敌人
 					它们所受伤害增加15%
@@ -223,8 +223,8 @@ Mods: {
 			}
 
 			SoulScroll: {
-				 DisplayName: 幽冥刃契
-				 Tooltip: "蕴魔剑命中时吸取敌怪生命"
+				DisplayName: 幽冥刃契
+				Tooltip: 蕴魔剑命中时吸取敌怪生命
 			}
 		}
 

@@ -7,10 +7,17 @@ using ThoriumMod.Items.Terrarium;
 using ThoriumMod.Utilities;
 namespace ThoriumAccessoryExpansion.Accessories.BlazingLightBalloonBundle
 {
+  /*  [AutoloadEquip(EquipType.Face, EquipType.Back)]*/
+
     public class BlazingLightBalloonBundle : ModItem
     {
+        public override void Load()
+        {
+
+        }
         public override void SetStaticDefaults()
         {
+
         }
 
         public override void SetDefaults()
@@ -20,7 +27,6 @@ namespace ThoriumAccessoryExpansion.Accessories.BlazingLightBalloonBundle
             Item.accessory = true;
             Item.rare = ItemRarityID.LightRed;
             Item.value = Item.sellPrice(gold: 1);
-            Item.wingSlot = 1;
         }
 
         public override void UpdateAccessory(Player player, bool hideVisual)

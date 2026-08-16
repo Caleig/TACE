@@ -35,7 +35,6 @@ namespace ThoriumAccessoryExpansion.Accessories.MagicSheath
 
         public override void PostUpdate()
         {
-            // 冷却
             if (SpawnCooldown > 0) SpawnCooldown--;
 
             // 清理无效剑
@@ -45,7 +44,7 @@ namespace ThoriumAccessoryExpansion.Accessories.MagicSheath
                 return !p.active || p.type != ModContent.ProjectileType<MagicSwordPro>();
             });
 
-            // 若未装备任何剑鞘，且没有英灵破刃，清空剑
+            // 若未装备任何剑鞘且无英灵破刃，清空所有剑
             if (SheathLevel == 0 && !HasSpiritBlade)
             {
                 foreach (int idx in SwordIndices)
@@ -64,17 +63,18 @@ namespace ThoriumAccessoryExpansion.Accessories.MagicSheath
                 SwordIndices.RemoveAt(0);
             }
 
-            // 检测魔力消耗
+            // 魔力消耗检测（仅服务器执行生成）
             int currentMana = Player.statMana;
             int manaDiff = _prevMana - currentMana;
             if (manaDiff > 0 && SheathLevel > 0)
             {
-                OnManaConsumed(manaDiff);
+                if (Main.netMode != NetmodeID.MultiplayerClient)
+                    OnManaConsumed(manaDiff);
             }
             _prevMana = currentMana;
 
-            // 低魔检测（仅在SheathLevel>0时）
-            if (SheathLevel > 0)
+            // 低魔检测（仅服务器执行发射）
+            if (SheathLevel > 0 && Main.netMode != NetmodeID.MultiplayerClient)
                 CheckLowMana();
         }
 
@@ -94,9 +94,9 @@ namespace ThoriumAccessoryExpansion.Accessories.MagicSheath
         {
             switch (SheathLevel)
             {
-                case 1: return 0.10f;//10
-                case 2: return 0.20f;//20
-                case 3: return 0.25f;//25
+                case 1: return 0.10f;
+                case 2: return 0.20f;
+                case 3: return 0.25f;
                 default: return 0f;
             }
         }
@@ -105,7 +105,7 @@ namespace ThoriumAccessoryExpansion.Accessories.MagicSheath
         {
             switch (SheathLevel)
             {
-                case 1: return 0.25f;    // 基础不触发
+                case 1: return 0.25f;
                 case 2: return 0.30f;
                 case 3: return 0.35f;
                 default: return 0f;
@@ -114,10 +114,9 @@ namespace ThoriumAccessoryExpansion.Accessories.MagicSheath
 
         public int GetExtraPenetrate()
         {
-            // 英灵级和泰拉级额外穿透2
-            if(SheathLevel >= 2)
+            if (SheathLevel >= 2)
                 return 2;
-            if(HasSpiritBlade)
+            if (HasSpiritBlade)
                 return 2;
             return 0;
         }
@@ -133,12 +132,11 @@ namespace ThoriumAccessoryExpansion.Accessories.MagicSheath
             }
         }
 
-        // 面板伤害加成（供GlobalItem调用）
         public int GetFlatDamageBonus()
         {
             if (SheathLevel == 2) return 3;
             if (SheathLevel == 3) return 4;
-            if (HasSpiritBlade) return 5; // 仅英灵破刃
+            if (HasSpiritBlade) return 5;
             return 0;
         }
 
@@ -157,27 +155,26 @@ namespace ThoriumAccessoryExpansion.Accessories.MagicSheath
 
         public float GetMagicDamageBonus()
         {
-            return (SheathLevel == 3) ? 0.15f : 0f;
+            return (SheathLevel == 3) ? 0f : 0f;
         }
 
-        // 消耗魔力触发
+        // 消耗魔力触发（仅服务器调用）
         private void OnManaConsumed(int manaUsed)
         {
             if (SheathLevel == 0) return;
             if (SpawnCooldown > 0) return;
             if (SwordIndices.Count >= GetMaxSwords()) return;
-
             if (Main.rand.NextFloat() >= GetSpawnChance()) return;
 
             SpawnSword();
             SpawnCooldown = 120;
         }
 
+        // 生成剑（仅服务器调用）
         private void SpawnSword()
         {
             Player player = Player;
             int damage = 0;
-            // 基础级：15，英灵级：30，泰拉级：手持武器50%
             if (SheathLevel == 1)
                 damage = 15;
             else if (SheathLevel == 2)
@@ -188,10 +185,11 @@ namespace ThoriumAccessoryExpansion.Accessories.MagicSheath
                 if (held != null && held.damage > 0)
                     damage = (int)(held.damage * 0.5f);
                 else
-                    damage = 30; // fallback
+                    damage = 30;
             }
 
             int extraPen = GetExtraPenetrate();
+            int swordCount = SwordIndices.Count; // 用于序号
             Projectile proj = Projectile.NewProjectileDirect(
                 player.GetSource_Accessory(null),
                 player.Center - new Vector2(0, 40f),
@@ -200,12 +198,14 @@ namespace ThoriumAccessoryExpansion.Accessories.MagicSheath
                 damage,
                 2f,
                 player.whoAmI,
-                ai0: extraPen
+                ai0: swordCount,
+                ai1: extraPen
             );
             proj.timeLeft = 600;
-            SwordIndices.Add(proj.whoAmI);
+            // OnSpawn 会自动添加到列表
         }
 
+        // 低魔发射（仅服务器调用）
         private void CheckLowMana()
         {
             float threshold = GetLowManaThreshold();
@@ -213,20 +213,15 @@ namespace ThoriumAccessoryExpansion.Accessories.MagicSheath
             float ratio = (float)Player.statMana / Player.statManaMax2;
             if (ratio <= threshold)
             {
-                // 调试：输出触发信息（测试后注释掉）
-                Main.NewText($"低魔触发！魔力比例: {ratio}, 阈值: {threshold}");
-
                 foreach (int idx in SwordIndices)
                 {
                     Projectile p = Main.projectile[idx];
                     if (p.active && p.type == ModContent.ProjectileType<MagicSwordPro>())
                     {
                         var mp = p.ModProjectile as MagicSwordPro;
-                        if (mp != null && !mp.Fired)
+                        if (mp != null && !mp.IsFired)
                         {
                             mp.FireAtMouse();
-                            // 调试：输出发射信息
-                            Main.NewText("已发射一把蕴魔剑");
                         }
                     }
                 }

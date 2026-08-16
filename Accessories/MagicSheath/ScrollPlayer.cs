@@ -1,43 +1,56 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace ThoriumAccessoryExpansion.Accessories.MagicSheath
 {
     public class ScrollPlayer : ModPlayer
     {
-        // 存储激活的卷轴类型ID（0~4），最多2个
         public List<int> ActiveScrolls = new List<int>();
 
-        public override void ResetEffects()
-        {
-            // 不重置，因为卷轴激活状态是持久的
-        }
+        public override void ResetEffects() { }
 
-        // 检查某卷轴是否激活
-        public bool IsScrollActive(int typeID)
-        {
-            return ActiveScrolls.Contains(typeID);
-        }
+        public bool IsScrollActive(int typeID) => ActiveScrolls.Contains(typeID);
 
-        // 切换卷轴激活状态
         public void ToggleScroll(int typeID)
         {
             if (ActiveScrolls.Contains(typeID))
-            {
-                // 已激活则关闭
                 ActiveScrolls.Remove(typeID);
-            }
             else
             {
-                // 未激活则添加
                 if (ActiveScrolls.Count >= 2)
-                {
-                    // 移除最老的（第一个）
                     ActiveScrolls.RemoveAt(0);
-                }
                 ActiveScrolls.Add(typeID);
             }
+            if (Main.netMode == NetmodeID.Server)
+                SendScrollData();
+        }
+
+        private void SendScrollData()
+        {
+            if (Main.netMode != NetmodeID.Server) return;
+            ModPacket packet = Mod.GetPacket();
+            packet.Write((byte)MessageType.SyncScrolls);
+            packet.Write((byte)Player.whoAmI);
+            packet.Write((byte)ActiveScrolls.Count);
+            foreach (int id in ActiveScrolls)
+                packet.Write((byte)id);
+            packet.Send();
+        }
+
+        public void ReceiveScrollData(BinaryReader reader)
+        {
+            int count = reader.ReadByte();
+            ActiveScrolls.Clear();
+            for (int i = 0; i < count; i++)
+                ActiveScrolls.Add(reader.ReadByte());
+        }
+
+        public enum MessageType : byte
+        {
+            SyncScrolls
         }
     }
 }
