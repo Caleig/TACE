@@ -20,7 +20,7 @@ public class GlobalGunFire : GlobalItem
         if (!thoriumPlayer.hellfireEnergyOverload) // 这里的判断条件是没有触发过热
         {
             SoundEngine.PlaySound(in item.UseSound, new Vector2?(player.Center));
-            ++thoriumPlayer.hellfireEnergy; // 这里的上限是100 
+            thoriumPlayer.hellfireEnergy += 2; // 这里的上限是100 
         }
         return base.UseItem(item, player);
     }

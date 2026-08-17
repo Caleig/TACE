@@ -226,6 +226,11 @@ Mods: {
 				DisplayName: 幽冥刃契
 				Tooltip: 蕴魔剑命中时吸取敌怪生命
 			}
+
+			Test: {
+				// DisplayName: Test
+				// Tooltip: ""
+			}
 		}
 
 		Projectiles: {

@@ -226,6 +226,11 @@ Mods: {
 				DisplayName: Soul Scroll
 				Tooltip: Magic Sword hits drain life from enemies
 			}
+
+			Test: {
+				DisplayName: Test
+				Tooltip: ""
+			}
 		}
 
 		Projectiles: {
