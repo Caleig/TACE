@@ -227,9 +227,74 @@ Mods: {
 				Tooltip: Magic Sword hits drain life from enemies
 			}
 
-			Test: {
-				DisplayName: Test
-				Tooltip: ""
+			HellstoneGunMod: {
+				DisplayName: Hellstone Gun Modification
+				Tooltip:
+					'''
+					Gun attack speed increased by 5%
+					Gun critical strike chance increased by 5%
+					Slowly overheats your guns
+					While overheated, shots deal additional damage, and heat cools at a steady rate
+					Heat cannot build up again until fully cooled
+					'''
+			}
+
+			GreenDragonGunMod: {
+				DisplayName: Green Dragon Gun Modification
+				Tooltip:
+					'''
+					Gun attack speed increased by 8%
+					Gun critical strike chance increased by 12%
+					Slowly overheats your guns
+					While overheated, shots deal more additional damage, and heat cools slowly
+					Heat cannot build up again until fully cooled
+					'''
+			}
+
+			FleshGunMod: {
+				DisplayName: Flesh Gun Modification
+				Tooltip:
+					'''
+					Gun attack speed increased by 8%
+					Gun critical strike chance increased by 12%
+					Slowly overheats your guns
+					While overheated, shots deal additional damage, and heat cools slowly
+					Heat cannot build up again until fully cooled
+					'''
+			}
+
+			TitanGunMod: {
+				DisplayName: Titan Gun Modification
+				Tooltip:
+					'''
+					Gun attack speed reduced by 30%
+					You are more fragile
+					Greatly empowers slow guns
+					Gun critical strike damage increased to 300%
+					'''
+			}
+
+			FleshTrigger: {
+				DisplayName: Flesh Trigger
+				Tooltip:
+					'''
+					Gun attack speed increased by 20%
+					Overheats your guns faster
+					While overheated, shots deal more additional damage, and heat cools very slowly
+					Heat cannot build up again until fully cooled
+					'''
+			}
+
+			DreadQuiver: {
+				DisplayName: Dread Quiver
+				Tooltip:
+					'''
+					Arrow damage increased by 15% and arrow velocity greatly increased
+					Ranged critical strike chance increased by 8%
+					25% chance to not consume arrows
+					Arrows deal 15% of their damage as a bonus hit
+					Enemies are less likely to target you
+					'''
 			}
 		}
 
