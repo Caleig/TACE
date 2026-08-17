@@ -1,6 +1,7 @@
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Audio;
+using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using ThoriumMod.Items.Donate;
@@ -9,15 +10,14 @@ using ThoriumMod.Utilities;
 namespace ThoriumAccessoryExpansion.Accessories.HellfireGunAcc;
 
 /// <summary>
-/// 子弹枪械通用钩子：蓄热、泰坦攻速/慢枪加成、过热冷却期间伤害加成
+/// 子弹枪械通用钩子：热状态机（蓄热/消耗）、泰坦攻速/慢枪加成、增益态伤害
 /// </summary>
 public class GlobalGunFire : GlobalItem
 {
-    public const int SlowGunUseTime = 30;       // 泰坦：慢枪 useTime 阈值
+    public const int SlowGunUseTime = 30;       // 泰坦：慢枪判定阈值
     public const float TitanSpeedMult = 1.3f;   // 泰坦：攻速 -30%
-    public const float TitanSlowGunBonus = 1f;  // 泰坦：慢枪 +100% 伤害
-    public const float TitanCritBonus = 0.5f;   // 泰坦：暴击 x1.5 -> 合计 x3（见 GlobalBulletCrit）
-    public const float OverloadGate = 0f;       // (占位常量防误改)
+    public const float TitanFastGunBonus = 0.75f; // 泰坦：useTime<30 的枪 +75% 伤害
+    public const float TitanCritBonus = 0.5f;   // 泰坦：暴击 x1.5 -> 合计 x3
 
     public override bool AppliesToEntity(Item entity, bool lateInstantiation) =>
         entity.useAmmo == AmmoID.Bullet && entity.ModItem is not HellfireMinigun;
@@ -25,13 +25,29 @@ public class GlobalGunFire : GlobalItem
     public override bool? UseItem(Item item, Player player)
     {
         var gf = player.GetModPlayer<GunFirePlayer>();
-        if (!gf.gunfireAcc || gf.heatGainPerShot <= 0)
+        if (!gf.gunfireAcc)
             return base.UseItem(item, player);
+
         var tp = player.GetThoriumPlayer();
-        if (!tp.hellfireEnergyOverload) // 彻底冷却前不再蓄热
+        if (!gf.boosted)
         {
-            SoundEngine.PlaySound(in item.UseSound, new Vector2?(player.Center));
-            tp.hellfireEnergy += gf.heatGainPerShot; // 上限 100，过热由 Thorium 触发
+            // 蓄热阶段：每次攻击 +heatGain
+            tp.hellfireEnergy += gf.heatGain;
+            if (tp.hellfireEnergy >= gf.heatCap)
+            {
+                tp.hellfireEnergy = gf.heatCap;
+                gf.boosted = true; // 热量满 -> 增益态
+            }
+        }
+        else
+        {
+            // 增益阶段：每次攻击消耗热量，耗尽后才重新积累
+            tp.hellfireEnergy -= gf.heatConsume;
+            if (tp.hellfireEnergy <= 0)
+            {
+                tp.hellfireEnergy = 0;
+                gf.boosted = false;
+            }
         }
         return base.UseItem(item, player);
     }
@@ -42,10 +58,8 @@ public class GlobalGunFire : GlobalItem
     public override void ModifyWeaponDamage(Item item, Player player, ref StatModifier damage)
     {
         var gf = player.GetModPlayer<GunFirePlayer>();
-        if (gf.titanAcc && item.useTime >= SlowGunUseTime)
-            damage += TitanSlowGunBonus; // 极大幅度提升缓慢的枪械
-        if (gf.gunfireAcc && gf.overloadBonus > 0f && player.GetThoriumPlayer().hellfireEnergyOverload)
-            damage += gf.overloadBonus; // 过热冷却期间的开枪附加伤害
+        if (gf.titanAcc && item.useTime < SlowGunUseTime)
+            damage += TitanFastGunBonus; // 初始使用时间低于慢的枪械类 +75%
     }
 }
 
@@ -56,9 +70,39 @@ public class GlobalBulletCrit : GlobalProjectile
 {
     public override void ModifyHitNPC(Projectile projectile, NPC target, ref NPC.HitModifiers modifiers)
     {
-        // 只对"用子弹枪械打出的弹幕"生效：看发射者当前主手是否消耗子弹
         var owner = Main.player[projectile.owner];
         if (owner.GetModPlayer<GunFirePlayer>().titanAcc && owner.HeldItem.useAmmo == AmmoID.Bullet)
             modifiers.CritDamage += GlobalGunFire.TitanCritBonus;
+    }
+}
+
+/// <summary>
+/// 发热改件增益态：固定伤害（不暴击/可暴击）+ 命中减益
+/// </summary>
+public class GlobalBulletHeat : GlobalProjectile
+{
+    public override void OnSpawn(Projectile projectile, IEntitySource source)
+    {
+        // 扳机：可暴击固定伤害 -> 弹幕伤害前置（先于暴击计算）
+        var gf = Main.player[projectile.owner].GetModPlayer<GunFirePlayer>();
+        if (gf.gunfireAcc && gf.flatCrits && gf.boosted && Main.player[projectile.owner].HeldItem.useAmmo == AmmoID.Bullet)
+            projectile.damage += (int)gf.flatDamage;
+    }
+
+    public override void ModifyHitNPC(Projectile projectile, NPC target, ref NPC.HitModifiers modifiers)
+    {
+        var owner = Main.player[projectile.owner];
+        var gf = owner.GetModPlayer<GunFirePlayer>();
+        // 不暴击固定伤害：FlatBonusDamage 在暴击乘法之后，天然不吃暴击
+        if (gf.gunfireAcc && !gf.flatCrits && gf.boosted && gf.flatDamage > 0 && owner.HeldItem.useAmmo == AmmoID.Bullet)
+            modifiers.FlatBonusDamage += gf.flatDamage;
+    }
+
+    public override void OnHitNPC(Projectile projectile, NPC target, NPC.HitInfo hit, int damageDone)
+    {
+        var owner = Main.player[projectile.owner];
+        var gf = owner.GetModPlayer<GunFirePlayer>();
+        if (gf.gunfireAcc && gf.boosted && gf.hitDebuff > 0 && owner.HeldItem.useAmmo == AmmoID.Bullet)
+            target.AddBuff(gf.hitDebuff, 300); // 5 秒
     }
 }

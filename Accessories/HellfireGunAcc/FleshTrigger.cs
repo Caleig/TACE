@@ -1,19 +1,25 @@
 using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
 using ThoriumMod.Items;
+using ThoriumMod.Items.DemonBlood;
 
 namespace ThoriumAccessoryExpansion.Accessories.HellfireGunAcc;
 
 /* 血肉扳机
- * 枪械速度提高20%
- * 更快使枪械过热
- * 过热后造成更多额外伤害并极慢的冷却
- * 彻底冷却前不会再次积蓄热量 */
+ * 枪械改件[血肉]/[绿龙]＋10魔血碎块
+ * 射速提高20%
+ * 武器攻击获得热量（每次2点，上限150）
+ * 热量满时攻击消耗更少热量（1点）并额外造成10点固定伤害（可暴击）
+ * 热量耗尽后才继续积累
+ * 视为枪械改件 */
 public class FleshTrigger : ThoriumItem
 {
-    public const int HeatGain = 4;           // 更快蓄热
-    public const float CooldownRate = 1f;    // 极慢冷却
-    public const float OverloadBonus = 0.6f; // 更多额外伤害
+    public const int HeatGain = 2;
+    public const int HeatConsume = 1;
+    public const int HeatCap = 150;
+    public const float FlatDamage = 10f; // 可暴击
+    public const float SpeedBuff = 0.20f;
 
     public override void SetDefaults()
     {
@@ -22,14 +28,31 @@ public class FleshTrigger : ThoriumItem
         Item.accessory = true;
     }
 
+    public override void AddRecipes()
+    {
+        // 枪械改件[血肉] 或 [绿龙] + 10魔血碎块
+        CreateRecipe()
+            .AddIngredient(ModContent.ItemType<FleshGunMod>(), 1)
+            .AddIngredient(ModContent.ItemType<DemonBloodShard>(), 10)
+            .AddTile(TileID.TinkerersWorkbench)
+            .Register();
+        CreateRecipe()
+            .AddIngredient(ModContent.ItemType<GreenDragonGunMod>(), 1)
+            .AddIngredient(ModContent.ItemType<DemonBloodShard>(), 10)
+            .AddTile(TileID.TinkerersWorkbench)
+            .Register();
+    }
+
     public override void UpdateAccessory(Player player, bool hideVisual)
     {
         var gf = player.GetModPlayer<GunFirePlayer>();
         gf.gunfireAcc = true;
-        gf.heatGainPerShot = HeatGain;
-        gf.cooldownRate = CooldownRate;
-        gf.overloadBonus = OverloadBonus;
+        gf.heatGain = HeatGain;
+        gf.heatConsume = HeatConsume;
+        gf.heatCap = HeatCap;
+        gf.flatDamage = FlatDamage;
+        gf.flatCrits = true; // 可暴击
 
-        player.GetAttackSpeed(DamageClass.Ranged) += 0.2f;
+        player.GetAttackSpeed(DamageClass.Ranged) += SpeedBuff;
     }
 }

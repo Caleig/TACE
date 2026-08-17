@@ -1,20 +1,26 @@
 using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
 using ThoriumMod.Items;
+using ThoriumMod.Items.MasterMode;
 
 namespace ThoriumAccessoryExpansion.Accessories.HellfireGunAcc;
 
-/* 枪械改件（血肉）
- * 枪械速度提高8%
- * 枪械暴击率增加12%
- * 缓慢使枪械过热
- * 过热后造成额外伤害并缓慢冷却
- * 彻底冷却前不会再次积蓄热量 */
+/* 枪械改件[血肉]
+ * 枪械改件[狱炎]＋15不明肉块＋10灵液
+ * 暴击率提高8%，射速提高12%
+ * 武器攻击获得热量（每次1点，上限100）
+ * 热量满时攻击消耗更少热量（1点）给予"灵液"并额外造成6点固定伤害（无法暴击）
+ * 热量耗尽后才能重新积累 */
 public class FleshGunMod : ThoriumItem
 {
-    public const int HeatGain = 2;           // 缓慢蓄热
-    public const float CooldownRate = 2f;    // 缓慢冷却
-    public const float OverloadBonus = 0.3f; // 额外伤害
+    public const int HeatGain = 1;
+    public const int HeatConsume = 1;
+    public const int HeatCap = 100;
+    public const float FlatDamage = 6f;
+    public const int HitDebuff = BuffID.Ichor;
+    public const float SpeedBuff = 0.12f;
+    public const int CritBonus = 8;
 
     public override void SetDefaults()
     {
@@ -23,15 +29,29 @@ public class FleshGunMod : ThoriumItem
         Item.accessory = true;
     }
 
+    public override void AddRecipes()
+    {
+        CreateRecipe()
+            .AddIngredient(ModContent.ItemType<HellstoneGunMod>(), 1)
+            .AddIngredient(ModContent.ItemType<RottenMeat>(), 15)
+            .AddIngredient(ItemID.Ichor, 10)
+            .AddTile(TileID.TinkerersWorkbench)
+            .Register();
+    }
+
     public override void UpdateAccessory(Player player, bool hideVisual)
     {
         var gf = player.GetModPlayer<GunFirePlayer>();
         gf.gunfireAcc = true;
-        gf.heatGainPerShot = HeatGain;
-        gf.cooldownRate = CooldownRate;
-        gf.overloadBonus = OverloadBonus;
+        gf.heatGain = HeatGain;
+        gf.heatConsume = HeatConsume;
+        gf.heatCap = HeatCap;
+        gf.flatDamage = FlatDamage;
+        gf.hitDebuff = HitDebuff;
+        gf.speedBuff = SpeedBuff;
+        gf.critBonus = CritBonus;
 
-        player.GetAttackSpeed(DamageClass.Ranged) += 0.08f;
-        player.GetCritChance(DamageClass.Ranged) += 12f;
+        player.GetAttackSpeed(DamageClass.Ranged) += SpeedBuff;
+        player.GetCritChance(DamageClass.Ranged) += CritBonus;
     }
 }

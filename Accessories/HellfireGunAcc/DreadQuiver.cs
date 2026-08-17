@@ -3,15 +3,16 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using ThoriumMod.Items;
+using ThoriumMod.Items.Dread;
 
 namespace ThoriumAccessoryExpansion.Accessories.HellfireGunAcc;
 
 /* 恐惧箭袋
- * 箭的伤害提升15%，箭的速度大大提高
- * 远程暴击率增加8%
- * 25%的概率不消耗箭
- * 复制15%的箭矢伤害
- * 敌人不太可能瞄准你 */
+ * 10恐惧之灵＋潜伏者箭袋
+ * 箭伤害提高15%，暴击率提高8%
+ * 25%不消耗箭，箭的速度大大提高
+ * 弓箭命中复制15%的远程伤害
+ * 敌人不易以你为目标 */
 public class DreadQuiver : ThoriumItem
 {
     public const float ArrowSpeedMult = 1.3f; // 箭速 +30%
@@ -25,6 +26,15 @@ public class DreadQuiver : ThoriumItem
         Item.accessory = true;
     }
 
+    public override void AddRecipes()
+    {
+        CreateRecipe()
+            .AddIngredient(ModContent.ItemType<DreadSoul>(), 10)
+            .AddIngredient(ItemID.StalkersQuiver, 1)
+            .AddTile(TileID.TinkerersWorkbench)
+            .Register();
+    }
+
     public override void UpdateAccessory(Player player, bool hideVisual)
     {
         player.GetModPlayer<GunFirePlayer>().dreadQuiver = true;
@@ -36,7 +46,7 @@ public class DreadQuiver : ThoriumItem
 }
 
 /// <summary>
-/// 恐惧箭袋：箭矢伤害提升 + 箭速大大提高（发射瞬间缩放初速）
+/// 恐惧箭袋：箭速提升 + 命中复制 15% 伤害
 /// </summary>
 public class QuiverArrowGlobal : GlobalProjectile
 {
