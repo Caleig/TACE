@@ -3,13 +3,14 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
+using ThoriumMod.Items.Donate;
 using ThoriumMod.Utilities;
 
 namespace ThoriumAccessoryExpansion.Accessories.HellfireGunAcc;
 
 public class GlobalGunFire : GlobalItem
 {
-    public override bool AppliesToEntity(Item entity, bool lateInstantiation) => entity.useAmmo == AmmoID.Bullet;
+    public override bool AppliesToEntity(Item entity, bool lateInstantiation) => entity.useAmmo == AmmoID.Bullet && entity.ModItem is not HellfireMinigun;
     public override bool? UseItem(Item item, Player player)
     {
         // 如果这里没有触发饰品效果
