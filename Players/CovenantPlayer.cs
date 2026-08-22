@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-using ThoriumAccessoryExpansion.Accessories.EternalBulwark;
+using ThoriumAccessoryExpansion.Accessories.Healer.EternalBulwark;
 using ThoriumMod;
 using ThoriumMod.Buffs.Healer;
 using ThoriumMod.Projectiles.Healer;
@@ -13,10 +13,10 @@ namespace ThoriumAccessoryExpansion.Players
 {
     public class CovenantPlayer : ModPlayer
     {
-        // 全局最大层数（公倍数）
-        public const int GlobalMaxStacks = 60; // 10,5,12,15 的最小公倍数为 60
+        
+        public const int GlobalMaxStacks = 60; 
 
-        // ========== 各圣约佩戴标志 ==========
+        
         public bool BoneHasCovenant = false;
         public bool CursedHasCovenant = false;
         public bool FallenHasCovenant = false;
@@ -25,11 +25,11 @@ namespace ThoriumAccessoryExpansion.Players
         public bool EternalHasCovenant = false;
         public bool MichaelasHasCovenant = false;
 
-        // ========== 共用堕落光辉层数（上限 GlobalMaxStacks） ==========
+        
         public int FallenRadianceStacks = 0;
         public int FallenRadianceTimer = 0;
 
-        // ========== 各圣约独立数据（非层数） ==========
+        
         public int KarmaHealAccumulator = 0;
         private int _karmaPreviousLife = 0;
         public int HeresyLifeRegenTimer = 0;
@@ -40,13 +40,13 @@ namespace ThoriumAccessoryExpansion.Players
         private int _boneDebugTimer = 0;
         private int _boneLastDisplayedHealBonus = int.MinValue;
 
-        // ========== 初始化 ==========
+        
         public override void Initialize()
         {
             _karmaPreviousLife = Player.statLife;
         }
 
-        // ========== ResetEffects ==========
+        
         public override void ResetEffects()
         {
             bool anyEquipped = BoneHasCovenant || CursedHasCovenant || FallenHasCovenant || KarmaHasCovenant;
@@ -71,7 +71,7 @@ namespace ThoriumAccessoryExpansion.Players
 
         public int GetMaxStacks() => GlobalMaxStacks;
 
-        // ========== UpdateDead ==========
+        
         public override void UpdateDead()
         {
             BoneHasCovenant = false;
@@ -94,7 +94,7 @@ namespace ThoriumAccessoryExpansion.Players
             _boneLastDisplayedHealBonus = int.MinValue;
         }
 
-        // ========== UpdateEquips（骨圣约治疗减益） ==========
+        
         public override void UpdateEquips()
         {
             if (BoneHasCovenant)
@@ -109,7 +109,7 @@ namespace ThoriumAccessoryExpansion.Players
             }
         }
 
-        // ========== PostUpdate ==========
+        
         public override void PostUpdate()
         {
             if (FallenRadianceTimer > 0)
@@ -119,7 +119,7 @@ namespace ThoriumAccessoryExpansion.Players
                     FallenRadianceStacks = 0;
             }
 
-            // ---- 骨圣约调试输出（仅单机） ----
+            
             if (BoneHasCovenant && Main.netMode == NetmodeID.SinglePlayer)
             {
                 Item heldItem = Player.HeldItem;
@@ -144,7 +144,7 @@ namespace ThoriumAccessoryExpansion.Players
                 _boneLastDisplayedHealBonus = int.MinValue;
             }
 
-            // ---- 业果圣约：治疗累加 ----
+            
             if (KarmaHasCovenant)
             {
                 int currentLife = Player.statLife;
@@ -181,7 +181,7 @@ namespace ThoriumAccessoryExpansion.Players
                 _karmaPreviousLife = Player.statLife;
             }
 
-            // ---- 赫瑞之孽：生命再生 ----
+            
             if (HeresyHasCovenant && HeresyLifeRegenTimer > 0)
             {
                 HeresyLifeRegenTimer--;
@@ -194,7 +194,7 @@ namespace ThoriumAccessoryExpansion.Players
                 }
             }
 
-            // ---- 永恒壁垒：冷却 & 保护状态 ----
+            
             if (EternalHasCovenant)
             {
                 if (EternalProtectionCooldown > 0)
@@ -218,7 +218,7 @@ namespace ThoriumAccessoryExpansion.Players
             }
         }
 
-        // ========== EternalBulwark 的 ModifyHurt 和 OnHurt ==========
+        
         public override void ModifyHurt(ref Player.HurtModifiers modifiers)
         {
             if (Main.netMode == NetmodeID.MultiplayerClient) return;
@@ -274,7 +274,7 @@ namespace ThoriumAccessoryExpansion.Players
             }
         }
 
-        // ========== 辅助方法 ==========
+        
         private Vector2 GetShootVelocity(Player player)
         {
             NPC targetNPC = null;
