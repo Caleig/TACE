@@ -298,11 +298,195 @@ Mods: {
 					敌人不易以你为目标
 					'''
 			}
+
+			AmethystContract: {
+				Tooltip:
+					'''
+					紫晶追寻猎物的轨迹
+
+					魔法武器将视为召唤武器，并降低其造成的伤害至原来的65%。
+					魔法武器命中单位时施加「紫晶刻印」持续5秒。
+					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
+
+					仅当召唤物或哨兵攻击带有「紫晶刻印」的单位时：
+					消耗刻印并释放一枚拥有追踪能力的紫晶矢
+
+					紫晶矢造成等同于施加刻印时魔法武器伤害的召唤伤害。
+					'''
+				DisplayName: 紫晶灵契
+			}
+
+			TopazContract: {
+				Tooltip:
+					'''
+					黄玉释放晶体爆裂
+
+					魔法武器将视为召唤武器，并降低其造成的伤害至原来的65%。
+					魔法武器命中单位时施加「黄玉刻印」持续5秒。
+					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
+
+					仅当召唤物或哨兵攻击带有「黄玉刻印」的单位时：
+					消耗刻印并释放一枚蕴含爆裂能量的黄玉矢。
+
+					黄玉矢命中单位后产生黄玉爆裂，爆裂范围为6格。
+
+					黄玉矢造成等同于施加刻印时魔法武器伤害的召唤伤害。
+					黄玉爆裂造成等同于黄玉矢伤害50%的召唤伤害。
+					'''
+				DisplayName: 黄玉灵契
+			}
+
+			SapphireContract: {
+				Tooltip:
+					'''
+					蓝玉以螺旋轨迹撕裂防线
+
+					魔法武器将视为召唤武器，并降低其造成的伤害至原来的65%。
+					魔法武器命中单位时施加「蓝玉刻印」持续5秒。
+					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
+
+					仅当召唤物或哨兵攻击带有「蓝玉刻印」的单位时：
+					消耗刻印并释放两枚蓝玉矢。
+
+					蓝玉矢将沿双螺旋轨迹飞行。
+					每枚蓝玉矢造成等同于施加刻印时魔法武器伤害60%的召唤伤害。
+					'''
+				DisplayName: 蓝玉灵契
+			}
+
+			EmeraldContract: {
+				Tooltip:
+					'''
+					翡翠留下无法逃脱的晶体猎痕
+
+					魔法武器将视为召唤武器，并降低其造成的伤害至原来的65%。
+
+					魔法武器命中单位时施加「翡翠刻印」持续5秒。
+					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
+
+					仅当召唤物或哨兵攻击带有「翡翠刻印」的单位时：
+					消耗刻印并释放一枚高速穿透的翡翠矢。
+
+					翡翠矢造成等同于施加刻印时魔法武器伤害的召唤伤害。
+					翡翠矢能够穿透2个单位。
+
+					翡翠矢命中物块后停留并形成翡翠晶簇。
+					翡翠晶簇持续3秒。
+					单位触碰翡翠晶簇时，造成翡翠矢伤害40%的召唤伤害，最多造成2次伤害后消失。
+					'''
+				DisplayName: 翡翠灵契
+			}
+
+			AmberContract: {
+				Tooltip:
+					'''
+					琥珀在敌群之间折射传递
+
+					魔法武器将视为召唤武器，并降低其造成的伤害至原来的65%。
+					魔法武器命中单位时施加「琥珀刻印」持续5秒。
+					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
+
+					仅当召唤物或哨兵攻击带有「琥珀刻印」的单位时：
+					消耗刻印并释放一枚琥珀矢。
+
+					琥珀矢会在单位与物块之间折射传递，最多折射3次。
+					琥珀矢首次命中单位时造成等同于施加刻印时魔法武器伤害的召唤伤害。
+					每次折射后，琥珀矢造成的伤害降低20%。
+					'''
+				DisplayName: 琥珀灵契
+			}
+
+			RubyContract: {
+				DisplayName: 红玉灵契
+				Tooltip:
+					'''
+					红玉释放连续不断的晶体弹幕
+
+					魔法武器将视为召唤武器，并降低其造成的伤害至原来的65%。
+					魔法武器命中单位时施加「红玉刻印」持续5秒。
+					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
+
+					仅当召唤物或哨兵攻击带有「红玉刻印」的单位时：
+					消耗刻印并释放三波红玉矢，每次一发红玉矢。
+
+					红玉矢会连续发射，每次间隔短暂时间。
+					每枚红玉矢造成等同于施加刻印时魔法武器伤害50%的召唤伤害。
+					'''
+			}
+
+			DiamondContract: {
+				Tooltip:
+					'''
+					钻石展现最纯粹的晶体力量
+
+					魔法武器将视为召唤武器，并降低其造成的伤害至原来的65%。
+					魔法武器命中单位时施加「钻石刻印」持续5秒。
+					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
+
+					仅当召唤物或哨兵攻击带有「钻石刻印」的单位时：
+					消耗刻印并释放一枚巨大的钻石矢。
+
+					钻石矢造成等同于施加刻印时魔法武器伤害150%的召唤伤害。
+					'''
+				DisplayName: 钻石灵契
+			}
+
+			OpalContract: {
+				DisplayName: 欧珀灵契
+				Tooltip:
+					'''
+					欧珀折射万象之光，改变攻击轨迹
+
+					魔法武器将视为召唤武器，并降低其造成的伤害至原来的65%。
+					魔法武器命中单位时施加「欧珀刻印」持续5秒。
+					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
+
+					仅当召唤物或哨兵攻击带有「欧珀刻印」的单位时：
+					消耗刻印并释放一枚会分裂的欧珀矢。
+
+					欧珀矢造成等同于施加刻印时魔法武器伤害的召唤伤害。
+					欧珀矢命中单位后分裂为3枚小型晶体。
+					小型晶体会折射飞向附近其他单位，
+					每枚小型晶体造成等同于施加刻印时魔法武器伤害35%的召唤伤害。
+					'''
+			}
+
+			AquamarineContract: {
+				DisplayName: 海蓝灵契
+				Tooltip:
+					'''
+					海蓝凝聚流动的魔力洪流
+
+					魔法武器将视为召唤武器，并降低其造成的伤害至原来的65%。
+					魔法武器命中单位时施加「海蓝刻印」持续5秒。
+					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
+
+					仅当召唤物或哨兵攻击带有「海蓝刻印」的单位时：
+					消耗刻印并释放一道高速海蓝矢。
+
+					海蓝矢造成等同于施加刻印时魔法武器伤害120%的召唤伤害。
+					海蓝矢能够穿透最多5个单位，每次命中单位后伤害降低20%。
+					'''
+			}
 		}
 
 		Projectiles: {
 			MagicSwordPro.DisplayName: 蕴魔剑
 			BlastPro.DisplayName: 爆炸弹幕
+			// AmethystCrystalProjectile.DisplayName: Amethyst Crystal Projectile
+			// TopazExplosionProjectile.DisplayName: Topaz Explosion Projectile
+			// TopazCrystalProjectile.DisplayName: Topaz Crystal Projectile
+			// SapphireCrystalProjectile.DisplayName: Sapphire Crystal Projectile
+			// EmeraldCrystalNeedleProjectile.DisplayName: Emerald Crystal Needle Projectile
+			// EmeraldCrystalClusterProjectile.DisplayName: Emerald Crystal Cluster Projectile
+			// AmberCrystalProjectile.DisplayName: Amber Crystal Projectile
+			// EmeraldCrystalProjectile.DisplayName: Emerald Crystal Projectile
+			// RubyCrystalProjectile.DisplayName: Ruby Crystal Projectile
+			// RubyBurstProjectile.DisplayName: Ruby Burst Projectile
+			// DiamondCrystalProjectile.DisplayName: Diamond Crystal Projectile
+			// OpalCrystalProjectile.DisplayName: Opal Crystal Projectile
+			// OpalShardProjectile.DisplayName: Opal Shard Projectile
+			// AquamarineCrystalProjectile.DisplayName: Aquamarine Crystal Projectile
 		}
 	}
 }

@@ -298,11 +298,70 @@ Mods: {
 					Enemies are less likely to target you
 					'''
 			}
+
+			AmethystContract: {
+				Tooltip: ""
+				DisplayName: Amethyst Contract
+			}
+
+			TopazContract: {
+				Tooltip: ""
+				DisplayName: Topaz Contract
+			}
+
+			SapphireContract: {
+				Tooltip: ""
+				DisplayName: Sapphire Contract
+			}
+
+			EmeraldContract: {
+				Tooltip: ""
+				DisplayName: Emerald Contract
+			}
+
+			AmberContract: {
+				Tooltip: ""
+				DisplayName: Amber Contract
+			}
+
+			RubyContract: {
+				DisplayName: Ruby Contract
+				Tooltip: ""
+			}
+
+			DiamondContract: {
+				Tooltip: ""
+				DisplayName: Diamond Contract
+			}
+
+			OpalContract: {
+				DisplayName: Opal Contract
+				Tooltip: ""
+			}
+
+			AquamarineContract: {
+				DisplayName: Aquamarine Contract
+				Tooltip: ""
+			}
 		}
 
 		Projectiles: {
 			MagicSwordPro.DisplayName: Magic Sword Pro
 			BlastPro.DisplayName: Blast Pro
+			AmethystCrystalProjectile.DisplayName: Amethyst Crystal Projectile
+			TopazExplosionProjectile.DisplayName: Topaz Explosion Projectile
+			TopazCrystalProjectile.DisplayName: Topaz Crystal Projectile
+			SapphireCrystalProjectile.DisplayName: Sapphire Crystal Projectile
+			EmeraldCrystalNeedleProjectile.DisplayName: Emerald Crystal Needle Projectile
+			EmeraldCrystalClusterProjectile.DisplayName: Emerald Crystal Cluster Projectile
+			AmberCrystalProjectile.DisplayName: Amber Crystal Projectile
+			EmeraldCrystalProjectile.DisplayName: Emerald Crystal Projectile
+			RubyCrystalProjectile.DisplayName: Ruby Crystal Projectile
+			RubyBurstProjectile.DisplayName: Ruby Burst Projectile
+			DiamondCrystalProjectile.DisplayName: Diamond Crystal Projectile
+			OpalCrystalProjectile.DisplayName: Opal Crystal Projectile
+			OpalShardProjectile.DisplayName: Opal Shard Projectile
+			AquamarineCrystalProjectile.DisplayName: Aquamarine Crystal Projectile
 		}
 	}
 }
