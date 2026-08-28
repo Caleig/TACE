@@ -1,4 +1,3 @@
-using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
@@ -7,9 +6,8 @@ using Terraria.ID;
 namespace ThoriumAccessoryExpansion.Projectiles.MagicContract;
 
 
-public class EmeraldCrystalClusterProjectile : ModProjectile
+public class CrystallineEmeraldCrystalClusterProjectile : ModProjectile
 {
-
 
     private int hitCount;
 
@@ -30,10 +28,10 @@ public class EmeraldCrystalClusterProjectile : ModProjectile
             DamageClass.Summon;
 
 
-        Projectile.penetrate = 3;
+        Projectile.penetrate = 4;
 
 
-        Projectile.timeLeft = 180;
+        Projectile.timeLeft = 240;
 
 
         Projectile.tileCollide = false;
@@ -47,9 +45,9 @@ public class EmeraldCrystalClusterProjectile : ModProjectile
 
         Lighting.AddLight(
             Projectile.Center,
-            0.2f,
+            0.3f,
             1f,
-            0.3f
+            0.4f
         );
 
 
@@ -68,9 +66,12 @@ public class EmeraldCrystalClusterProjectile : ModProjectile
 
 
 
-    public override bool? CanHitNPC(NPC target)
+    public override bool? CanHitNPC(
+        NPC target)
     {
-        return hitCount < 3;
+
+        return hitCount < 4;
+
     }
 
 
@@ -84,7 +85,7 @@ public class EmeraldCrystalClusterProjectile : ModProjectile
         hitCount++;
 
 
-        if (hitCount >= 3)
+        if (hitCount >= 4)
         {
             Projectile.Kill();
         }
@@ -94,6 +95,6 @@ public class EmeraldCrystalClusterProjectile : ModProjectile
 
 
     public override string Texture =>
-        "ThoriumAccessoryExpansion/Images/Projectiles/MagicContract/EmeraldCrystalClusterProjectile";
+        "ThoriumAccessoryExpansion/Images/Projectiles/MagicContract/CrystallineEmeraldCrystalClusterProjectile";
 
 }

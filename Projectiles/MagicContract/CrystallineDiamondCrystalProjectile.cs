@@ -8,9 +8,8 @@ using Terraria.ModLoader;
 namespace ThoriumAccessoryExpansion.Projectiles.MagicContract;
 
 
-public class DiamondCrystalProjectile : ModProjectile
+public class CrystallineDiamondCrystalProjectile : ModProjectile
 {
-
 
     public override void SetStaticDefaults()
     {
@@ -95,7 +94,7 @@ public class DiamondCrystalProjectile : ModProjectile
                     -Projectile.velocity * 0.15f,
                     100,
                     Color.White,
-                    1.3f
+                    1.4f
                 );
 
 
@@ -106,11 +105,12 @@ public class DiamondCrystalProjectile : ModProjectile
     }
 
 
+
     public override void OnKill(
         int timeLeft)
     {
 
-        for (int i = 0; i < 15; i++)
+        for (int i = 0; i < 20; i++)
         {
 
             Dust dust =
@@ -123,7 +123,7 @@ public class DiamondCrystalProjectile : ModProjectile
                     ),
                     100,
                     Color.White,
-                    1.4f
+                    1.5f
                 );
 
 
@@ -182,6 +182,6 @@ public class DiamondCrystalProjectile : ModProjectile
 
 
     public override string Texture =>
-        "ThoriumAccessoryExpansion/Images/Projectiles/MagicContract/DiamondCrystalProjectile";
+        "ThoriumAccessoryExpansion/Images/Projectiles/MagicContract/CrystallineDiamondCrystalProjectile";
 
 }

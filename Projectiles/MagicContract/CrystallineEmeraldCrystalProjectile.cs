@@ -1,17 +1,16 @@
 using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.DataStructures;
-using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria.ID;
+using Terraria.DataStructures;
 using ThoriumAccessoryExpansion.Systems.Projectiles;
 
 
 namespace ThoriumAccessoryExpansion.Projectiles.MagicContract;
 
 
-public class EmeraldCrystalProjectile : ModProjectile
+public class CrystallineEmeraldCrystalProjectile : ModProjectile
 {
-
 
     public override void SetStaticDefaults()
     {
@@ -62,9 +61,9 @@ public class EmeraldCrystalProjectile : ModProjectile
 
         Lighting.AddLight(
             Projectile.Center,
-            0.2f,
+            0.3f,
             1f,
-            0.3f
+            0.4f
         );
 
 
@@ -83,7 +82,8 @@ public class EmeraldCrystalProjectile : ModProjectile
 
 
 
-    public override bool OnTileCollide(Vector2 oldVelocity)
+    public override bool OnTileCollide(
+        Vector2 oldVelocity)
     {
 
         int cluster =
@@ -91,27 +91,28 @@ public class EmeraldCrystalProjectile : ModProjectile
                 Projectile.GetSource_FromThis(),
                 Projectile.Center,
                 Vector2.Zero,
-                ModContent.ProjectileType<EmeraldCrystalClusterProjectile>(),
+                ModContent.ProjectileType<CrystallineEmeraldCrystalClusterProjectile>(),
                 (int)(Projectile.damage * 0.4f),
                 0,
                 Projectile.owner
-                );
+            );
 
 
         Main.projectile[cluster]
-        .GetGlobalProjectile<MagicContractGlobalProjectile>()
-        .gemProjectile = true;
+            .GetGlobalProjectile<MagicContractGlobalProjectile>()
+            .gemProjectile = true;
 
 
         Projectile.Kill();
 
 
         return false;
+
     }
 
 
 
     public override string Texture =>
-        "ThoriumAccessoryExpansion/Images/Projectiles/MagicContract/EmeraldCrystalProjectile";
+        "ThoriumAccessoryExpansion/Images/Projectiles/MagicContract/CrystallineEmeraldCrystalProjectile";
 
 }

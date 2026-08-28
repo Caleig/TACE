@@ -343,6 +343,56 @@ Mods: {
 				DisplayName: Aquamarine Contract
 				Tooltip: ""
 			}
+
+			CrystallineAmethystContract: {
+				DisplayName: Crystalline Amethyst Contract
+				Tooltip: ""
+			}
+
+			CrystallineTopazContract: {
+				DisplayName: Crystalline Topaz Contract
+				Tooltip: ""
+			}
+
+			CrystallineSapphireContract: {
+				DisplayName: Crystalline Sapphire Contract
+				Tooltip: ""
+			}
+
+			CrystallineEmeraldContract: {
+				DisplayName: Crystalline Emerald Contract
+				Tooltip: ""
+			}
+
+			CrystallineAmberContract: {
+				DisplayName: Crystalline Amber Contract
+				Tooltip: ""
+			}
+
+			CrystallineRubyContract: {
+				DisplayName: Crystalline Ruby Contract
+				Tooltip: ""
+			}
+
+			CrystallineDiamondContract: {
+				Tooltip: ""
+				DisplayName: Crystalline Diamond Contract
+			}
+
+			CrystallineOpalContract: {
+				DisplayName: Crystalline Opal Contract
+				Tooltip: ""
+			}
+
+			CrystallineAquamarineContract: {
+				DisplayName: Crystalline Aquamarine Contract
+				Tooltip: ""
+			}
+
+			LegendaryContract: {
+				Tooltip: ""
+				DisplayName: Legendary Contract
+			}
 		}
 
 		Projectiles: {
@@ -362,6 +412,21 @@ Mods: {
 			OpalCrystalProjectile.DisplayName: Opal Crystal Projectile
 			OpalShardProjectile.DisplayName: Opal Shard Projectile
 			AquamarineCrystalProjectile.DisplayName: Aquamarine Crystal Projectile
+			CrystallineAmethystCrystalProjectile.DisplayName: Crystalline Amethyst Crystal Projectile
+			CrystalShardProjectile.DisplayName: Crystal Shard Projectile
+			CrystallineShardProjectile.DisplayName: Crystalline Shard Projectile
+			CrystallineTopazCrystalProjectile.DisplayName: Crystalline Topaz Crystal Projectile
+			CrystallineTopazExplosionProjectile.DisplayName: Crystalline Topaz Explosion Projectile
+			CrystallineSapphireCrystalProjectile.DisplayName: Crystalline Sapphire Crystal Projectile
+			CrystallineEmeraldCrystalClusterProjectile.DisplayName: Crystalline Emerald Crystal Cluster Projectile
+			CrystallineEmeraldCrystalProjectile.DisplayName: Crystalline Emerald Crystal Projectile
+			CrystallineAmberCrystalProjectile.DisplayName: Crystalline Amber Crystal Projectile
+			CrystallineRubyBurstProjectile.DisplayName: Crystalline Ruby Burst Projectile
+			CrystallineRubyCrystalProjectile.DisplayName: Crystalline Ruby Crystal Projectile
+			CrystallineDiamondCrystalProjectile.DisplayName: Crystalline Diamond Crystal Projectile
+			CrystallineOpalCrystalProjectile.DisplayName: Crystalline Opal Crystal Projectile
+			CrystallineOpalShardProjectile.DisplayName: Crystalline Opal Shard Projectile
+			CrystallineAquamarineCrystalProjectile.DisplayName: Crystalline Aquamarine Crystal Projectile
 		}
 	}
 }

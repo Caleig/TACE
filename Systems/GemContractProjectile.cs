@@ -52,6 +52,15 @@ namespace ThoriumAccessoryExpansion.Systems
                 );
             }
 
+            if (contract.crystallineAmethystContract)
+            {
+                mark.AddGemMark(
+                    GemType.CrystallineAmethyst,
+                    300,
+                    projectile.damage,
+                    player.whoAmI
+                );
+            }
 
             if (contract.topazContract)
             {
@@ -63,6 +72,15 @@ namespace ThoriumAccessoryExpansion.Systems
                 );
             }
 
+            if (contract.crystallineTopazContract)
+            {
+                mark.AddGemMark(
+                    GemType.CrystallineTopaz,
+                    300,
+                    projectile.damage,
+                    player.whoAmI
+                );
+            }
 
             if (contract.sapphireContract)
             {
@@ -74,11 +92,30 @@ namespace ThoriumAccessoryExpansion.Systems
                 );
             }
 
+            if (contract.crystallineSapphireContract)
+            {
+                mark.AddGemMark(
+                    GemType.CrystallineSapphire,
+                    300,
+                    projectile.damage,
+                    player.whoAmI
+                );
+            }
 
             if (contract.emeraldContract)
             {
                 mark.AddGemMark(
                     GemType.Emerald,
+                    300,
+                    projectile.damage,
+                    player.whoAmI
+                );
+            }
+
+            if (contract.crystallineEmeraldContract)
+            {
+                mark.AddGemMark(
+                    GemType.CrystallineEmerald,
                     300,
                     projectile.damage,
                     player.whoAmI
@@ -95,10 +132,30 @@ namespace ThoriumAccessoryExpansion.Systems
                 );
             }
 
+            if (contract.crystallineAmberContract)
+            {
+                mark.AddGemMark(
+                    GemType.CrystallineAmber,
+                    300,
+                    projectile.damage,
+                    player.whoAmI
+                );
+            }
+
             if (contract.rubyContract)
             {
                 mark.AddGemMark(
                     GemType.Ruby,
+                    300,
+                    projectile.damage,
+                    player.whoAmI
+                );
+            }
+
+            if (contract.crystallineRubyContract)
+            {
+                mark.AddGemMark(
+                    GemType.CrystallineRuby,
                     300,
                     projectile.damage,
                     player.whoAmI
@@ -115,6 +172,16 @@ namespace ThoriumAccessoryExpansion.Systems
                 );
             }
 
+            if (contract.crystallineDiamondContract)
+            {
+                mark.AddGemMark(
+                    GemType.CrystallineDiamond,
+                    300,
+                    projectile.damage,
+                    player.whoAmI
+                );
+            }
+
             if (contract.opalContract)
             {
                 mark.AddGemMark(
@@ -125,10 +192,40 @@ namespace ThoriumAccessoryExpansion.Systems
                 );
             }
 
+            if (contract.crystallineOpalContract)
+            {
+                mark.AddGemMark(
+                    GemType.CrystallineOpal,
+                    300,
+                    projectile.damage,
+                    player.whoAmI
+                );
+            }
+
             if (contract.aquamarineContract)
             {
                 mark.AddGemMark(
                     GemType.Aquamarine,
+                    300,
+                    projectile.damage,
+                    player.whoAmI
+                );
+            }
+
+            if (contract.crystallineAquamarineContract)
+            {
+                mark.AddGemMark(
+                    GemType.CrystallineAquamarine,
+                    300,
+                    projectile.damage,
+                    player.whoAmI
+                );
+            }
+
+            if (contract.legendaryContract)
+            {
+                mark.AddGemMark(
+                    GemType.Prismatic,
                     300,
                     projectile.damage,
                     player.whoAmI

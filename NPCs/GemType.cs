@@ -12,6 +12,18 @@ namespace ThoriumAccessoryExpansion.NPCs
         Ruby,
         Diamond,
         Opal,
-        Aquamarine
+        Aquamarine,
+
+        CrystallineAmethyst,
+        CrystallineTopaz,
+        CrystallineSapphire,
+        CrystallineEmerald,
+        CrystallineAmber,
+        CrystallineRuby,
+        CrystallineDiamond,
+        CrystallineOpal,
+        CrystallineAquamarine,
+
+        Prismatic
     }
 }

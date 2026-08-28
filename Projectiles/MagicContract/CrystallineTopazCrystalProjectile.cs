@@ -9,7 +9,8 @@ using ThoriumAccessoryExpansion.Systems.Projectiles;
 
 namespace ThoriumAccessoryExpansion.Projectiles.MagicContract;
 
-public class TopazCrystalProjectile : ModProjectile
+
+public class CrystallineTopazCrystalProjectile : ModProjectile
 {
 
     private bool initializedRotation;
@@ -17,7 +18,7 @@ public class TopazCrystalProjectile : ModProjectile
 
     public override void SetStaticDefaults()
     {
-        ProjectileID.Sets.TrailCacheLength[Type] = 8;
+        ProjectileID.Sets.TrailCacheLength[Type] = 10;
         ProjectileID.Sets.TrailingMode[Type] = 0;
     }
 
@@ -25,30 +26,38 @@ public class TopazCrystalProjectile : ModProjectile
 
     public override void SetDefaults()
     {
-        Projectile.width = 14;
-        Projectile.height = 14;
+        Projectile.width = 16;
+        Projectile.height = 16;
+
 
         Projectile.friendly = true;
         Projectile.hostile = false;
 
-        Projectile.DamageType = DamageClass.Summon;
+
+        Projectile.DamageType =
+            DamageClass.Summon;
+
 
         Projectile.penetrate = 1;
 
+
         Projectile.timeLeft = 180;
+
 
         Projectile.tileCollide = true;
         Projectile.ignoreWater = true;
+
 
         Projectile.extraUpdates = 2;
     }
 
 
 
+
     public override void OnSpawn(IEntitySource source)
     {
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 15; i++)
         {
 
             Dust dust =
@@ -69,19 +78,26 @@ public class TopazCrystalProjectile : ModProjectile
 
 
 
+
     public override void AI()
     {
 
         if (!initializedRotation)
         {
+
             Projectile.rotation =
                 Projectile.velocity.ToRotation()
                 + MathHelper.PiOver2;
 
+
             initializedRotation = true;
+
         }
 
-        Projectile.rotation += 0.12f;
+
+        Projectile.rotation += 0.15f;
+
+
 
         Dust dust =
             Dust.NewDustDirect(
@@ -100,11 +116,12 @@ public class TopazCrystalProjectile : ModProjectile
         Lighting.AddLight(
             Projectile.Center,
             1f,
-            0.8f,
-            0.2f
+            0.85f,
+            0.3f
         );
 
     }
+
 
 
 
@@ -119,11 +136,12 @@ public class TopazCrystalProjectile : ModProjectile
                 Projectile.GetSource_FromThis(),
                 Projectile.Center,
                 Vector2.Zero,
-                ModContent.ProjectileType<TopazExplosionProjectile>(),
+                ModContent.ProjectileType<CrystallineTopazExplosionProjectile>(),
                 Projectile.damage / 2,
                 0,
                 Projectile.owner
                 );
+
 
         Main.projectile[explosion]
         .GetGlobalProjectile<MagicContractGlobalProjectile>()
@@ -133,6 +151,7 @@ public class TopazCrystalProjectile : ModProjectile
         Projectile.Kill();
 
     }
+
 
 
 
@@ -169,7 +188,7 @@ public class TopazCrystalProjectile : ModProjectile
                 texture,
                 pos,
                 null,
-                Color.Gold * alpha * 0.35f,
+                Color.Gold * alpha * 0.4f,
                 Projectile.rotation,
                 origin,
                 Projectile.scale,
@@ -186,7 +205,8 @@ public class TopazCrystalProjectile : ModProjectile
 
 
 
+
     public override string Texture =>
-        "ThoriumAccessoryExpansion/Images/Projectiles/MagicContract/TopazCrystalProjectile";
+        "ThoriumAccessoryExpansion/Images/Projectiles/MagicContract/CrystallineTopazCrystalProjectile";
 
 }

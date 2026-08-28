@@ -346,7 +346,7 @@ Mods: {
 					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
 
 					仅当召唤物或哨兵攻击带有「蓝玉刻印」的单位时：
-					消耗刻印并释放两枚蓝玉矢。
+					消耗刻印并释放两枚成对旋舞的蓝玉矢。
 
 					蓝玉矢将沿双螺旋轨迹飞行。
 					每枚蓝玉矢造成等同于施加刻印时魔法武器伤害60%的召唤伤害。
@@ -372,7 +372,7 @@ Mods: {
 
 					翡翠矢命中物块后停留并形成翡翠晶簇。
 					翡翠晶簇持续3秒。
-					单位触碰翡翠晶簇时，造成翡翠矢伤害40%的召唤伤害，最多造成2次伤害后消失。
+					单位触碰翡翠晶簇时，造成翡翠矢伤害40%的召唤伤害，最多造成3次伤害后消失。
 					'''
 				DisplayName: 翡翠灵契
 			}
@@ -387,7 +387,7 @@ Mods: {
 					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
 
 					仅当召唤物或哨兵攻击带有「琥珀刻印」的单位时：
-					消耗刻印并释放一枚琥珀矢。
+					消耗刻印并释放一枚折射的琥珀矢。
 
 					琥珀矢会在单位与物块之间折射传递，最多折射3次。
 					琥珀矢首次命中单位时造成等同于施加刻印时魔法武器伤害的召唤伤害。
@@ -426,7 +426,7 @@ Mods: {
 					仅当召唤物或哨兵攻击带有「钻石刻印」的单位时：
 					消耗刻印并释放一枚巨大的钻石矢。
 
-					钻石矢造成等同于施加刻印时魔法武器伤害150%的召唤伤害。
+					钻石矢造成等同于施加刻印时魔法武器伤害175%的召唤伤害。
 					'''
 				DisplayName: 钻石灵契
 			}
@@ -462,31 +462,262 @@ Mods: {
 					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
 
 					仅当召唤物或哨兵攻击带有「海蓝刻印」的单位时：
-					消耗刻印并释放一道高速海蓝矢。
+					消耗刻印并释放一道高速贯穿的海蓝矢。
 
 					海蓝矢造成等同于施加刻印时魔法武器伤害120%的召唤伤害。
 					海蓝矢能够穿透最多5个单位，每次命中单位后伤害降低20%。
 					'''
+			}
+
+			CrystallineAmethystContract: {
+				DisplayName: 晶化紫晶灵契
+				Tooltip:
+					'''
+					紫晶凝聚分裂的晶化魔力
+
+					魔法武器将视为召唤武器，并降低其造成的伤害至原来的65%。
+					魔法武器命中单位时施加「晶化紫晶刻印」持续5秒。
+					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
+
+					仅当召唤物或哨兵攻击带有「晶化紫晶刻印」的单位时：
+					消耗刻印并释放一枚高速追踪的晶化紫晶矢。
+
+					晶化紫晶矢造成等同于施加刻印时魔法武器伤害115%的召唤伤害。
+					晶化紫晶矢会额外产生两枚晶化碎片。
+
+					晶化碎片会追踪附近敌人，并造成等同于施加刻印时魔法武器伤害20%的召唤伤害。
+					'''
+			}
+
+			CrystallineTopazContract: {
+				DisplayName: 晶化黄玉灵契
+				Tooltip:
+					'''
+					黄玉凝聚爆裂的晶化魔力
+
+					魔法武器将视为召唤武器，并降低其造成的伤害至原来的65%。
+					魔法武器命中单位时施加「晶化黄玉刻印」持续5秒。
+					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
+
+					仅当召唤物或哨兵攻击带有「晶化黄玉刻印」的单位时：
+					消耗刻印并释放一枚蕴含更强大爆裂的晶化黄玉矢。
+
+					晶化黄玉矢造成等同于施加刻印时魔法武器伤害115%的召唤伤害。
+					晶化黄玉矢命中单位后产生晶化爆裂。
+
+					晶化爆裂范围比普通黄玉爆裂更大，
+					造成等同于晶化黄玉矢伤害50%的召唤伤害。
+
+					晶化黄玉矢会额外产生两枚晶化碎片。
+					晶化碎片会追踪附近敌人，并造成等同于施加刻印时魔法武器伤害20%的召唤伤害。
+					'''
+			}
+
+			CrystallineSapphireContract: {
+				DisplayName: 晶化蓝玉灵契
+				Tooltip:
+					'''
+					蓝玉凝聚旋转的晶化魔力
+
+					魔法武器将视为召唤武器，并降低其造成的伤害至原来的65%。
+					魔法武器命中单位时施加「晶化蓝玉刻印」持续5秒。
+					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
+
+					仅当召唤物或哨兵攻击带有「晶化蓝玉刻印」的单位时：
+					消耗刻印并释放两枚成对旋舞的晶化蓝玉矢。
+
+					每枚晶化蓝玉矢造成等同于施加刻印时魔法武器伤害70%的召唤伤害。
+
+					晶化蓝玉矢会额外产生两枚晶化碎片。
+					晶化碎片会追踪附近敌人，并造成等同于施加刻印时魔法武器伤害20%的召唤伤害。
+					'''
+			}
+
+			CrystallineEmeraldContract: {
+				DisplayName: 晶化翡翠灵契
+				Tooltip:
+					'''
+					翡翠凝聚不息的晶化魔力
+
+					魔法武器将视为召唤武器，并降低其造成的伤害至原来的65%。
+					魔法武器命中单位时施加「晶化翡翠刻印」持续5秒。
+					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
+
+					仅当召唤物或哨兵攻击带有「晶化翡翠刻印」的单位时：
+					消耗刻印并释放一枚晶化翡翠矢。
+
+					晶化翡翠矢造成等同于施加刻印时魔法武器伤害115%的召唤伤害。
+					晶化翡翠矢能够穿透3个单位。
+
+					晶化翡翠矢命中物块后停留并形成晶化翡翠晶簇。
+					晶化翡翠晶簇持续4秒。
+					单位触碰晶化翡翠晶簇时，造成晶化翡翠矢伤害40%的召唤伤害，
+					最多造成4次伤害后消失。
+
+					晶化翡翠矢会额外产生两枚晶化碎片。
+					晶化碎片会追踪附近敌人，并造成等同于施加刻印时魔法武器伤害20%的召唤伤害。
+					'''
+			}
+
+			CrystallineAmberContract: {
+				DisplayName: 晶化琥珀灵契
+				Tooltip:
+					'''
+					琥珀凝聚不断折射的晶化魔力
+
+					魔法武器将视为召唤武器，并降低其造成的伤害至原来的65%。
+					魔法武器命中单位时施加「晶化琥珀刻印」持续5秒。
+					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
+
+					仅当召唤物或哨兵攻击带有「晶化琥珀刻印」的单位时：
+					消耗刻印并释放一枚折射传递的晶化琥珀矢。
+
+					晶化琥珀矢首次命中单位时造成等同于施加刻印时魔法武器伤害115%的召唤伤害。
+					晶化琥珀矢会在单位与物块之间折射传递，最多折射4次。
+					每次折射后，晶化琥珀矢造成的伤害降低20%。
+
+					晶化琥珀矢会额外产生两枚晶化碎片。
+					晶化碎片会追踪附近敌人，并造成等同于施加刻印时魔法武器伤害20%的召唤伤害。
+					'''
+			}
+
+			CrystallineRubyContract: {
+				DisplayName: 晶化红玉灵契
+				Tooltip:
+					'''
+					红玉凝聚连续不断的晶化魔力
+
+					魔法武器将视为召唤武器，并降低其造成的伤害至原来的65%。
+					魔法武器命中单位时施加「晶化红玉刻印」持续5秒。
+					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
+
+					仅当召唤物或哨兵攻击带有「晶化红玉刻印」的单位时：
+					消耗刻印并释放四波红玉矢，每次一发。
+
+					红玉矢会连续发射，每次间隔短暂时间。
+					每枚红玉矢造成等同于施加刻印时魔法武器伤害50%的召唤伤害。
+
+					晶化红玉矢会额外产生两枚晶化碎片。
+					晶化碎片会追踪附近敌人，并造成等同于施加刻印时魔法武器伤害20%的召唤伤害。
+					'''
+			}
+
+			CrystallineDiamondContract: {
+				Tooltip:
+					'''
+					钻石凝聚最纯粹的晶化魔力
+
+					魔法武器将视为召唤武器，并降低其造成的伤害至原来的65%。
+					魔法武器命中单位时施加「晶化钻石刻印」持续5秒。
+					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
+
+					仅当召唤物或哨兵攻击带有「晶化钻石刻印」的单位时：
+					消耗刻印并释放一枚巨大的晶化钻石矢。
+
+					晶化钻石矢造成等同于施加刻印时魔法武器伤害200%的召唤伤害。
+
+					晶化钻石矢会额外产生两枚晶化碎片。
+					晶化碎片会追踪附近敌人，并造成等同于施加刻印时魔法武器伤害20%的召唤伤害。
+					'''
+				DisplayName: 晶化钻石灵契
+			}
+
+			CrystallineOpalContract: {
+				DisplayName: 晶化欧珀灵契
+				Tooltip:
+					'''
+					欧珀凝聚幻彩交织的晶化魔力
+
+					魔法武器将视为召唤武器，并降低其造成的伤害至原来的65%。
+					魔法武器命中单位时施加「晶化欧珀刻印」持续5秒。
+					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
+
+					仅当召唤物或哨兵攻击带有「晶化欧珀刻印」的单位时：
+					消耗刻印并释放一枚会分裂的晶化欧珀矢。
+
+					晶化欧珀矢造成等同于施加刻印时魔法武器伤害115%的召唤伤害。
+					晶化欧珀矢命中单位后分裂为4枚晶化欧珀晶体。
+
+					晶化欧珀晶体会追踪附近其他单位，
+					每枚晶化欧珀晶体造成等同于晶化欧珀矢伤害35%的召唤伤害。
+
+					晶化欧珀矢会额外产生两枚晶化碎片。
+					晶化碎片会追踪附近敌人，并造成等同于施加刻印时魔法武器伤害20%的召唤伤害。
+					'''
+			}
+
+			CrystallineAquamarineContract: {
+				DisplayName: 晶化海蓝灵契
+				Tooltip:
+					'''
+					海蓝凝聚奔涌不息的晶化魔力
+
+					魔法武器将视为召唤武器，并降低其造成的伤害至原来的65%。
+					魔法武器命中单位时施加「晶化海蓝刻印」持续5秒。
+					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
+
+					仅当召唤物或哨兵攻击带有「晶化海蓝刻印」的单位时：
+					消耗刻印并释放一道高速晶化海蓝矢。
+
+					晶化海蓝矢首次命中单位时造成等同于施加刻印时魔法武器伤害130%的召唤伤害。
+					晶化海蓝矢能够穿透最多5个单位，每次命中单位后伤害降低15%。
+
+					晶化海蓝矢会额外产生两枚晶化碎片。
+					晶化碎片会追踪附近敌人，并造成等同于施加刻印时魔法武器伤害20%的召唤伤害。
+					'''
+			}
+
+			LegendaryContract: {
+				Tooltip:
+					'''
+					九彩传奇，共鸣万象之力
+
+					魔法武器将视为召唤武器，并降低其造成的伤害至原来的65%。
+					魔法武器命中单位时施加「传奇刻印」持续5秒。
+					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
+
+					仅当召唤物或哨兵攻击带有「传奇刻印」的单位时：
+					消耗「传奇刻印」，使目标进入「传奇共鸣」状态，持续5秒。
+
+					对处于「传奇共鸣」状态的单位进行召唤攻击时，
+					该攻击获得等同于你魔法暴击率的标记暴击率。
+					'''
+				DisplayName: 传奇灵契
 			}
 		}
 
 		Projectiles: {
 			MagicSwordPro.DisplayName: 蕴魔剑
 			BlastPro.DisplayName: 爆炸弹幕
-			// AmethystCrystalProjectile.DisplayName: Amethyst Crystal Projectile
-			// TopazExplosionProjectile.DisplayName: Topaz Explosion Projectile
-			// TopazCrystalProjectile.DisplayName: Topaz Crystal Projectile
-			// SapphireCrystalProjectile.DisplayName: Sapphire Crystal Projectile
-			// EmeraldCrystalNeedleProjectile.DisplayName: Emerald Crystal Needle Projectile
-			// EmeraldCrystalClusterProjectile.DisplayName: Emerald Crystal Cluster Projectile
-			// AmberCrystalProjectile.DisplayName: Amber Crystal Projectile
-			// EmeraldCrystalProjectile.DisplayName: Emerald Crystal Projectile
-			// RubyCrystalProjectile.DisplayName: Ruby Crystal Projectile
-			// RubyBurstProjectile.DisplayName: Ruby Burst Projectile
-			// DiamondCrystalProjectile.DisplayName: Diamond Crystal Projectile
-			// OpalCrystalProjectile.DisplayName: Opal Crystal Projectile
-			// OpalShardProjectile.DisplayName: Opal Shard Projectile
-			// AquamarineCrystalProjectile.DisplayName: Aquamarine Crystal Projectile
+			AmethystCrystalProjectile.DisplayName: 紫晶矢
+			TopazExplosionProjectile.DisplayName: 黄玉爆裂
+			TopazCrystalProjectile.DisplayName: 黄玉矢
+			SapphireCrystalProjectile.DisplayName: 蓝玉矢
+			EmeraldCrystalNeedleProjectile.DisplayName: 翡翠晶针
+			EmeraldCrystalClusterProjectile.DisplayName: 翡翠晶簇
+			AmberCrystalProjectile.DisplayName: 琥珀矢
+			EmeraldCrystalProjectile.DisplayName: 翡翠矢
+			RubyCrystalProjectile.DisplayName: 红玉矢
+			RubyBurstProjectile.DisplayName: 红玉连射
+			DiamondCrystalProjectile.DisplayName: 钻石矢
+			OpalCrystalProjectile.DisplayName: 欧珀矢
+			OpalShardProjectile.DisplayName: 欧珀晶体
+			AquamarineCrystalProjectile.DisplayName: 海蓝矢
+			CrystallineAmethystCrystalProjectile.DisplayName: 晶化紫晶矢
+			// CrystalShardProjectile.DisplayName: Crystal Shard Projectile
+			CrystallineShardProjectile.DisplayName: 晶化碎片
+			CrystallineTopazCrystalProjectile.DisplayName: 晶化黄玉矢
+			CrystallineTopazExplosionProjectile.DisplayName: 晶化黄玉爆裂
+			CrystallineSapphireCrystalProjectile.DisplayName: 晶化蓝玉矢
+			CrystallineEmeraldCrystalClusterProjectile.DisplayName: 晶化翡翠晶簇
+			CrystallineEmeraldCrystalProjectile.DisplayName: 晶化翡翠矢
+			CrystallineAmberCrystalProjectile.DisplayName: 晶化琥珀矢
+			CrystallineRubyBurstProjectile.DisplayName: 晶化红玉连射
+			CrystallineRubyCrystalProjectile.DisplayName: 晶化红玉矢
+			CrystallineDiamondCrystalProjectile.DisplayName: 晶化钻石矢
+			CrystallineOpalCrystalProjectile.DisplayName: 晶化欧珀矢
+			CrystallineOpalShardProjectile.DisplayName: 晶化欧珀晶体
+			CrystallineAquamarineCrystalProjectile.DisplayName: 晶化海蓝矢
 		}
 	}
 }

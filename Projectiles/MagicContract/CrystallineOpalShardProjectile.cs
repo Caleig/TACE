@@ -7,7 +7,7 @@ using Terraria.ModLoader;
 namespace ThoriumAccessoryExpansion.Projectiles.MagicContract;
 
 
-public class OpalShardProjectile : ModProjectile
+public class CrystallineOpalShardProjectile : ModProjectile
 {
 
     private const float SearchRange = 600f;
@@ -84,8 +84,8 @@ public class OpalShardProjectile : ModProjectile
 
         Lighting.AddLight(
             Projectile.Center,
-            0.6f,
-            0.8f,
+            0.7f,
+            0.9f,
             1f
         );
 
@@ -163,7 +163,6 @@ public class OpalShardProjectile : ModProjectile
                 );
 
 
-
             if (currentDistance < distance)
             {
 
@@ -179,6 +178,7 @@ public class OpalShardProjectile : ModProjectile
         }
 
 
+
         return result;
 
     }
@@ -186,5 +186,6 @@ public class OpalShardProjectile : ModProjectile
 
 
     public override string Texture =>
-        "ThoriumAccessoryExpansion/Images/Projectiles/MagicContract/OpalShardProjectile";
+        "ThoriumAccessoryExpansion/Images/Projectiles/MagicContract/CrystallineOpalShardProjectile";
+
 }

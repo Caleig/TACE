@@ -24,40 +24,48 @@ namespace ThoriumAccessoryExpansion.Systems
             if (item.DamageType != DamageClass.Magic)
                 return;
 
-
-
             StatModifier magic =
-                player.GetTotalDamage(DamageClass.Magic);
-
+                player.GetTotalDamage(
+                    DamageClass.Magic
+                );
 
             StatModifier summon =
-                player.GetTotalDamage(DamageClass.Summon);
+                player.GetTotalDamage(
+                    DamageClass.Summon
+                );
 
+            StatModifier target =
+                new StatModifier(
+                    summon.Additive,
+                    summon.Multiplicative * 0.65f,
+                    summon.Flat,
+                    summon.Base / 0.65f
+                );
 
+            StatModifier replacement =
+                new StatModifier(
+                    target.Additive
+                    - magic.Additive
+                    + 1f,
 
-            float magicMultiplier =
-                magic.Additive *
-                magic.Multiplicative;
+                    magic.Multiplicative != 0f
+                        ? target.Multiplicative
+                            / magic.Multiplicative
+                        : target.Multiplicative,
 
+                    target.Flat
+                    - magic.Flat,
 
-            float summonMultiplier =
-                summon.Additive *
-                summon.Multiplicative;
+                    target.Base
+                    - magic.Base
+                );
 
-
-
-            if (magicMultiplier != 0)
-            {
-                damage *= summonMultiplier / magicMultiplier;
-            }
-
-
-
-            damage *= 0.65f;
+            damage =
+                damage.CombineWith(
+                    replacement
+                );
 
         }
-
-
 
         public static bool IsMagicContractWeapon(
             Item item,

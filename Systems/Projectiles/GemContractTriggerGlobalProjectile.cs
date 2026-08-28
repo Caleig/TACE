@@ -42,10 +42,25 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
             return;
 
 
+        if (mark.HasGemMark(GemType.Prismatic))
+        {
+            int owner =
+                mark.gemOwner;
+
+
+            if (mark.ConsumeGemMark())
+            {
+                mark.AddPrismaticResonance(
+                    300,
+                    owner
+                );
+            }
+
+
+            return;
+        }
 
         int damage = mark.gemDamage;
-
-
 
         Vector2 spawnPosition =
             Main.player[projectile.owner].Center;
@@ -84,6 +99,58 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
         }
 
+        else if (mark.HasGemMark(GemType.CrystallineAmethyst))
+        {
+            mark.ConsumeGemMark();
+
+
+            int proj =
+            Projectile.NewProjectile(
+                projectile.GetSource_FromThis(),
+                spawnPosition,
+                shotVelocity * 1.25f,
+                ModContent.ProjectileType<CrystallineAmethystCrystalProjectile>(),
+                (int)(damage * 1.15f),
+                0,
+                projectile.owner
+            );
+
+
+            Main.projectile[proj]
+                .GetGlobalProjectile<MagicContractGlobalProjectile>()
+                .gemProjectile = true;
+
+
+
+            for (int i = 0; i < 2; i++)
+            {
+
+                Vector2 offset =
+                    new Vector2(
+                        0,
+                        i == 0 ? -12f : 12f
+                    );
+
+
+                int shard =
+                Projectile.NewProjectile(
+                    projectile.GetSource_FromThis(),
+                    spawnPosition + offset,
+                    shotVelocity,
+                    ModContent.ProjectileType<CrystallineShardProjectile>(),
+                    (int)(damage * 0.2f),
+                    0,
+                    projectile.owner
+                );
+
+
+                Main.projectile[shard]
+                    .GetGlobalProjectile<MagicContractGlobalProjectile>()
+                    .gemProjectile = true;
+
+            }
+        }
+
         else if (mark.HasGemMark(GemType.Topaz))
         {
 
@@ -106,6 +173,58 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
                 .GetGlobalProjectile<MagicContractGlobalProjectile>()
                 .gemProjectile = true;
 
+        }
+
+        else if (mark.HasGemMark(GemType.CrystallineTopaz))
+        {
+            mark.ConsumeGemMark();
+
+
+            int proj =
+            Projectile.NewProjectile(
+                projectile.GetSource_FromThis(),
+                spawnPosition,
+                shotVelocity * 1.25f,
+                ModContent.ProjectileType<CrystallineTopazCrystalProjectile>(),
+                (int)(damage * 1.15f),
+                0,
+                projectile.owner
+            );
+
+
+            Main.projectile[proj]
+                .GetGlobalProjectile<MagicContractGlobalProjectile>()
+                .gemProjectile = true;
+
+
+
+            for (int i = 0; i < 2; i++)
+            {
+
+                Vector2 offset =
+                    new Vector2(
+                        0,
+                        i == 0 ? -12f : 12f
+                    );
+
+
+                int shard =
+                Projectile.NewProjectile(
+                    projectile.GetSource_FromThis(),
+                    spawnPosition + offset,
+                    shotVelocity,
+                    ModContent.ProjectileType<CrystallineShardProjectile>(),
+                    (int)(damage * 0.2f),
+                    0,
+                    projectile.owner
+                );
+
+
+                Main.projectile[shard]
+                    .GetGlobalProjectile<MagicContractGlobalProjectile>()
+                    .gemProjectile = true;
+
+            }
         }
 
         else if (mark.HasGemMark(GemType.Sapphire))
@@ -150,6 +269,77 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
         }
 
+        else if (mark.HasGemMark(GemType.CrystallineSapphire))
+        {
+
+            mark.ConsumeGemMark();
+
+
+            Vector2 direction =
+                target.Center - spawnPosition;
+
+            direction.Normalize();
+
+            for (int i = 0; i < 2; i++)
+            {
+
+                int proj =
+                Projectile.NewProjectile(
+                    projectile.GetSource_FromThis(),
+                    spawnPosition,
+                    direction * 10f,
+                    ModContent.ProjectileType<CrystallineSapphireCrystalProjectile>(),
+                    (int)(damage * 0.7f),
+                    0,
+                    projectile.owner
+                );
+
+
+
+                Main.projectile[proj]
+                    .ai[0] = i;
+
+
+
+                Main.projectile[proj]
+                    .GetGlobalProjectile<MagicContractGlobalProjectile>()
+                    .gemProjectile = true;
+
+            }
+
+
+            for (int i = 0; i < 2; i++)
+            {
+
+                Vector2 offset =
+                    new Vector2(
+                        0,
+                        i == 0 ? -12f : 12f
+                    );
+
+
+
+                int shard =
+                Projectile.NewProjectile(
+                    projectile.GetSource_FromThis(),
+                    spawnPosition + offset,
+                    direction * 10f,
+                    ModContent.ProjectileType<CrystallineShardProjectile>(),
+                    (int)(damage * 0.2f),
+                    0,
+                    projectile.owner
+                );
+
+
+
+                Main.projectile[shard]
+                    .GetGlobalProjectile<MagicContractGlobalProjectile>()
+                    .gemProjectile = true;
+
+            }
+
+        }
+
         else if (mark.HasGemMark(GemType.Emerald))
         {
 
@@ -180,6 +370,64 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
                 .GetGlobalProjectile<MagicContractGlobalProjectile>()
                 .gemProjectile = true;
 
+        }
+
+        else if (mark.HasGemMark(GemType.CrystallineEmerald))
+        {
+            mark.ConsumeGemMark();
+
+
+            Vector2 emeraldVelocity =
+                Vector2.Normalize(
+                    target.Center - spawnPosition
+                )
+                * 16f;
+
+
+
+            int proj =
+            Projectile.NewProjectile(
+                projectile.GetSource_FromThis(),
+                spawnPosition,
+                emeraldVelocity,
+                ModContent.ProjectileType<CrystallineEmeraldCrystalProjectile>(),
+                (int)(damage * 1.15f),
+                0,
+                projectile.owner
+            );
+
+
+            Main.projectile[proj]
+                .GetGlobalProjectile<MagicContractGlobalProjectile>()
+                .gemProjectile = true;
+
+            for (int i = 0; i < 2; i++)
+            {
+
+                Vector2 offset =
+                    new Vector2(
+                        0,
+                        i == 0 ? -12f : 12f
+                    );
+
+
+                int shard =
+                Projectile.NewProjectile(
+                    projectile.GetSource_FromThis(),
+                    spawnPosition + offset,
+                    emeraldVelocity,
+                    ModContent.ProjectileType<CrystallineShardProjectile>(),
+                    (int)(damage * 0.2f),
+                    0,
+                    projectile.owner
+                );
+
+
+                Main.projectile[shard]
+                    .GetGlobalProjectile<MagicContractGlobalProjectile>()
+                    .gemProjectile = true;
+
+            }
         }
 
         else if (mark.HasGemMark(GemType.Amber))
@@ -214,6 +462,64 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
         }
 
+        else if (mark.HasGemMark(GemType.CrystallineAmber))
+        {
+            mark.ConsumeGemMark();
+
+
+            Vector2 amberVelocity =
+                Vector2.Normalize(
+                    target.Center - spawnPosition
+                )
+                * 12f;
+
+
+
+            int proj =
+            Projectile.NewProjectile(
+                projectile.GetSource_FromThis(),
+                spawnPosition,
+                amberVelocity,
+                ModContent.ProjectileType<CrystallineAmberCrystalProjectile>(),
+                (int)(damage * 1.15f),
+                0,
+                projectile.owner
+            );
+
+
+            Main.projectile[proj]
+                .GetGlobalProjectile<MagicContractGlobalProjectile>()
+                .gemProjectile = true;
+
+            for (int i = 0; i < 2; i++)
+            {
+
+                Vector2 offset =
+                    new Vector2(
+                        0,
+                        i == 0 ? -12f : 12f
+                    );
+
+
+                int shard =
+                Projectile.NewProjectile(
+                    projectile.GetSource_FromThis(),
+                    spawnPosition + offset,
+                    amberVelocity,
+                    ModContent.ProjectileType<CrystallineShardProjectile>(),
+                    (int)(damage * 0.2f),
+                    0,
+                    projectile.owner
+                );
+
+
+                Main.projectile[shard]
+                    .GetGlobalProjectile<MagicContractGlobalProjectile>()
+                    .gemProjectile = true;
+
+            }
+        }
+
         else if (mark.HasGemMark(GemType.Ruby))
         {
             mark.ConsumeGemMark();
@@ -240,6 +546,65 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
             Main.projectile[proj]
                 .GetGlobalProjectile<MagicContractGlobalProjectile>()
                 .gemProjectile = true;
+        }
+
+        else if (mark.HasGemMark(GemType.CrystallineRuby))
+        {
+            mark.ConsumeGemMark();
+
+
+            Vector2 direction =
+                Vector2.Normalize(
+                    target.Center - spawnPosition
+                );
+
+
+
+            int proj =
+                Projectile.NewProjectile(
+                    projectile.GetSource_FromThis(),
+                    spawnPosition,
+                    direction * 12f,
+                    ModContent.ProjectileType<CrystallineRubyBurstProjectile>(),
+                    (int)(damage * 0.5f),
+                    0,
+                    projectile.owner
+                );
+
+
+            Main.projectile[proj]
+                .GetGlobalProjectile<MagicContractGlobalProjectile>()
+                .gemProjectile = true;
+
+
+
+            for (int i = 0; i < 2; i++)
+            {
+
+                Vector2 offset =
+                    new Vector2(
+                        0,
+                        i == 0 ? -12f : 12f
+                    );
+
+
+                int shard =
+                    Projectile.NewProjectile(
+                        projectile.GetSource_FromThis(),
+                        spawnPosition + offset,
+                        direction * 10f,
+                        ModContent.ProjectileType<CrystallineShardProjectile>(),
+                        (int)(damage * 0.2f),
+                        0,
+                        projectile.owner
+                    );
+
+
+                Main.projectile[shard]
+                    .GetGlobalProjectile<MagicContractGlobalProjectile>()
+                    .gemProjectile = true;
+
+            }
         }
 
         else if (mark.HasGemMark(GemType.Diamond))
@@ -275,7 +640,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
                 diamondSpawnPosition,
                 velocity,
                 ModContent.ProjectileType<DiamondCrystalProjectile>(),
-                (int)(damage * 1.5f),
+                (int)(damage * 1.75f),
                 0,
                 projectile.owner
             );
@@ -285,6 +650,83 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
             Main.projectile[proj]
                 .GetGlobalProjectile<MagicContractGlobalProjectile>()
                 .gemProjectile = true;
+
+        }
+
+        else if (mark.HasGemMark(GemType.CrystallineDiamond))
+        {
+
+            mark.ConsumeGemMark();
+
+
+            Player player =
+                Main.player[projectile.owner];
+
+
+            Vector2 diamondSpawnPosition =
+                player.MountedCenter
+                + new Vector2(
+                    0,
+                    8f
+                );
+
+
+            Vector2 direction =
+                Vector2.Normalize(
+                    target.Center - diamondSpawnPosition
+                );
+
+
+            Vector2 velocity =
+                direction * 10f;
+
+
+
+            int proj =
+                Projectile.NewProjectile(
+                    projectile.GetSource_FromThis(),
+                    diamondSpawnPosition,
+                    velocity,
+                    ModContent.ProjectileType<CrystallineDiamondCrystalProjectile>(),
+                    (int)(damage * 2.0f),
+                    0,
+                    projectile.owner
+                );
+
+
+            Main.projectile[proj]
+                .GetGlobalProjectile<MagicContractGlobalProjectile>()
+                .gemProjectile = true;
+
+
+
+            for (int i = 0; i < 2; i++)
+            {
+
+                Vector2 offset =
+                    new Vector2(
+                        0,
+                        i == 0 ? -12f : 12f
+                    );
+
+
+                int shard =
+                    Projectile.NewProjectile(
+                        projectile.GetSource_FromThis(),
+                        diamondSpawnPosition + offset,
+                        velocity,
+                        ModContent.ProjectileType<CrystallineShardProjectile>(),
+                        (int)(damage * 0.2f),
+                        0,
+                        projectile.owner
+                    );
+
+
+                Main.projectile[shard]
+                    .GetGlobalProjectile<MagicContractGlobalProjectile>()
+                    .gemProjectile = true;
+
+            }
 
         }
 
@@ -320,6 +762,66 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
         }
 
+        else if (mark.HasGemMark(GemType.CrystallineOpal))
+        {
+
+            mark.ConsumeGemMark();
+
+
+            Vector2 velocity =
+                Vector2.Normalize(
+                    target.Center - spawnPosition
+                )
+                * 12f;
+
+
+
+            int proj =
+                Projectile.NewProjectile(
+                    projectile.GetSource_FromThis(),
+                    spawnPosition,
+                    velocity,
+                    ModContent.ProjectileType<CrystallineOpalCrystalProjectile>(),
+                    (int)(damage * 1.15f),
+                    0,
+                    projectile.owner
+                );
+
+
+            Main.projectile[proj]
+                .GetGlobalProjectile<MagicContractGlobalProjectile>()
+                .gemProjectile = true;
+
+            for (int i = 0; i < 2; i++)
+            {
+
+                Vector2 offset =
+                    new Vector2(
+                        0,
+                        i == 0 ? -12f : 12f
+                    );
+
+
+                int shard =
+                    Projectile.NewProjectile(
+                        projectile.GetSource_FromThis(),
+                        spawnPosition + offset,
+                        velocity,
+                        ModContent.ProjectileType<CrystallineShardProjectile>(),
+                        (int)(damage * 0.2f),
+                        0,
+                        projectile.owner
+                    );
+
+
+                Main.projectile[shard]
+                    .GetGlobalProjectile<MagicContractGlobalProjectile>()
+                    .gemProjectile = true;
+
+            }
+
+        }
+
         else if (mark.HasGemMark(GemType.Aquamarine))
         {
 
@@ -351,6 +853,124 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
                 .gemProjectile = true;
 
         }
-    }
 
+        else if (mark.HasGemMark(GemType.CrystallineAquamarine))
+        {
+            mark.ConsumeGemMark();
+
+
+            Vector2 velocity =
+                Vector2.Normalize(
+                    target.Center - spawnPosition
+                )
+                * 16f;
+
+
+            int proj =
+            Projectile.NewProjectile(
+                projectile.GetSource_FromThis(),
+                spawnPosition,
+                velocity,
+                ModContent.ProjectileType<CrystallineAquamarineCrystalProjectile>(),
+                (int)(damage * 1.3f),
+                0,
+                projectile.owner
+            );
+
+
+            Main.projectile[proj]
+                .GetGlobalProjectile<MagicContractGlobalProjectile>()
+                .gemProjectile = true;
+
+
+
+            for (int i = 0; i < 2; i++)
+            {
+
+                Vector2 offset =
+                    new Vector2(
+                        0,
+                        i == 0 ? -12f : 12f
+                    );
+
+
+                int shard =
+                Projectile.NewProjectile(
+                    projectile.GetSource_FromThis(),
+                    spawnPosition + offset,
+                    velocity,
+                    ModContent.ProjectileType<CrystallineShardProjectile>(),
+                    (int)(damage * 0.2f),
+                    0,
+                    projectile.owner
+                );
+
+
+                Main.projectile[shard]
+                    .GetGlobalProjectile<MagicContractGlobalProjectile>()
+                    .gemProjectile = true;
+
+            }
+
+        }
+    }
+    public override void ModifyHitNPC(
+    Projectile projectile,
+    NPC target,
+    ref NPC.HitModifiers modifiers)
+    {
+
+        if (projectile.DamageType != DamageClass.Summon)
+            return;
+
+
+
+        GemMarkGlobalNPC mark =
+            target.GetGlobalNPC<GemMarkGlobalNPC>();
+
+
+
+        if (!mark.HasPrismaticResonance())
+            return;
+
+
+
+        if (!mark.HasPrismaticResonance(
+            projectile.owner))
+            return;
+
+
+
+        Player player =
+            Main.player[projectile.owner];
+
+
+
+        if (!player.active)
+            return;
+
+
+
+        float magicCrit =
+            player.GetTotalCritChance(
+                DamageClass.Magic
+            );
+
+
+
+        if (magicCrit <= 0f)
+            return;
+
+
+
+        if (
+            Main.rand.Next(10000)
+            <
+            magicCrit * 100f
+        )
+        {
+            modifiers.SetCrit();
+        }
+
+    }
 }

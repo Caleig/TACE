@@ -36,11 +36,6 @@ namespace ThoriumAccessoryExpansion.Systems
 
             float conversionRate = 0.65f;
 
-            if (contract.legendaryContract)
-            {
-                conversionRate = 0.70f;
-            }
-
             if (!contract.HasAnyContract())
                 return;
 
