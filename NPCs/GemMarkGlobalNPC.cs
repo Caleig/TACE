@@ -24,6 +24,7 @@ namespace ThoriumAccessoryExpansion.NPCs
 
         public int prismaticResonanceOwner = -1;
 
+        public int legendaryResonanceDropCooldown;
 
 
         public override void ResetEffects(NPC npc)
@@ -39,7 +40,10 @@ namespace ThoriumAccessoryExpansion.NPCs
                 }
             }
 
-
+            if (legendaryResonanceDropCooldown > 0)
+            {
+                legendaryResonanceDropCooldown--;
+            }
 
             if (prismaticResonanceTime > 0)
             {

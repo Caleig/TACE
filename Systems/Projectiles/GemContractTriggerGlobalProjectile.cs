@@ -1,6 +1,9 @@
 using Microsoft.Xna.Framework;
+using System;
 using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
+using ThoriumAccessoryExpansion.Items.LegendaryResonance;
 using ThoriumAccessoryExpansion.NPCs;
 using ThoriumAccessoryExpansion.Projectiles.MagicContract;
 
@@ -34,8 +37,43 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
 
 
-        GemMarkGlobalNPC mark =
+         GemMarkGlobalNPC mark =
             target.GetGlobalNPC<GemMarkGlobalNPC>();
+
+
+
+        if (
+            mark.HasPrismaticResonance(
+                projectile.owner
+            )
+            &&
+            hit.Crit
+            &&
+            mark.legendaryResonanceDropCooldown <= 0
+            &&
+            Main.rand.NextBool(1)
+        )
+        {
+
+            if (
+                Main.netMode !=
+                NetmodeID.MultiplayerClient
+            )
+            {
+
+                LegendaryResonancePickupItem.SpawnRandom(
+                    projectile.GetSource_FromThis(),
+                    target.Center
+                );
+
+
+                mark.legendaryResonanceDropCooldown =
+                    20;
+
+            }
+
+        }
+
 
 
         if (mark.gemType == GemType.None)
@@ -44,20 +82,62 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
         if (mark.HasGemMark(GemType.Prismatic))
         {
+
             int owner =
                 mark.gemOwner;
 
 
+
+            int resonanceDamage =
+                (int)(
+                    mark.gemDamage
+                    * 0.80f
+                );
+
+
+
             if (mark.ConsumeGemMark())
             {
+
+                int proj =
+                    Projectile.NewProjectile(
+                        projectile.GetSource_FromThis(),
+                        target.Center,
+                        Vector2.Zero,
+                        ModContent.ProjectileType<
+                            LegendaryResonanceBurstProjectile
+                        >(),
+                        resonanceDamage,
+                        0f,
+                        owner
+                    );
+
+
+                Main.projectile[proj]
+                    .GetGlobalProjectile<
+                        MagicContractGlobalProjectile
+                    >()
+                    .gemProjectile = true;
+
+
+
+                Main.projectile[proj]
+                    .ai[0] =
+                    target.whoAmI;
+
+
+
                 mark.AddPrismaticResonance(
-                    300,
+                    360,
                     owner
                 );
+
             }
 
 
+
             return;
+
         }
 
         int damage = mark.gemDamage;
@@ -958,19 +1038,38 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
 
 
-        if (magicCrit <= 0f)
-            return;
+        magicCrit =
+            Math.Max(
+                0f,
+                magicCrit
+            );
+
+
+
+        float resonanceCrit =
+            20f
+            +
+            magicCrit * 0.25f;
+
+
+
+        resonanceCrit =
+            Math.Min(
+                100f,
+                resonanceCrit
+            );
 
 
 
         if (
-            Main.rand.Next(10000)
+            Main.rand.NextFloat(
+                100f
+            )
             <
-            magicCrit * 100f
+            resonanceCrit
         )
         {
             modifiers.SetCrit();
         }
-
     }
 }

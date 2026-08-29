@@ -45,6 +45,17 @@ public class LegendaryContract : GemContractBase
 
         contract.magicContractActive = true;
 
+        player.whipRangeMultiplier +=
+            0.10f;
+
+
+        player.maxMinions +=
+            1;
+
+
+        player.maxTurrets +=
+            1;
+
     }
 
 }

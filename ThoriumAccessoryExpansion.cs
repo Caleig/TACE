@@ -1,43 +1,365 @@
+using Microsoft.Xna.Framework;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using ThoriumAccessoryExpansion.Accessories.Magic.MagicSheath;
+using ThoriumAccessoryExpansion.Items.LegendaryResonance;
+using ThoriumAccessoryExpansion.NPCs;
+using ThoriumAccessoryExpansion.Players;
 
-namespace ThoriumAccessoryExpansion
+
+namespace ThoriumAccessoryExpansion;
+
+
+public class ThoriumAccessoryExpansion : Mod
 {
-	
-	public class ThoriumAccessoryExpansion : Mod
-	{
-        public override void HandlePacket(BinaryReader reader, int whoAmI)
+
+    public override void HandlePacket(
+        BinaryReader reader,
+        int whoAmI)
+    {
+
+        byte msgType =
+            reader.ReadByte();
+
+
+
+        if (
+            msgType ==
+            (byte)ScrollPlayer.MessageType.SyncScrolls
+        )
         {
-            byte msgType = reader.ReadByte();
-            switch ((ScrollPlayer.MessageType)msgType)
+
+            int playerId =
+                reader.ReadByte();
+
+
+
+            if (
+                Main.netMode ==
+                NetmodeID.Server
+            )
             {
-                case ScrollPlayer.MessageType.SyncScrolls:
-                    int playerId = reader.ReadByte();
-                    if (Main.netMode == NetmodeID.Server)
-                    {
-                        
-                        ModPacket packet = GetPacket();
-                        packet.Write((byte)msgType);
-                        packet.Write((byte)playerId);
-                        byte[] remaining = reader.ReadBytes((int)(reader.BaseStream.Length - reader.BaseStream.Position));
-                        packet.Write(remaining);
-                        packet.Send(-1, playerId);
-                        break;
-                    }
-                    
-                    Player player = Main.player[playerId];
-                    var sp = player.GetModPlayer<ScrollPlayer>();
-                    sp.ReceiveScrollData(reader);
-                    break;
+
+                ModPacket packet =
+                    GetPacket();
+
+
+
+                packet.Write(
+                    msgType
+                );
+
+
+                packet.Write(
+                    (byte)playerId
+                );
+
+
+
+                byte[] remaining =
+                    reader.ReadBytes(
+                        (int)(
+                            reader.BaseStream.Length
+                            -
+                            reader.BaseStream.Position
+                        )
+                    );
+
+
+
+                packet.Write(
+                    remaining
+                );
+
+
+
+                packet.Send(
+                    -1,
+                    playerId
+                );
+
+
+
+                return;
+
             }
+
+
+
+            Player player =
+                Main.player[playerId];
+
+
+
+            ScrollPlayer scrollPlayer =
+                player.GetModPlayer<
+                    ScrollPlayer
+                >();
+
+
+
+            scrollPlayer.ReceiveScrollData(
+                reader
+            );
+
+
+
+            return;
+
         }
+
+
+        if (
+            msgType ==
+            LegendaryResonancePickupItem.PickupPacket
+        )
+        {
+
+            HandleLegendaryPickup(
+                reader,
+                whoAmI
+            );
+
+
+
+            return;
+
+        }
+
+
+        if (
+            msgType ==
+            GemContractPlayer
+                .LegendaryResonanceSyncPacket
+        )
+        {
+
+            int playerId =
+                reader.ReadByte();
+
+
+
+            if (
+                playerId < 0
+                ||
+                playerId >= Main.maxPlayers
+            )
+                return;
+
+
+
+            GemContractPlayer contract =
+                Main.player[playerId]
+                    .GetModPlayer<
+                        GemContractPlayer
+                    >();
+
+
+
+            contract.ReceiveLegendaryResonance(
+                reader
+            );
+
+        }
+
     }
+
+
+
+    private void HandleLegendaryPickup(
+        BinaryReader reader,
+        int whoAmI)
+    {
+
+        int playerId =
+            reader.ReadByte();
+
+
+
+        short itemId =
+            reader.ReadInt16();
+
+        reader.ReadByte();
+
+
+
+        if (
+            Main.netMode !=
+            NetmodeID.Server
+        )
+            return;
+
+
+
+        if (
+            playerId != whoAmI
+        )
+            return;
+
+
+
+        if (
+            playerId < 0
+            ||
+            playerId >= Main.maxPlayers
+        )
+            return;
+
+
+
+        if (
+            itemId < 0
+            ||
+            itemId >= Main.maxItems
+        )
+            return;
+
+
+
+        Player picker =
+            Main.player[playerId];
+
+
+
+        if (!picker.active)
+            return;
+
+
+
+        Item item =
+            Main.item[itemId];
+
+
+
+        if (!item.active)
+            return;
+
+
+
+        if (
+            item.type !=
+            ModContent.ItemType<
+                LegendaryResonancePickupItem
+            >()
+        )
+            return;
+
+
+
+        LegendaryResonancePickupItem pickup =
+            item.ModItem as
+            LegendaryResonancePickupItem;
+
+
+
+        if (pickup == null)
+            return;
+
+
+
+        if (
+            Vector2.Distance(
+                picker.Center,
+                item.Center
+            ) > 100f
+        )
+            return;
+
+
+
+        GemType resonanceType =
+            LegendaryResonancePickupItem
+                .ResolveResonanceType(
+                    pickup.VisualType
+                );
+
+
+
+        item.TurnToAir();
+
+
+
+        NetMessage.SendData(
+            MessageID.SyncItem,
+            number: itemId
+        );
+
+        LegendaryResonancePickupItem
+            .ApplyPickup(
+                picker,
+                resonanceType
+            );
+
+
+
+        NetMessage.SendData(
+            MessageID.SyncPlayer,
+            number: picker.whoAmI
+        );
+
+
+        for (
+            int i = 0;
+            i < Main.maxPlayers;
+            i++
+        )
+        {
+
+            if (i == playerId)
+                continue;
+
+
+
+            Player other =
+                Main.player[i];
+
+
+
+            if (!other.active)
+                continue;
+
+
+
+            if (other.dead)
+                continue;
+
+
+
+            if (
+                Vector2.Distance(
+                    picker.Center,
+                    other.Center
+                ) > 700f
+            )
+                continue;
+
+            if (
+                picker.team != 0
+                &&
+                other.team != picker.team
+            )
+                continue;
+
+
+
+            LegendaryResonancePickupItem
+                .ApplyPickup(
+                    other,
+                    resonanceType
+                );
+
+
+
+            NetMessage.SendData(
+                MessageID.SyncPlayer,
+                number: other.whoAmI
+            );
+
+        }
+
+    }
+
 }

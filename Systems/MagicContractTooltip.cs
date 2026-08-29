@@ -8,12 +8,14 @@ namespace ThoriumAccessoryExpansion.Systems
 {
     public class MagicContractTooltip : GlobalItem
     {
+
         public override void ModifyTooltips(
             Item item,
             List<TooltipLine> tooltips)
         {
 
-            Player player = Main.LocalPlayer;
+            Player player =
+                Main.LocalPlayer;
 
 
             if (player == null || !player.active)
@@ -33,24 +35,33 @@ namespace ThoriumAccessoryExpansion.Systems
                 player.GetModPlayer<GemContractPlayer>();
 
 
-
-            float conversionRate = 0.65f;
-
             if (!contract.HasAnyContract())
                 return;
 
+            float convertedBaseDamage =
+                item.damage * 0.65f;
+
+            StatModifier summon =
+                player.GetTotalDamage(
+                    DamageClass.Summon
+                );
 
 
             int convertedDamage =
-                (int)(item.damage * conversionRate);
+                (int)summon.ApplyTo(
+                    convertedBaseDamage
+                );
 
 
 
             foreach (TooltipLine line in tooltips)
             {
 
-                if (line.Mod == "Terraria" &&
-                    line.Name == "Damage")
+                if (
+                    line.Mod == "Terraria"
+                    &&
+                    line.Name == "Damage"
+                )
                 {
 
                     line.Text =
@@ -68,5 +79,6 @@ namespace ThoriumAccessoryExpansion.Systems
             }
 
         }
+
     }
 }

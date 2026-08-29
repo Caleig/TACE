@@ -30,6 +30,21 @@ Mods: {
 				DisplayName: Supreme Wrath
 				Description: Attacking this target grants +1 Soul Essence
 			}
+
+			LegendaryResonanceBuff: {
+				Description: Legendary resonance is gathering rainbow power
+				DisplayName: Legendary Resonance
+				Stacks: Resonance Stacks: {0}/9
+				Amethyst: Amethyst ×{0}: Damage +{1}%
+				Topaz: Topaz ×{0}: Crit Chance +{1}%
+				Sapphire: Sapphire ×{0}: Move Speed +{1}%
+				Emerald: Emerald ×{0}: Armor Penetration +{1}
+				Amber: Amber ×{0}: Maximum Life +{1}%
+				Ruby: Ruby ×{0}: Damage Reduction +{1}%
+				Diamond: Diamond ×{0}: Life Regeneration +{0}/second
+				Opal: Opal ×{0}: Knockback Resistance +{1}%
+				Aquamarine: Aquamarine ×{0}: Resource Pickup Range +{1}%
+			}
 		}
 
 		Items: {
@@ -393,6 +408,11 @@ Mods: {
 				Tooltip: ""
 				DisplayName: Legendary Contract
 			}
+
+			LegendaryResonancePickupItem: {
+				Tooltip: ""
+				DisplayName: Legendary Resonance Pickup Item
+			}
 		}
 
 		Projectiles: {
@@ -427,6 +447,7 @@ Mods: {
 			CrystallineOpalCrystalProjectile.DisplayName: Crystalline Opal Crystal Projectile
 			CrystallineOpalShardProjectile.DisplayName: Crystalline Opal Shard Projectile
 			CrystallineAquamarineCrystalProjectile.DisplayName: Crystalline Aquamarine Crystal Projectile
+			LegendaryResonanceBurstProjectile.DisplayName: Legendary Resonance Burst Projectile
 		}
 	}
 }
