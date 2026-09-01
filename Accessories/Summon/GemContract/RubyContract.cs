@@ -44,5 +44,13 @@ public class RubyContract : GemContractBase
         contract.magicContractActive = true;
 
     }
-
+    public override void AddRecipes()
+    {
+        CreateRecipe()
+            .AddIngredient(ItemID.Ruby, 8)
+            .AddIngredient(ItemID.GoldBar, 7)
+            .AddIngredient(ItemID.LargeRuby, 1)
+            .AddTile(TileID.Anvils)
+            .Register();
+    }
 }

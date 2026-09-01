@@ -27,4 +27,13 @@ public class TopazContract : GemContractBase
         contract.topazContract = true;
         contract.magicContractActive = true;
     }
+    public override void AddRecipes()
+    {
+        CreateRecipe()
+            .AddIngredient(ItemID.Topaz, 8)
+            .AddIngredient(ItemID.TinBar, 7)
+            .AddIngredient(ItemID.LargeTopaz, 1)
+            .AddTile(TileID.Anvils)
+            .Register();
+    }
 }

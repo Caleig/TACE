@@ -1,6 +1,5 @@
 using Terraria;
 using Terraria.ModLoader;
-using ThoriumMod.Items;
 using Terraria.ID;
 using ThoriumAccessoryExpansion.Players;
 
@@ -27,6 +26,16 @@ namespace ThoriumAccessoryExpansion.Accessories.Summon.GemContract
 
             contract.amethystContract = true;
             contract.magicContractActive = true;
+        }
+
+        public override void AddRecipes()
+        {
+            CreateRecipe()
+                .AddIngredient(ItemID.Amethyst,8)
+                .AddIngredient(ItemID.CopperBar,7)
+                .AddIngredient(ItemID.LargeAmethyst,1)
+                .AddTile(TileID.Anvils)
+                .Register();
         }
     }
 }

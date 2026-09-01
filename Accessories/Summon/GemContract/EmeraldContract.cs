@@ -37,5 +37,13 @@ public class EmeraldContract : GemContractBase
         contract.magicContractActive = true;
 
     }
-
+    public override void AddRecipes()
+    {
+        CreateRecipe()
+            .AddIngredient(ItemID.Emerald,8)
+            .AddIngredient(ItemID.TungstenBar,7)
+            .AddIngredient(ItemID.LargeEmerald,1)
+            .AddTile(TileID.Anvils)
+            .Register();
+    }
 }

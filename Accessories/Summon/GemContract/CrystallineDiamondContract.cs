@@ -46,5 +46,13 @@ public class CrystallineDiamondContract : GemContractBase
         contract.magicContractActive = true;
 
     }
-
+    public override void AddRecipes()
+    {
+        CreateRecipe()
+            .AddIngredient<DiamondContract>()
+            .AddIngredient(ItemID.LargeDiamond, 2)
+            .AddIngredient(ItemID.CrystalShard, 50)
+            .AddTile(TileID.MythrilAnvil)
+            .Register();
+    }
 }

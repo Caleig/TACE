@@ -44,5 +44,13 @@ public class DiamondContract : GemContractBase
         contract.magicContractActive = true;
 
     }
-
+    public override void AddRecipes()
+    {
+        CreateRecipe()
+            .AddIngredient(ItemID.Diamond,8)
+            .AddIngredient(ItemID.PlatinumBar,7)
+            .AddIngredient(ItemID.LargeDiamond,1)
+            .AddTile(TileID.Anvils)
+            .Register();
+    }
 }

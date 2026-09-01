@@ -1,4 +1,4 @@
-displayName = 奇奇怪怪的瑟银饰品扩展
-author = Caleigh，迷途，BlackCrystal
+displayName = 瑟银的简单饰品扩展
+author = Caleigh，迷途，BlackCrystal，龙冰/离霜/塔西娅
 version = 0.1.5
 modReferences = ThoriumMod

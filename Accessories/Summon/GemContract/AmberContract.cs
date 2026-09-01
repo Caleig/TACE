@@ -44,5 +44,13 @@ public class AmberContract : GemContractBase
         contract.magicContractActive = true;
 
     }
-
+    public override void AddRecipes()
+    {
+        CreateRecipe()
+            .AddIngredient(ItemID.Amber,8)
+            .AddIngredient(ItemID.FossilOre,10)
+            .AddIngredient(ItemID.LargeAmber,1)
+            .AddTile(TileID.Anvils)
+            .Register();
+    }
 }

@@ -1,7 +1,9 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using ThoriumAccessoryExpansion.Accessories.Healer.CursedCovenant;
 using ThoriumAccessoryExpansion.Players;
+using ThoriumMod;
 
 
 namespace ThoriumAccessoryExpansion.Accessories.Summon.GemContract;
@@ -46,5 +48,21 @@ public class AquamarineContract : GemContractBase
         contract.magicContractActive = true;
 
     }
+    public override void AddRecipes()
+    {
+        Mod thorium = ModLoader.GetMod("ThoriumMod");
 
+        int aquamarineType =
+            thorium.Find<ModItem>("Aquamarine").Type;
+
+        int largeAquamarineType =
+            thorium.Find<ModItem>("LargeAquamarine").Type;
+
+        CreateRecipe()
+            .AddIngredient(aquamarineType, 8)
+            .AddIngredient(ItemID.LeadBar,10)
+            .AddIngredient(largeAquamarineType, 1)
+            .AddTile(TileID.Anvils)
+            .Register();
+    }
 }

@@ -1,24 +1,51 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using ThoriumAccessoryExpansion.Players;
 
-namespace ThoriumAccessoryExpansion.Accessories.Magic.MagicSheath
+namespace ThoriumAccessoryExpansion.Accessories.Magic.MagicSheath;
+
+public class BlazingScroll : MagicSwordEnhancementItem
 {
-    public class BlazingScroll : ScrollBase
+    public override void SetDefaults()
     {
-        public override int ScrollTypeID => 0; 
+        Item.width = 28;
+        Item.height = 28;
 
-        public override void SetStaticDefaults()
-        {
-        }
+        Item.accessory = true;
 
-        public override void AddRecipes()
-        {
-            CreateRecipe()
-                .AddIngredient(ItemID.HellstoneBar, 10)
-                .AddIngredient(ItemID.Silk, 5)
-                .AddTile(TileID.Loom)
-                .Register();
-        }
+        Item.rare =
+            ItemRarityID.LightRed;
+
+        Item.value =
+            Item.sellPrice(silver: 50);
+    }
+
+    public override void UpdateAccessory(
+        Player player,
+        bool hideVisual)
+    {
+        player
+            .GetModPlayer<
+                MagicSwordEnhancementPlayer
+            >()
+            .HasBlazingScroll = true;
+    }
+
+    public override void AddRecipes()
+    {
+        CreateRecipe()
+            .AddIngredient(
+                ItemID.HellstoneBar,
+                10
+            )
+            .AddIngredient(
+                ItemID.Silk,
+                5
+            )
+            .AddTile(
+                TileID.Loom
+            )
+            .Register();
     }
 }
