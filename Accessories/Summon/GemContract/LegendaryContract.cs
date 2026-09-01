@@ -57,5 +57,40 @@ public class LegendaryContract : GemContractBase
             1;
 
     }
+    public override void AddRecipes()
+    {
+        Mod thorium = ModLoader.GetMod("ThoriumMod");
 
+        int largeOpalType =
+            thorium.Find<ModItem>("LargeOpal").Type;
+
+        int largeAquamarineType =
+            thorium.Find<ModItem>("LargeAquamarine").Type;
+
+        int largePrismiteType =
+            thorium.Find<ModItem>("LargePrismite").Type;
+
+        int titanicBarType =
+            thorium.Find<ModItem>("TitanicBar").Type;
+
+        int concentratedThoriumType =
+            thorium.Find<ModItem>("ConcentratedThorium").Type;
+
+        CreateRecipe()
+            .AddIngredient(ItemID.LargeAmethyst, 1)
+            .AddIngredient(ItemID.LargeTopaz, 1)
+            .AddIngredient(ItemID.LargeSapphire, 1)
+            .AddIngredient(ItemID.LargeEmerald, 1)
+            .AddIngredient(ItemID.LargeAmber, 1)
+            .AddIngredient(ItemID.LargeRuby, 1)
+            .AddIngredient(ItemID.LargeDiamond, 1)
+            .AddIngredient(largeOpalType, 1)
+            .AddIngredient(largeAquamarineType, 1)
+            .AddIngredient(largePrismiteType, 1)
+            .AddIngredient(titanicBarType, 5)
+            .AddIngredient(concentratedThoriumType, 5)
+            .AddIngredient(ItemID.CrystalShard, 100)
+            .AddTile(TileID.MythrilAnvil)
+            .Register();
+    }
 }

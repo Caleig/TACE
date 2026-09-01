@@ -1,134 +1,36 @@
 using Microsoft.Xna.Framework;
-using System;
 using System.IO;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using ThoriumAccessoryExpansion.Accessories.Magic.MagicSheath;
 using ThoriumAccessoryExpansion.Items.LegendaryResonance;
 using ThoriumAccessoryExpansion.NPCs;
 using ThoriumAccessoryExpansion.Players;
 
-
 namespace ThoriumAccessoryExpansion;
-
 
 public class ThoriumAccessoryExpansion : Mod
 {
-
     public override void HandlePacket(
         BinaryReader reader,
         int whoAmI)
     {
-
         byte msgType =
             reader.ReadByte();
 
-
-
         if (
             msgType ==
-            (byte)ScrollPlayer.MessageType.SyncScrolls
+            LegendaryResonancePickupItem
+                .PickupPacket
         )
         {
-
-            int playerId =
-                reader.ReadByte();
-
-
-
-            if (
-                Main.netMode ==
-                NetmodeID.Server
-            )
-            {
-
-                ModPacket packet =
-                    GetPacket();
-
-
-
-                packet.Write(
-                    msgType
-                );
-
-
-                packet.Write(
-                    (byte)playerId
-                );
-
-
-
-                byte[] remaining =
-                    reader.ReadBytes(
-                        (int)(
-                            reader.BaseStream.Length
-                            -
-                            reader.BaseStream.Position
-                        )
-                    );
-
-
-
-                packet.Write(
-                    remaining
-                );
-
-
-
-                packet.Send(
-                    -1,
-                    playerId
-                );
-
-
-
-                return;
-
-            }
-
-
-
-            Player player =
-                Main.player[playerId];
-
-
-
-            ScrollPlayer scrollPlayer =
-                player.GetModPlayer<
-                    ScrollPlayer
-                >();
-
-
-
-            scrollPlayer.ReceiveScrollData(
-                reader
-            );
-
-
-
-            return;
-
-        }
-
-
-        if (
-            msgType ==
-            LegendaryResonancePickupItem.PickupPacket
-        )
-        {
-
             HandleLegendaryPickup(
                 reader,
                 whoAmI
             );
 
-
-
             return;
-
         }
-
 
         if (
             msgType ==
@@ -136,47 +38,49 @@ public class ThoriumAccessoryExpansion : Mod
                 .LegendaryResonanceSyncPacket
         )
         {
-
             int playerId =
                 reader.ReadByte();
 
 
-
             if (
-                playerId < 0
-                ||
+                playerId < 0 ||
                 playerId >= Main.maxPlayers
             )
+            {
+                return;
+            }
+
+
+            Player player =
+                Main.player[playerId];
+
+
+            if (!player.active)
                 return;
 
 
-
             GemContractPlayer contract =
-                Main.player[playerId]
-                    .GetModPlayer<
-                        GemContractPlayer
-                    >();
-
+                player.GetModPlayer<
+                    GemContractPlayer
+                >();
 
 
             contract.ReceiveLegendaryResonance(
                 reader
             );
 
+
+            return;
         }
-
     }
-
 
 
     private void HandleLegendaryPickup(
         BinaryReader reader,
         int whoAmI)
     {
-
         int playerId =
             reader.ReadByte();
-
 
 
         short itemId =
@@ -184,59 +88,54 @@ public class ThoriumAccessoryExpansion : Mod
 
         reader.ReadByte();
 
-
-
         if (
             Main.netMode !=
             NetmodeID.Server
         )
+        {
             return;
-
-
+        }
 
         if (
             playerId != whoAmI
         )
+        {
             return;
-
+        }
 
 
         if (
-            playerId < 0
-            ||
+            playerId < 0 ||
             playerId >= Main.maxPlayers
         )
+        {
             return;
-
+        }
 
 
         if (
-            itemId < 0
-            ||
+            itemId < 0 ||
             itemId >= Main.maxItems
         )
+        {
             return;
-
+        }
 
 
         Player picker =
             Main.player[playerId];
 
 
-
         if (!picker.active)
             return;
-
 
 
         Item item =
             Main.item[itemId];
 
 
-
         if (!item.active)
             return;
-
 
 
         if (
@@ -245,8 +144,9 @@ public class ThoriumAccessoryExpansion : Mod
                 LegendaryResonancePickupItem
             >()
         )
+        {
             return;
-
+        }
 
 
         LegendaryResonancePickupItem pickup =
@@ -254,11 +154,8 @@ public class ThoriumAccessoryExpansion : Mod
             LegendaryResonancePickupItem;
 
 
-
         if (pickup == null)
             return;
-
-
 
         if (
             Vector2.Distance(
@@ -266,8 +163,9 @@ public class ThoriumAccessoryExpansion : Mod
                 item.Center
             ) > 100f
         )
+        {
             return;
-
+        }
 
 
         GemType resonanceType =
@@ -276,10 +174,7 @@ public class ThoriumAccessoryExpansion : Mod
                     pickup.VisualType
                 );
 
-
-
         item.TurnToAir();
-
 
 
         NetMessage.SendData(
@@ -294,12 +189,10 @@ public class ThoriumAccessoryExpansion : Mod
             );
 
 
-
         NetMessage.SendData(
             MessageID.SyncPlayer,
             number: picker.whoAmI
         );
-
 
         for (
             int i = 0;
@@ -307,25 +200,20 @@ public class ThoriumAccessoryExpansion : Mod
             i++
         )
         {
-
             if (i == playerId)
                 continue;
-
 
 
             Player other =
                 Main.player[i];
 
 
-
             if (!other.active)
                 continue;
 
 
-
             if (other.dead)
                 continue;
-
 
 
             if (
@@ -334,15 +222,17 @@ public class ThoriumAccessoryExpansion : Mod
                     other.Center
                 ) > 700f
             )
+            {
                 continue;
+            }
 
             if (
-                picker.team != 0
-                &&
+                picker.team != 0 &&
                 other.team != picker.team
             )
+            {
                 continue;
-
+            }
 
 
             LegendaryResonancePickupItem
@@ -352,14 +242,10 @@ public class ThoriumAccessoryExpansion : Mod
                 );
 
 
-
             NetMessage.SendData(
                 MessageID.SyncPlayer,
                 number: other.whoAmI
             );
-
         }
-
     }
-
 }

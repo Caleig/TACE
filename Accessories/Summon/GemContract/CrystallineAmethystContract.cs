@@ -38,7 +38,15 @@ namespace ThoriumAccessoryExpansion.Accessories.Summon.GemContract
             contract.magicContractActive = true;
 
         }
-
+        public override void AddRecipes()
+        {
+            CreateRecipe()
+                .AddIngredient<AmethystContract>()
+                .AddIngredient(ItemID.LargeAmethyst, 2)
+                .AddIngredient(ItemID.CrystalShard, 50)
+                .AddTile(TileID.MythrilAnvil)
+                .Register();
+        }
     }
 
 }

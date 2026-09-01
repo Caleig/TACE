@@ -609,6 +609,9 @@ Mods: {
 			CrystallineOpalShardProjectile.DisplayName: Crystalline Opal Shard Projectile
 			CrystallineAquamarineCrystalProjectile.DisplayName: Crystalline Aquamarine Crystal Projectile
 			LegendaryResonanceBurstProjectile.DisplayName: Legendary Resonance Burst Projectile
+			MagicSwordProjectile.DisplayName: Magic Sword Projectile
+			MagicSwordExplosionProjectile.DisplayName: Magic Sword Explosion Projectile
+			HellfireExplosionProjectile.DisplayName: Hellfire Explosion Projectile
 		}
 	}
 }

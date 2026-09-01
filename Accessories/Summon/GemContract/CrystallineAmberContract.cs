@@ -46,5 +46,13 @@ public class CrystallineAmberContract : GemContractBase
         contract.magicContractActive = true;
 
     }
-
+    public override void AddRecipes()
+    {
+        CreateRecipe()
+            .AddIngredient<AmberContract>()
+            .AddIngredient(ItemID.LargeAmber, 2)
+            .AddIngredient(ItemID.CrystalShard, 50)
+            .AddTile(TileID.MythrilAnvil)
+            .Register();
+    }
 }

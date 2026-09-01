@@ -37,5 +37,13 @@ public class CrystallineSapphireContract : GemContractBase
         contract.magicContractActive = true;
 
     }
-
+    public override void AddRecipes()
+    {
+        CreateRecipe()
+            .AddIngredient<SapphireContract>()
+            .AddIngredient(ItemID.LargeSapphire, 2)
+            .AddIngredient(ItemID.CrystalShard, 50)
+            .AddTile(TileID.MythrilAnvil)
+            .Register();
+    }
 }

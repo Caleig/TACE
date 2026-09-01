@@ -46,5 +46,18 @@ public class CrystallineOpalContract : GemContractBase
         contract.magicContractActive = true;
 
     }
+    public override void AddRecipes()
+    {
+        Mod thorium = ModLoader.GetMod("ThoriumMod");
 
+        int largeOpalType =
+            thorium.Find<ModItem>("LargeOpal").Type;
+
+        CreateRecipe()
+            .AddIngredient<OpalContract>()
+            .AddIngredient(largeOpalType, 2)
+            .AddIngredient(ItemID.CrystalShard, 50)
+            .AddTile(TileID.MythrilAnvil)
+            .Register();
+    }
 }

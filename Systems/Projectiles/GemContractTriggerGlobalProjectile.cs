@@ -36,7 +36,6 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
             return;
 
 
-
          GemMarkGlobalNPC mark =
             target.GetGlobalNPC<GemMarkGlobalNPC>();
 

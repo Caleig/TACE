@@ -46,5 +46,18 @@ public class CrystallineAquamarineContract : GemContractBase
         contract.magicContractActive = true;
 
     }
+    public override void AddRecipes()
+    {
+        Mod thorium = ModLoader.GetMod("ThoriumMod");
 
+        int largeAquamarineType =
+            thorium.Find<ModItem>("LargeAquamarine").Type;
+
+        CreateRecipe()
+            .AddIngredient<AquamarineContract>()
+            .AddIngredient(largeAquamarineType, 2)
+            .AddIngredient(ItemID.CrystalShard, 50)
+            .AddTile(TileID.MythrilAnvil)
+            .Register();
+    }
 }

@@ -46,5 +46,13 @@ public class CrystallineEmeraldContract : GemContractBase
         contract.magicContractActive = true;
 
     }
-
+    public override void AddRecipes()
+    {
+        CreateRecipe()
+            .AddIngredient<EmeraldContract>()
+            .AddIngredient(ItemID.LargeEmerald, 2)
+            .AddIngredient(ItemID.CrystalShard, 50)
+            .AddTile(TileID.MythrilAnvil)
+            .Register();
+    }
 }

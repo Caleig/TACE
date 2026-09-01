@@ -36,5 +36,13 @@ public class CrystallineTopazContract : GemContractBase
         contract.magicContractActive = true;
 
     }
-
+    public override void AddRecipes()
+    {
+        CreateRecipe()
+            .AddIngredient<TopazContract>()
+            .AddIngredient(ItemID.LargeTopaz, 2)
+            .AddIngredient(ItemID.CrystalShard, 50)
+            .AddTile(TileID.MythrilAnvil)
+            .Register();
+    }
 }

@@ -37,5 +37,13 @@ public class SapphireContract : GemContractBase
         contract.magicContractActive = true;
 
     }
-
+    public override void AddRecipes()
+    {
+        CreateRecipe()
+            .AddIngredient(ItemID.Sapphire, 8)
+            .AddIngredient(ItemID.SilverBar, 7)
+            .AddIngredient(ItemID.LargeSapphire, 1)
+            .AddTile(TileID.Anvils)
+            .Register();
+    }
 }

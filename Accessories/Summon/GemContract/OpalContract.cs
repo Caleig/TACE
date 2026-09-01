@@ -44,5 +44,21 @@ public class OpalContract : GemContractBase
         contract.magicContractActive = true;
 
     }
+    public override void AddRecipes()
+    {
+        Mod thorium = ModLoader.GetMod("ThoriumMod");
 
+        int opalType =
+            thorium.Find<ModItem>("Opal").Type;
+
+        int largeOpalType =
+            thorium.Find<ModItem>("LargeOpal").Type;
+
+        CreateRecipe()
+            .AddIngredient(opalType,8)
+            .AddIngredient(ItemID.IronBar,10)
+            .AddIngredient(largeOpalType,1)
+            .AddTile(TileID.Anvils)
+            .Register();
+    }
 }
