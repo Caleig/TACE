@@ -1,1 +1,68 @@
-本mod是瑟银的附属mod，主要的内容是扩展瑟银自己的一些职业的饰品，目前的主要是扩展了牧师在暗牧分支上的流程饰品，后续可能会添加更多其他职业的饰品
+[h1]奇奇怪怪的瑟银饰品扩展[/h1]
+
+本模组是[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2909886416]瑟银[/url]的附属，扩展多个职业的饰品流程。目前内容主要集中在牧师的暗牧分支，也加入了其它饰品。
+
+[h2]通用饰品[/h2]
+[list]
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Generic/BlazingLightBalloonBundle/BlazingLightBalloonBundle.png[/img] 狐火灵球：四连跳、加速、免疫摔落伤害，并可消耗灵焰冲刺
+[/list]
+
+[h2]牧师饰品[/h2]
+[list]
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Healer/CursedCovenant/CursedCovenant.png[/img] 诅咒圣约：以生命代价强化光辉攻击并积累堕落充能
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Healer/BoneCovenant/BoneCovenant.png[/img] 骸骨圣约：降低治疗量，换取更高的光辉伤害上限
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Healer/FallenCovenant/FallenCovenant.png[/img] 堕落圣约：更高的生命消耗与光辉伤害，满充能提供暴击加成
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Healer/HeresyCovenant/HeresyCovenant.png[/img] 赫瑞之孽：大幅强化光辉伤害、暴击，并放大暗影焰与光之咒
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Healer/KarmaCovenant/KarmaCovenant.png[/img] 业果圣契：治疗连击为坩埚充能，持续提升光辉伤害并共享治疗
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Healer/EternalBulwark/EternalBulwark.png[/img] 永恒壁垒：吸收队友伤害，低生命值时生成减伤护盾
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Healer/MichaelasAid/MichaelasAid.png[/img] 米迦勒之助：根据额外治疗获得光辉加成，并提升治疗效率
+[/list]
+
+[h2]魔法剑鞘系列[/h2]
+[list]
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/MagicSheath.png[/img] 魔力剑鞘：消耗魔力生成蕴魔剑，命中回复魔力
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/SpiritMagicSheath.png[/img] 英灵的蕴魔剑鞘：更多蕴魔剑，并提高魔法伤害
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/TerraMagicSheath.png[/img] 泰拉蕴魔剑鞘：召唤追踪泰拉蕴魔剑，提供伤害与防御
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/SpiritBlade.png[/img] 英灵的破刃：增加魔法伤害并让蕴魔剑穿透敌人
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/BlazingScroll.png[/img] 爆炎刃契：蕴魔剑命中造成范围伤害并点燃敌人
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/EnergyScroll.png[/img] 能量刃契：蕴魔剑注入花岗岩能量，使敌人受到更多伤害
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/GeodeScroll.png[/img] 地脉刃契：蕴魔剑剥离敌人，提升其所受伤害
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/HolyScroll.png[/img] 神圣刃契：蕴魔剑施加神圣之怒，使敌人受到更多伤害
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/SoulScroll.png[/img] 幽冥刃契：蕴魔剑命中吸取敌怪生命
+[/list]
+
+[h2]远程饰品[/h2]
+[list]
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Ranged/HellfireGunAcc/HellstoneGunMod.png[/img] 枪械改件（狱岩）：枪械积累热量，满热时获得射速与额外伤害
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Ranged/HellfireGunAcc/GreenDragonGunMod.png[/img] 枪械改件（绿龙）：高暴击与射速，满热时施加诅咒炎
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Ranged/HellfireGunAcc/FleshGunMod.png[/img] 枪械改件（血肉）：提升射速与暴击，满热时施加灵液
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Ranged/HellfireGunAcc/TitanGunMod.png[/img] 枪械改件（泰坦）：牺牲攻速与承伤，换取高额枪械伤害和暴击
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Ranged/HellfireGunAcc/FleshTrigger.png[/img] 血肉扳机：快速积累热量，满热攻击造成可暴击的额外伤害
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Ranged/HellfireGunAcc/DreadQuiver.png[/img] 恐惧箭袋：提升箭伤害、暴击、速度，并降低被瞄准概率
+[/list]
+
+[h2]宝石灵契系列[/h2]
+[list]
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/AmethystContract.png[/img] 紫晶灵契：召唤追踪紫晶矢
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/TopazContract.png[/img] 黄玉灵契：召唤爆炸黄玉矢
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/SapphireContract.png[/img] 蓝玉灵契：召唤双螺旋蓝玉矢
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/EmeraldContract.png[/img] 翡翠灵契：召唤可穿透并生成晶簇的翡翠矢
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/AmberContract.png[/img] 琥珀灵契：召唤可多次折射的琥珀矢
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/RubyContract.png[/img] 红玉灵契：连续释放红玉矢弹幕
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/DiamondContract.png[/img] 钻石灵契：召唤造成高额伤害的巨型钻石矢
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/OpalContract.png[/img] 欧珀灵契：召唤命中后分裂的欧珀矢
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/AquamarineContract.png[/img] 海蓝灵契：召唤可穿透多个敌人的海蓝矢
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineAmethystContract.png[/img] 晶化紫晶灵契：强化追踪紫晶矢并释放晶化碎片
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineTopazContract.png[/img] 晶化黄玉灵契：强化爆裂黄玉矢并释放晶化碎片
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineSapphireContract.png[/img] 晶化蓝玉灵契：成对释放晶化蓝玉矢与碎片
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineEmeraldContract.png[/img] 晶化翡翠灵契：延长晶簇效果并释放晶化碎片
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineAmberContract.png[/img] 晶化琥珀灵契：连续折射晶化琥珀矢
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineRubyContract.png[/img] 晶化红玉灵契：释放更长的晶化红玉弹幕
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineDiamondContract.png[/img] 晶化钻石灵契：召唤毁灭性的巨型晶化钻石矢
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineOpalContract.png[/img] 晶化欧珀灵契：分裂为多枚晶体并释放碎片
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineAquamarineContract.png[/img] 晶化海蓝灵契：强化穿透能力并释放晶化碎片
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/LegendaryContract.png[/img] 传奇灵契：汇聚九彩共鸣，强化召唤攻击并掉落随机强化物
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Images/Items/LegendaryResonance/Prismatic.png[/img] 九彩强化物：拾取后获得一层随机传奇共鸣
+[/list]
+
+欢迎订阅与反馈！

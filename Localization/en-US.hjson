@@ -315,102 +315,263 @@ Mods: {
 			}
 
 			AmethystContract: {
-				Tooltip: ""
+				Tooltip:
+					'''
+					Amethyst seeks and tracks its prey.
+
+					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Hits apply "Amethyst Mark" for 5 seconds.
+
+					"Amethyst Mark": When a minion or sentry attacks the marked target, consumes the mark and releases a homing Amethyst Bolt dealing 100% of the weapon damage when the mark was applied.
+					'''
 				DisplayName: Amethyst Contract
 			}
 
 			TopazContract: {
-				Tooltip: ""
+				Tooltip:
+					'''
+					Topaz unleashes the power of exploding crystals.
+
+					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Hits apply "Topaz Mark" for 5 seconds.
+
+					"Topaz Mark": When a minion or sentry attacks the marked target, consumes the mark and releases a Topaz Bolt dealing 100% of the weapon damage when the mark was applied. On hit, it explodes in a 6-tile radius; the explosion deals 50% of the Topaz Bolt's damage.
+					'''
 				DisplayName: Topaz Contract
 			}
 
 			SapphireContract: {
-				Tooltip: ""
+				Tooltip:
+					'''
+					Sapphire dances through defenses.
+
+					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Hits apply "Sapphire Mark" for 5 seconds.
+
+					"Sapphire Mark": When a minion or sentry attacks the marked target, consumes the mark and releases 2 Sapphire Bolts. Each deals 60% of the weapon damage when the mark was applied and travels along a double-helix trajectory.
+					'''
 				DisplayName: Sapphire Contract
 			}
 
 			EmeraldContract: {
-				Tooltip: ""
+				Tooltip:
+					'''
+					Emerald leaves a crystal hunting mark.
+
+					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Hits apply "Emerald Mark" for 5 seconds.
+
+					"Emerald Mark": When a minion or sentry attacks the marked target, consumes the mark and releases an Emerald Bolt dealing 100% of the weapon damage when the mark was applied. It can pierce 2 enemies. Hitting a tile creates an Emerald Crystal Cluster lasting 3 seconds.
+					'''
 				DisplayName: Emerald Contract
 			}
 
 			AmberContract: {
-				Tooltip: ""
+				Tooltip:
+					'''
+					Amber refracts the attack's trajectory.
+
+					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Hits apply "Amber Mark" for 5 seconds.
+
+					"Amber Mark": When a minion or sentry attacks the marked target, consumes the mark and releases an Amber Bolt. It can refract up to 3 times, dealing 20% less damage after each refraction.
+					'''
 				DisplayName: Amber Contract
 			}
 
 			RubyContract: {
 				DisplayName: Ruby Contract
-				Tooltip: ""
+				Tooltip:
+					'''
+					Ruby releases a crystal barrage.
+
+					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Hits apply "Ruby Mark" for 5 seconds.
+
+					"Ruby Mark": When a minion or sentry attacks the marked target, consumes the mark and releases 3 Ruby Bolts in rapid succession. Each deals 50% of the weapon damage when the mark was applied.
+					'''
 			}
 
 			DiamondContract: {
-				Tooltip: ""
+				Tooltip:
+					'''
+					Diamond gathers pure power.
+
+					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Hits apply "Diamond Mark" for 5 seconds.
+
+					"Diamond Mark": When a minion or sentry attacks the marked target, consumes the mark and releases a giant Diamond Bolt dealing 175% of the weapon damage when the mark was applied.
+					'''
 				DisplayName: Diamond Contract
 			}
 
 			OpalContract: {
 				DisplayName: Opal Contract
-				Tooltip: ""
+				Tooltip:
+					'''
+					Opal refracts the light of all things.
+
+					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Hits apply "Opal Mark" for 5 seconds.
+
+					"Opal Mark": When a minion or sentry attacks the marked target, consumes the mark and releases an Opal Bolt dealing 100% of the weapon damage when the mark was applied. On hit, it splits into 3 crystals, each dealing 35% of the Opal Bolt's damage.
+					'''
 			}
 
 			AquamarineContract: {
 				DisplayName: Aquamarine Contract
-				Tooltip: ""
+				Tooltip:
+					'''
+					Aquamarine pierces the battlefield.
+
+					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Hits apply "Aquamarine Mark" for 5 seconds.
+
+					"Aquamarine Mark": When a minion or sentry attacks the marked target, consumes the mark and releases an Aquamarine Bolt dealing 120% of the weapon damage when the mark was applied. It can pierce 5 enemies; damage is reduced by 20% after each hit.
+					'''
 			}
 
 			CrystallineAmethystContract: {
 				DisplayName: Crystalline Amethyst Contract
-				Tooltip: ""
+				Tooltip:
+					'''
+					Crystalline Amethyst tracks its prey.
+
+					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Hits apply "Crystalline Amethyst Mark" for 5 seconds.
+
+					"Crystalline Amethyst Mark": When a minion or sentry attacks the marked target, consumes the mark and releases a homing Crystalline Amethyst Bolt dealing 115% of the weapon damage when the mark was applied, plus 2 Crystalline Shards.
+					'''
 			}
 
 			CrystallineTopazContract: {
 				DisplayName: Crystalline Topaz Contract
-				Tooltip: ""
+				Tooltip:
+					'''
+					Crystalline Topaz enhances explosions.
+
+					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Hits apply "Crystalline Topaz Mark" for 5 seconds.
+
+					"Crystalline Topaz Mark": When a minion or sentry attacks the marked target, consumes the mark and releases a Crystalline Topaz Bolt dealing 115% of the weapon damage when the mark was applied, plus an Enhanced Explosion and 2 Crystalline Shards.
+					'''
 			}
 
 			CrystallineSapphireContract: {
 				DisplayName: Crystalline Sapphire Contract
-				Tooltip: ""
+				Tooltip:
+					'''
+					Crystalline Sapphire dances in pairs.
+
+					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Hits apply "Crystalline Sapphire Mark" for 5 seconds.
+
+					"Crystalline Sapphire Mark": When a minion or sentry attacks the marked target, consumes the mark and releases 2 Crystalline Sapphire Bolts. Each deals 70% of the weapon damage when the mark was applied, plus 2 Crystalline Shards.
+					'''
 			}
 
 			CrystallineEmeraldContract: {
 				DisplayName: Crystalline Emerald Contract
-				Tooltip: ""
+				Tooltip:
+					'''
+					Crystalline Emerald extends the hunting mark.
+
+					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Hits apply "Crystalline Emerald Mark" for 5 seconds.
+
+					"Crystalline Emerald Mark": When a minion or sentry attacks the marked target, consumes the mark and releases a Crystalline Emerald Bolt dealing 115% of the weapon damage when the mark was applied. It can pierce 3 enemies. Hitting a tile creates a Crystalline Emerald Cluster lasting 4 seconds, plus 2 Crystalline Shards.
+					'''
 			}
 
 			CrystallineAmberContract: {
 				DisplayName: Crystalline Amber Contract
-				Tooltip: ""
+				Tooltip:
+					'''
+					Crystalline Amber refracts repeatedly.
+
+					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Hits apply "Crystalline Amber Mark" for 5 seconds.
+
+					"Crystalline Amber Mark": When a minion or sentry attacks the marked target, consumes the mark and releases a Crystalline Amber Bolt dealing 115% of the weapon damage when the mark was applied. It can refract up to 4 times, dealing 20% less damage after each refraction, plus 2 Crystalline Shards.
+					'''
 			}
 
 			CrystallineRubyContract: {
 				DisplayName: Crystalline Ruby Contract
-				Tooltip: ""
+				Tooltip:
+					'''
+					Crystalline Ruby releases a continuous barrage.
+
+					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Hits apply "Crystalline Ruby Mark" for 5 seconds.
+
+					"Crystalline Ruby Mark": When a minion or sentry attacks the marked target, consumes the mark and releases 4 Crystalline Ruby Bolts in rapid succession. Each deals 50% of the weapon damage when the mark was applied, plus 2 Crystalline Shards.
+					'''
 			}
 
 			CrystallineDiamondContract: {
-				Tooltip: ""
+				Tooltip:
+					'''
+					Crystalline Diamond gathers ultimate power.
+
+					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Hits apply "Crystalline Diamond Mark" for 5 seconds.
+
+					"Crystalline Diamond Mark": When a minion or sentry attacks the marked target, consumes the mark and releases a giant Crystalline Diamond Bolt dealing 200% of the weapon damage when the mark was applied, plus 2 Crystalline Shards.
+					'''
 				DisplayName: Crystalline Diamond Contract
 			}
 
 			CrystallineOpalContract: {
 				DisplayName: Crystalline Opal Contract
-				Tooltip: ""
+				Tooltip:
+					'''
+					Crystalline Opal bursts with iridescent color.
+
+					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Hits apply "Crystalline Opal Mark" for 5 seconds.
+
+					"Crystalline Opal Mark": When a minion or sentry attacks the marked target, consumes the mark and releases a Crystalline Opal Bolt dealing 115% of the weapon damage when the mark was applied. On hit, it splits into 4 crystals, each dealing 35% of the Crystalline Opal Bolt's damage, plus 2 Crystalline Shards.
+					'''
 			}
 
 			CrystallineAquamarineContract: {
 				DisplayName: Crystalline Aquamarine Contract
-				Tooltip: ""
+				Tooltip:
+					'''
+					Crystalline Aquamarine pierces the battlefield.
+
+					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Hits apply "Crystalline Aquamarine Mark" for 5 seconds.
+
+					"Crystalline Aquamarine Mark": When a minion or sentry attacks the marked target, consumes the mark and releases a Crystalline Aquamarine Bolt dealing 130% of the weapon damage when the mark was applied. It can pierce 5 enemies; damage is reduced by 15% after each hit, plus 2 Crystalline Shards.
+					'''
 			}
 
 			LegendaryContract: {
-				Tooltip: ""
+				Tooltip:
+					'''
+					Nine colors become legendary, resonating with the power of all things.
+
+					While equipped: whip range increased by 10%, maximum minions increased by 1, and maximum sentries increased by 1.
+					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Hits apply 「Legendary Sigil」 for 5 seconds.
+
+					「Legendary Sigil」: When a minion or sentry attacks the marked target, consumes the mark, deals 80% of the weapon damage when the mark was applied, and inflicts 「Legendary Resonance」 for 6 seconds.
+
+					「Legendary Resonance」: Summon attacks gain 20% marked critical strike chance, plus marked critical strike chance equal to 25% of your magic critical strike chance. Marked critical hits drop Rainbow Enhancements.
+
+					Picking up a Rainbow Enhancement grants a random Resonance stack and restores a small amount of life, mana, and inspiration. Up to 9 stacks; each lasts 8 seconds.
+					'''
 				DisplayName: Legendary Contract
 			}
 
 			LegendaryResonancePickupItem: {
-				Tooltip: ""
+				Tooltip:
+					'''
+					Grants one stack of Legendary Resonance when picked up.
+					Grants the corresponding Resonance effect based on its color.
+					'''
 				DisplayName: Legendary Resonance Pickup Item
 			}
 		}
