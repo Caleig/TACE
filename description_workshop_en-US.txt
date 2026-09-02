@@ -1,68 +1,65 @@
 [h1]Thorium Accessory Expansion[/h1]
-
-An add-on for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2909886416]Thorium[/url] that expands accessory progression for several classes. The current focus is the Dark-Healer branch, with additional magic, ranged, summon, and general accessories.
+An accessory add-on for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2909886416]Thorium[/url], focused on Dark-Healer progression with magic, ranged, summon, and general accessories.
 
 [h2]General[/h2]
 [list]
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Generic/BlazingLightBalloonBundle/BlazingLightBalloonBundle.png[/img] Blazing Light Balloon Bundle: quadruple jump, acceleration, fall-damage immunity, and spirit-flame dashes.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Generic/BlazingLightBalloonBundle/BlazingLightBalloonBundle.png[/img] Blazing Light Balloon Bundle: quadruple jump and spirit-flame dash.
 [/list]
 
 [h2]Healer[/h2]
 [list]
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Healer/CursedCovenant/CursedCovenant.png[/img] Cursed Covenant: empower radiant attacks at the cost of life and build Fallen Charge.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Healer/BoneCovenant/BoneCovenant.png[/img] Bone Covenant: reduce healing to gain a higher radiant-damage ceiling.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Healer/FallenCovenant/FallenCovenant.png[/img] Fallen Covenant: stronger life costs and radiant damage, with critical bonuses at full charge.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Healer/HeresyCovenant/HeresyCovenant.png[/img] Heresy Covenant: greatly boost radiant damage and critical chance, amplifying Shadowflame and Cursed Light.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Healer/KarmaCovenant/KarmaCovenant.png[/img] Karma Covenant: fuel an ancient crucible with healing streaks to share healing and increase radiant damage.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Healer/EternalBulwark/EternalBulwark.png[/img] Eternal Bulwark: absorb team damage and gain a protective bubble at low life.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Healer/MichaelasAid/MichaelasAid.png[/img] Michaela's Aid: gain radiant bonuses from bonus healing and improve healing efficiency.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Healer/CursedCovenant/CursedCovenant.png[/img] Cursed Covenant: radiant power for life and Fallen Charge.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Healer/BoneCovenant/BoneCovenant.png[/img] Bone Covenant: less healing, higher radiant damage.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Healer/FallenCovenant/FallenCovenant.png[/img] Fallen Covenant: life cost and radiant critical bonuses.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Healer/HeresyCovenant/HeresyCovenant.png[/img] Heresy Covenant: radiant damage and Shadowflame amplification.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Healer/KarmaCovenant/KarmaCovenant.png[/img] Karma Covenant: healing fuels radiant damage and shared healing.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Healer/EternalBulwark/EternalBulwark.png[/img] Eternal Bulwark: absorb team damage; bubble at low life.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Healer/MichaelasAid/MichaelasAid.png[/img] Michaela's Aid: bonus healing grants radiant power.
 [/list]
 
 [h2]Magic Sheaths[/h2]
 [list]
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/MagicSheath.png[/img] Magic Sheath: summon Magic Swords by spending mana; sword hits restore mana.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/SpiritMagicSheath.png[/img] Spirit Magic Sheath: summon more Magic Swords and increase magic damage.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/TerraMagicSheath.png[/img] Terra Magic Sheath: summon homing Terra Magic Swords for damage and defense.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/SpiritBlade.png[/img] Spirit Blade: increase magic damage and let Magic Swords pierce enemies.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/BlazingScroll.png[/img] Blazing Scroll: Magic Sword hits deal area damage and ignite enemies.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/EnergyScroll.png[/img] Energy Scroll: Magic Sword hits infuse enemies with granite energy, increasing damage taken.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/GeodeScroll.png[/img] Geode Scroll: Magic Sword hits sunder enemies, increasing damage taken.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/HolyScroll.png[/img] Holy Scroll: Magic Sword hits inflict Holy Glare, increasing damage taken.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/SoulScroll.png[/img] Soul Scroll: Magic Sword hits drain life from enemies.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/MagicSheath.png[/img] Magic Sheath: mana-powered swords restore mana.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/SpiritMagicSheath.png[/img] Spirit Magic Sheath: more swords and magic damage.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/TerraMagicSheath.png[/img] Terra Magic Sheath: homing swords, damage, and defense.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/SpiritBlade.png[/img] Spirit Blade: magic damage and sword piercing.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/BlazingScroll.png[/img] Blazing Scroll: sword area damage and ignition.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/EnergyScroll.png[/img] Energy Scroll: granite energy increases damage taken.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/GeodeScroll.png[/img] Geode Scroll: sunder increases damage taken.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/HolyScroll.png[/img] Holy Scroll: Holy Glare increases damage taken.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Magic/MagicSheath/SoulScroll.png[/img] Soul Scroll: sword hits drain life.
 [/list]
 
 [h2]Ranged[/h2]
 [list]
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Ranged/HellfireGunAcc/HellstoneGunMod.png[/img] Hellstone Gun Modification: build heat with gun attacks for attack speed and bonus damage at full heat.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Ranged/HellfireGunAcc/GreenDragonGunMod.png[/img] Green Dragon Gun Modification: high crit and attack speed; full heat applies Cursed Inferno.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Ranged/HellfireGunAcc/FleshGunMod.png[/img] Flesh Gun Modification: increase attack speed and crit; full heat applies Ichor.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Ranged/HellfireGunAcc/TitanGunMod.png[/img] Titan Gun Modification: trade attack speed and defense for massive gun damage and critical strikes.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Ranged/HellfireGunAcc/FleshTrigger.png[/img] Flesh Trigger: build heat quickly and deal extra critical-capable damage at full heat.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Ranged/HellfireGunAcc/DreadQuiver.png[/img] Dread Quiver: increase arrow damage, crit, and velocity while reducing enemy targeting.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Ranged/GunModification/HellstoneGunMod.png[/img] Hellstone Gun Modification: heat grants speed and bonus damage.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Ranged/GunModification/GreenDragonGunMod.png[/img] Green Dragon Gun Modification: crit, speed, and Cursed Inferno.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Ranged/GunModification/FleshGunMod.png[/img] Flesh Gun Modification: speed, crit, and Ichor.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Ranged/GunModification/TitanGunMod.png[/img] Titan Gun Modification: trade speed and defense for damage.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Ranged/GunModification/FleshTrigger.png[/img] Flesh Trigger: rapid heat and critical bonus damage.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Ranged/GunModification/DreadQuiver.png[/img] Dread Quiver: arrow damage, crit, velocity, and stealth.
 [/list]
 
 [h2]Gem Contracts[/h2]
 [list]
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/AmethystContract.png[/img] Amethyst Contract: summon homing Amethyst Bolts.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/TopazContract.png[/img] Topaz Contract: summon explosive Topaz Bolts.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/SapphireContract.png[/img] Sapphire Contract: summon double-helix Sapphire Bolts.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/EmeraldContract.png[/img] Emerald Contract: summon piercing Emerald Bolts that create crystal clusters.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/AmberContract.png[/img] Amber Contract: summon Amber Bolts that refract multiple times.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/RubyContract.png[/img] Ruby Contract: unleash a barrage of Ruby Bolts.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/DiamondContract.png[/img] Diamond Contract: summon a giant, high-damage Diamond Bolt.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/OpalContract.png[/img] Opal Contract: summon Opal Bolts that split into crystals on hit.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/AquamarineContract.png[/img] Aquamarine Contract: summon bolts that pierce multiple enemies.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineAmethystContract.png[/img] Crystalline Amethyst Contract: empower homing Amethyst Bolts and release shards.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineTopazContract.png[/img] Crystalline Topaz Contract: empower explosive Topaz Bolts and release shards.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineSapphireContract.png[/img] Crystalline Sapphire Contract: fire paired Crystalline Sapphire Bolts and shards.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineEmeraldContract.png[/img] Crystalline Emerald Contract: extend crystal clusters and release shards.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineAmberContract.png[/img] Crystalline Amber Contract: repeatedly refract Crystalline Amber Bolts.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineRubyContract.png[/img] Crystalline Ruby Contract: unleash a longer Crystalline Ruby barrage.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineDiamondContract.png[/img] Crystalline Diamond Contract: summon a devastating giant Crystalline Diamond Bolt.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineOpalContract.png[/img] Crystalline Opal Contract: split into multiple crystals and release shards.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineAquamarineContract.png[/img] Crystalline Aquamarine Contract: improve piercing and release crystalline shards.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/LegendaryContract.png[/img] Legendary Contract: gather nine-color resonance, empower summons, and drop random enhancements.
-[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Images/Items/LegendaryResonance/Prismatic.png[/img] Rainbow Enhancement: gain one random Legendary Resonance stack when picked up.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/AmethystContract.png[/img] Amethyst Contract: homing Amethyst Bolts.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/TopazContract.png[/img] Topaz Contract: explosive Topaz Bolts.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/SapphireContract.png[/img] Sapphire Contract: double-helix Bolts.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/EmeraldContract.png[/img] Emerald Contract: piercing Bolts and crystal clusters.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/AmberContract.png[/img] Amber Contract: refracting Bolts.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/RubyContract.png[/img] Ruby Contract: Bolt barrage.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/DiamondContract.png[/img] Diamond Contract: giant high-damage Bolt.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/OpalContract.png[/img] Opal Contract: Bolts split into crystals.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/AquamarineContract.png[/img] Aquamarine Contract: piercing Bolts.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineAmethystContract.png[/img] Crystalline Amethyst Contract: homing Bolts and shards.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineTopazContract.png[/img] Crystalline Topaz Contract: explosive Bolts and shards.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineSapphireContract.png[/img] Crystalline Sapphire Contract: paired Bolts and shards.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineEmeraldContract.png[/img] Crystalline Emerald Contract: clusters and shards.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineAmberContract.png[/img] Crystalline Amber Contract: repeated refraction.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineRubyContract.png[/img] Crystalline Ruby Contract: extended barrage and shards.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineDiamondContract.png[/img] Crystalline Diamond Contract: devastating giant Bolt.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineOpalContract.png[/img] Crystalline Opal Contract: crystal split and shards.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/CrystallineAquamarineContract.png[/img] Crystalline Aquamarine Contract: piercing and shards.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Accessories/Summon/GemContract/LegendaryContract.png[/img] Legendary Contract: nine-color resonance.
+[*][img]https://raw.githubusercontent.com/Caleig/TACE/main/Images/Items/LegendaryResonance/Prismatic.png[/img] Rainbow Enhancement: random resonance stack.
 [/list]
-
-Welcome to Subscribe and share feedback!
