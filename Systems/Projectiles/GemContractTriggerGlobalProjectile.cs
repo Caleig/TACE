@@ -95,7 +95,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
 
 
-            if (mark.ConsumeGemMark())
+            if (mark.ConsumeGemMark(target))
             {
 
                 int proj =
@@ -157,7 +157,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         if (mark.HasGemMark(GemType.Amethyst))
         {
 
-            mark.ConsumeGemMark();
+            mark.ConsumeGemMark(target);
 
 
             int proj =
@@ -180,7 +180,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
         else if (mark.HasGemMark(GemType.CrystallineAmethyst))
         {
-            mark.ConsumeGemMark();
+            mark.ConsumeGemMark(target);
 
 
             int proj =
@@ -233,7 +233,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         else if (mark.HasGemMark(GemType.Topaz))
         {
 
-            mark.ConsumeGemMark();
+            mark.ConsumeGemMark(target);
 
 
             int proj =
@@ -256,7 +256,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
         else if (mark.HasGemMark(GemType.CrystallineTopaz))
         {
-            mark.ConsumeGemMark();
+            mark.ConsumeGemMark(target);
 
 
             int proj =
@@ -309,7 +309,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         else if (mark.HasGemMark(GemType.Sapphire))
         {
 
-            mark.ConsumeGemMark();
+            mark.ConsumeGemMark(target);
 
 
             Vector2 direction =
@@ -351,7 +351,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         else if (mark.HasGemMark(GemType.CrystallineSapphire))
         {
 
-            mark.ConsumeGemMark();
+            mark.ConsumeGemMark(target);
 
 
             Vector2 direction =
@@ -422,7 +422,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         else if (mark.HasGemMark(GemType.Emerald))
         {
 
-            mark.ConsumeGemMark();
+            mark.ConsumeGemMark(target);
 
 
             Vector2 emeraldVelocity =
@@ -453,7 +453,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
         else if (mark.HasGemMark(GemType.CrystallineEmerald))
         {
-            mark.ConsumeGemMark();
+            mark.ConsumeGemMark(target);
 
 
             Vector2 emeraldVelocity =
@@ -512,7 +512,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         else if (mark.HasGemMark(GemType.Amber))
         {
 
-            mark.ConsumeGemMark();
+            mark.ConsumeGemMark(target);
 
 
             Vector2 amberVelocity =
@@ -543,7 +543,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
         else if (mark.HasGemMark(GemType.CrystallineAmber))
         {
-            mark.ConsumeGemMark();
+            mark.ConsumeGemMark(target);
 
 
             Vector2 amberVelocity =
@@ -601,7 +601,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
         else if (mark.HasGemMark(GemType.Ruby))
         {
-            mark.ConsumeGemMark();
+            mark.ConsumeGemMark(target);
 
 
             Vector2 direction =
@@ -629,7 +629,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
         else if (mark.HasGemMark(GemType.CrystallineRuby))
         {
-            mark.ConsumeGemMark();
+            mark.ConsumeGemMark(target);
 
 
             Vector2 direction =
@@ -689,7 +689,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         else if (mark.HasGemMark(GemType.Diamond))
         {
 
-            mark.ConsumeGemMark();
+            mark.ConsumeGemMark(target);
 
 
             Player player =
@@ -735,7 +735,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         else if (mark.HasGemMark(GemType.CrystallineDiamond))
         {
 
-            mark.ConsumeGemMark();
+            mark.ConsumeGemMark(target);
 
 
             Player player =
@@ -812,7 +812,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         else if (mark.HasGemMark(GemType.Opal))
         {
 
-            mark.ConsumeGemMark();
+            mark.ConsumeGemMark(target);
 
 
             Vector2 velocity =
@@ -844,7 +844,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         else if (mark.HasGemMark(GemType.CrystallineOpal))
         {
 
-            mark.ConsumeGemMark();
+            mark.ConsumeGemMark(target);
 
 
             Vector2 velocity =
@@ -904,7 +904,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         else if (mark.HasGemMark(GemType.Aquamarine))
         {
 
-            mark.ConsumeGemMark();
+            mark.ConsumeGemMark(target);
 
 
             Vector2 velocity =
@@ -935,7 +935,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
         else if (mark.HasGemMark(GemType.CrystallineAquamarine))
         {
-            mark.ConsumeGemMark();
+            mark.ConsumeGemMark(target);
 
 
             Vector2 velocity =

@@ -36,7 +36,7 @@ namespace ThoriumAccessoryExpansion.NPCs
 
                 if (gemMarkTime <= 0)
                 {
-                    ClearMark();
+                    ClearMark(npc);
                 }
             }
 
@@ -92,6 +92,7 @@ namespace ThoriumAccessoryExpansion.NPCs
 
 
         public void AddGemMark(
+            NPC npc,
             GemType type,
             int time,
             int damage,
@@ -105,7 +106,12 @@ namespace ThoriumAccessoryExpansion.NPCs
             gemDamage = damage;
 
             gemOwner = owner;
+            Player player = Main.player[owner];
 
+            if (player.active)
+            {
+                player.MinionAttackTargetNPC = npc.whoAmI;
+            }
         }
 
 
@@ -118,32 +124,34 @@ namespace ThoriumAccessoryExpansion.NPCs
 
 
 
-        public bool ConsumeGemMark()
+        public bool ConsumeGemMark(NPC npc)
         {
-
             if (gemType == GemType.None)
                 return false;
 
-
-            ClearMark();
-
+            ClearMark(npc);
             return true;
-
         }
 
 
 
-        private void ClearMark()
+        private void ClearMark(NPC npc)
         {
+            if (gemOwner >= 0 && gemOwner < Main.maxPlayers)
+            {
+                Player player = Main.player[gemOwner];
+
+                if (player.active &&
+                    player.MinionAttackTargetNPC == npc.whoAmI)
+                {
+                    player.MinionAttackTargetNPC = -1;
+                }
+            }
 
             gemType = GemType.None;
-
             gemMarkTime = 0;
-
             gemDamage = 0;
-
             gemOwner = -1;
-
         }
 
 

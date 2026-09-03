@@ -7,12 +7,9 @@ namespace ThoriumAccessoryExpansion.Systems.Projectiles
     public class MagicContractGlobalProjectile : GlobalProjectile
     {
         public bool magicConverted;
-
         public bool gemProjectile;
 
-
         public override bool InstancePerEntity => true;
-
 
         public override void OnSpawn(
             Projectile projectile,
@@ -22,7 +19,6 @@ namespace ThoriumAccessoryExpansion.Systems.Projectiles
 
             if (!player.active)
                 return;
-
             if (source is EntitySource_Parent parent)
             {
                 if (parent.Entity is Projectile parentProjectile)
@@ -30,30 +26,34 @@ namespace ThoriumAccessoryExpansion.Systems.Projectiles
                     MagicContractGlobalProjectile parentData =
                         parentProjectile.GetGlobalProjectile<MagicContractGlobalProjectile>();
 
-
                     if (parentData.magicConverted)
                     {
                         magicConverted = true;
-
                         projectile.DamageType = DamageClass.Summon;
-
                         return;
                     }
                 }
             }
-
+            if (source is EntitySource_ItemUse_WithAmmo itemSource)
+            {
+                if (MagicContractGlobalItem.IsMagicContractWeapon(
+                        itemSource.Item,
+                        player))
+                {
+                    magicConverted = true;
+                    projectile.DamageType = DamageClass.Summon;
+                    return;
+                }
+            }
             if (!MagicContractGlobalItem.IsMagicContractWeapon(
-                player.HeldItem,
-                player))
+                    player.HeldItem,
+                    player))
                 return;
 
             if (projectile.DamageType != DamageClass.Magic)
                 return;
 
-
-
             magicConverted = true;
-
             projectile.DamageType = DamageClass.Summon;
         }
 
