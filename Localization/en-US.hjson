@@ -574,6 +574,31 @@ Mods: {
 					'''
 				DisplayName: Legendary Resonance Pickup Item
 			}
+
+			CrystallineRetaliationShield: {
+				Tooltip: ""
+				DisplayName: Crystalline Retaliation Shield
+			}
+
+			TectonicAccumulationShield: {
+				DisplayName: Tectonic Accumulation Shield
+				Tooltip: ""
+			}
+
+			BurstingBarrier: {
+				Tooltip: ""
+				DisplayName: Bursting Barrier
+			}
+
+			VoidmetalRetaliationShield: {
+				Tooltip: ""
+				DisplayName: Voidmetal Retaliation Shield
+			}
+
+			PiercingBarrier: {
+				DisplayName: Piercing Barrier
+				Tooltip: ""
+			}
 		}
 
 		Projectiles: {
