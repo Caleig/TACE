@@ -8,17 +8,17 @@ Mods: {
 
 			LifeReganBuff: {
 				Description: Rapidly regenerating life
-				DisplayName: Life Regan Buff
+				DisplayName: Life Regeneration
 			}
 
 			EternalBulwarkAbsorbBuff: {
 				Description: Redirecting damage
-				DisplayName: Eternal Bulwark Absorb Buff
+				DisplayName: Damage Absorption
 			}
 
 			DefenseBuff: {
 				Description: Take 25% less damage, life regenerates rapidly
-				DisplayName: Defense Buff
+				DisplayName: Defense Enhancement
 			}
 
 			LifeDrainCooldown: {
@@ -32,12 +32,12 @@ Mods: {
 			}
 
 			LegendaryResonanceBuff: {
-				Description: Legendary resonance is gathering rainbow power
+				Description: Legendary Resonance is gathering the power of all nine colors
 				DisplayName: Legendary Resonance
 				Stacks: Resonance Stacks: {0}/9
 				Amethyst: Amethyst ×{0}: Damage +{1}%
-				Topaz: Topaz ×{0}: Crit Chance +{1}%
-				Sapphire: Sapphire ×{0}: Move Speed +{1}%
+				Topaz: Topaz ×{0}: Critical Strike Chance +{1}%
+				Sapphire: Sapphire ×{0}: Movement Speed +{1}%
 				Emerald: Emerald ×{0}: Armor Penetration +{1}
 				Amber: Amber ×{0}: Maximum Life +{1}%
 				Ruby: Ruby ×{0}: Damage Reduction +{1}%
@@ -49,15 +49,15 @@ Mods: {
 
 		Items: {
 			BlazingLightBalloonBundle: {
-				DisplayName: Blazing Light Balloon Bundle
+				DisplayName: Blazing Light Spirit Orbs
 				Tooltip:
 					'''
 					"Four spirit orbs infused with the swift power of a fox spirit"
-					Grants the ability to perform a quadruple jump
+					Allows you to perform a quadruple jump
 					Increases movement acceleration and jump height, and negates fall damage
 					Hold DOWN to fall quickly
-					Slowly generates up to 3 spirit flames, letting you consume one to dash toward the cursor
-					Press 'Accessory Ability' key to dash
+					Slowly generates up to 3 Spirit Flames, allowing you to consume one to dash toward the cursor
+					Press the "Accessory Ability" key to dash
 					Counts as wings when equipped
 					'''
 			}
@@ -67,7 +67,7 @@ Mods: {
 				Tooltip:
 					'''
 					Empowers certain radiant attacks with dark energy
-					Healing spells heal 1 less life
+					Healing spells heal for 1 less life
 					Using radiant weapons costs an additional 1 life
 					Using radiant weapons steadily accumulates Fallen Charge
 					Fallen Charge increases radiant damage by up to 10
@@ -90,12 +90,12 @@ Mods: {
 				Tooltip:
 					'''
 					Grants immunity to knockback
-					Absorbs 25% of damage done to players on your team when above 25% life
+					While above 25% life, absorbs 25% of the damage taken by players on your team
 					Enemies are more likely to target you
-					Increases your life regeneration speed
+					Increases your life regeneration rate
 					While below 25% life, taking damage surrounds you with a protective bubble
-					While inside the bubble, you recover life each second equal to a +5 healing bonus and take 25% less damage
-					The bubble also fully negates 1 instance of incoming damage over 15 seconds
+					While inside the bubble, you recover life each second equal to your healing bonus +5 and take 25% less damage
+					The bubble also completely negates 1 instance of incoming damage within 15 seconds
 					This effect can only trigger once every 45 seconds
 					'''
 			}
@@ -105,7 +105,7 @@ Mods: {
 				Tooltip:
 					'''
 					Empowers certain radiant attacks with dark energy
-					Healing spells heal 1 less life
+					Healing spells heal for 1 less life
 					Using radiant weapons costs an additional 2 life
 					Using radiant weapons steadily accumulates Fallen Charge
 					Fallen Charge increases radiant damage by up to 12
@@ -114,16 +114,16 @@ Mods: {
 			}
 
 			HeresyCovenant: {
-				DisplayName: Heresy Covenant
+				DisplayName: Heresy
 				Tooltip:
 					'''
 					Empowers certain radiant attacks with dark energy
 					Increases radiant damage by 20%
 					Increases radiant critical strike chance by 15%
-					Healing spells heal 1 less life
+					Healing spells heal for 1 less life
 					For every 2 life spent by radiant spells, restores 1 life
 					Enemies you hit take 100% increased damage over time from Shadowflame and Cursed Light debuffs
-					Enemies afflicted by Shadowflame and Cursed Light take 15% more damage and increase your own life regeneration
+					Enemies afflicted by Shadowflame and Cursed Light take 15% more damage and increase your life regeneration
 					'''
 			}
 
@@ -131,28 +131,28 @@ Mods: {
 				DisplayName: Karma Covenant
 				Tooltip:
 					'''
-					Your healing streak fuels an ancient crucible every 100 life up to 500 total
-					The crucible increases your radiant damage by 8% per 100 life in the crucible
+					Every 100 healing in your healing streak fuels an ancient crucible, up to 500 total
+					Each 100 life stored in the crucible increases your radiant damage by 8%
 					Empowers certain radiant attacks with dark energy
 					Using radiant weapons costs an additional 3 life
 					Using radiant weapons steadily accumulates Fallen Charge
 					Fallen Charge increases radiant damage by up to 15
 					At maximum Fallen Charge, grants 15% radiant damage and 8% radiant critical strike chance
-					At maximum Fallen Charge, the healing from Soul Essence is shared with nearby teammates
+					At maximum Fallen Charge, the healing from Soul Essence is shared with nearby allies
 					'''
 			}
 
 			MichaelasAid: {
-				DisplayName: Michaelas Aid
+				DisplayName: Michaela's Aid
 				Tooltip:
 					'''
-					"Quis ut Deus? — and the heavens answer."
+					"Who can compare to God?"
 					Empowers your radiant attacks with holy energy
-					Enemies you hit grant you more Soul Essence
+					Enemies you hit grant you additional Soul Essence
 					Grants comprehensive radiant bonuses based on your bonus healing
-					Increases maximum health and mana by 10
+					Increases maximum life and mana by 10
 					Increases healing speed by 20%
-					Healing spells heal an additional 2 life
+					Healing spells heal for an additional 2 life
 					'''
 			}
 
@@ -160,20 +160,20 @@ Mods: {
 				DisplayName: Spirit Blade
 				Tooltip:
 					'''
-					+5 magic damage
-					Allows the Magic Sword to pierce through 2 enemies
+					Increases magic damage by 5
+					Allows the Magic Sword to pierce 2 additional enemies
 					'''
 			}
 
 			MagicSheath: {
 				Tooltip:
 					'''
-					15 basic magic damage
+					Magic Swords deal 15% of the held magic weapon's final damage
 					Consuming mana has a low chance to summon 1 Magic Sword
-					Flies toward the cursor when mana falls below 25%
+					When mana falls below 25%, Magic Swords begin automatically homing toward nearby enemies
 					Magic Sword hits restore 10% of your maximum mana
 					Up to 2 Magic Swords can exist at once
-					Each active sword increases mana costs by 5%
+					Each active Magic Sword increases mana costs by 5%
 					'''
 				DisplayName: Magic Sheath
 			}
@@ -182,12 +182,13 @@ Mods: {
 				DisplayName: Spirit Magic Sheath
 				Tooltip:
 					'''
-					30 basic magic damage
+					Magic Swords deal 30% of the held magic weapon's final damage
 					Consuming mana has a medium chance to summon 1 Magic Sword
-					Flies toward the cursor when mana falls below 30%
+					When mana falls below 30%, Magic Swords begin automatically homing toward nearby enemies
+					Magic Swords can pierce 2 additional enemies
 					Magic Sword hits restore 15% of your maximum mana
 					Up to 3 Magic Swords can exist at once
-					Each active sword increases mana costs by 5% and magic damage by 3
+					Each active Magic Sword increases magic damage by 3 and mana costs by 5%
 					'''
 			}
 
@@ -195,95 +196,106 @@ Mods: {
 				DisplayName: Terra Magic Sheath
 				Tooltip:
 					'''
-					+15% magic damage
-					Magic Swords deal 50% of the held weapon's damage
-					Consuming mana has a high chance to summon 1 Terra Magic Sword
-					Flies toward the cursor and homes in on enemies when mana falls below 35%
+					Increases magic damage by 15%
+					Magic Swords deal 50% of the held magic weapon's final damage
+					Consuming mana has a high chance to summon 1 Magic Sword
+					When mana falls below 35%, Magic Swords begin automatically homing toward nearby enemies
+					Magic Swords can pierce 4 additional enemies
 					Magic Sword hits restore 15% of your maximum mana
-					Up to 4 Terra Magic Swords can exist at once
-					Each active sword increases magic damage by 4, defense by 3, and mana costs by 5%
+					Up to 4 Magic Swords can exist at once
+					Each active Magic Sword increases magic damage by 4, defense by 3, and mana costs by 5%
 					'''
 			}
 
 			BlazingScroll: {
-				DisplayName: Blazing Scroll
-				Tooltip: Magic Sword hits deal area damage and ignite enemies
+				DisplayName: Blazing Blade Contract
+				Tooltip:
+					'''
+					Increases magic damage by 12%
+					Magic Sword hits deal area damage and inflict Shadowflame
+					'''
 			}
 
 			EnergyScroll: {
-				DisplayName: Energy Scroll
+				DisplayName: Energy Blade Contract
 				Tooltip:
 					'''
-					Magic Sword hits infuse enemies with granite energy
-					Infused enemies take 5% increased damage
+					Increases maximum mana by 40
+					Reduces magic weapon mana costs by 5%
+					Magic Sword hits infuse enemies with Granite Energy
 					'''
 			}
 
 			GeodeScroll: {
-				DisplayName: Geode Scroll
+				DisplayName: Geode Blade Contract
 				Tooltip:
 					'''
-					Magic Sword hits sunder enemies
-					Sundered enemies take 10% increased damage
+					Increases armor penetration by 8
+					Magic Sword hits cause enemies to become Sundered
 					'''
 			}
 
 			HolyScroll: {
-				DisplayName: Holy Scroll
+				DisplayName: Holy Blade Contract
 				Tooltip:
 					'''
-					Magic Sword hits ignite enemies with Holy Glare
-					Enemies afflicted with Holy Glare take 15% increased damage
+					Increases magic critical strike chance by 8%
+					Magic Sword hits scorch enemies with Holy Wrath
 					'''
 			}
 
 			SoulScroll: {
-				DisplayName: Soul Scroll
-				Tooltip: Magic Sword hits drain life from enemies
+				DisplayName: Nether Blade Contract
+				Tooltip:
+					'''
+					Increases magic damage by 10%
+					Increases life regeneration by 4
+					Magic Sword hits drain life from enemies
+					'''
 			}
 
 			HellstoneGunMod: {
-				DisplayName: Hellstone Gun Modification
+				DisplayName: Gun Modification (Hellstone)
 				Tooltip:
 					'''
 					Gun critical strike chance increased by 5%
 					Gun attack speed increased by 5%
-					Gun attacks build heat (1 per attack, max 100)
-					At full heat: attack speed +10%, attacks consume 2 heat, deal 5 bonus damage (cannot crit) and apply Hellfire
-					Heat only builds again after fully spent
+					Weapon attacks generate Heat (1 per attack, maximum 100)
+					At full Heat, attack speed +10%, attacks consume 2 Heat, deal 5 bonus fixed damage (cannot crit), and inflict Hellfire
+					Heat can only begin building again after being fully depleted
 					'''
 			}
 
 			GreenDragonGunMod: {
-				DisplayName: Green Dragon Gun Modification
+				DisplayName: Gun Modification (Green Dragon)
 				Tooltip:
 					'''
 					Gun critical strike chance increased by 12%
 					Gun attack speed increased by 8%
-					Gun attacks build heat (1 per attack, max 100)
-					At full heat: attacks consume 1 heat, deal 10 bonus damage (cannot crit) and apply Cursed Inferno
-					Heat only builds again after fully spent
+					Weapon attacks generate Heat (1 per attack, maximum 100)
+					At full Heat, attacks consume 1 Heat, deal 10 bonus fixed damage (cannot crit), and inflict Cursed Inferno
+					Heat can only begin building again after being fully depleted
 					'''
 			}
 
 			FleshGunMod: {
-				DisplayName: Flesh Gun Modification
+				DisplayName: Gun Modification (Flesh)
 				Tooltip:
 					'''
 					Gun critical strike chance increased by 8%
 					Gun attack speed increased by 12%
-					Gun attacks build heat (1 per attack, max 100)
-					At full heat: attacks consume 1 heat, deal 6 bonus damage (cannot crit) and apply Ichor
-					Heat only builds again after fully spent
+					Weapon attacks generate Heat (1 per attack, maximum 100)
+					At full Heat, attacks consume 1 Heat, deal 6 bonus fixed damage (cannot crit), and inflict Ichor
+					Heat can only begin building again after being fully depleted
 					'''
 			}
 
 			TitanGunMod: {
-				DisplayName: Titan Gun Modification
+				DisplayName: Gun Modification (Titan)
 				Tooltip:
 					'''
 					Take 25% more damage
-					Gun attack speed reduced by 30%
+					Attack speed reduced by 30%
 					Guns with a base use time below 30 deal 75% more damage
 					Critical strikes deal 300% damage
 					'''
@@ -294,9 +306,9 @@ Mods: {
 				Tooltip:
 					'''
 					Gun attack speed increased by 20%
-					Gun attacks build heat (2 per attack, max 150)
-					At full heat: attacks consume 1 heat and deal 10 bonus damage (can crit)
-					Heat only builds again after fully spent
+					Weapon attacks generate Heat (2 per attack, maximum 150)
+					At full Heat, attacks consume 1 Heat and deal 10 bonus fixed damage (can crit)
+					Heat can only begin building again after being fully depleted
 					Counts as a gun modification
 					'''
 			}
@@ -307,76 +319,98 @@ Mods: {
 					'''
 					Arrow damage increased by 15%
 					Ranged critical strike chance increased by 8%
-					25% chance to not consume arrows
+					25% chance not to consume arrows
 					Arrow velocity greatly increased
-					Arrows copy 15% of their damage on hit
+					Bows copy 15% of their ranged damage on hit
 					Enemies are less likely to target you
 					'''
 			}
 
 			AmethystContract: {
+				DisplayName: Amethyst Contract
 				Tooltip:
 					'''
 					Amethyst seeks and tracks its prey.
 
-					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
 					Hits apply "Amethyst Mark" for 5 seconds.
+					Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
 
-					"Amethyst Mark": When a minion or sentry attacks the marked target, consumes the mark and releases a homing Amethyst Bolt dealing 100% of the weapon damage when the mark was applied.
+					When a minion or sentry attacks a target with "Amethyst Mark":
+					Consumes the mark and triggers an explosion dealing 50% of the triggering attack's actual damage.
+					Also releases a homing Amethyst Bolt dealing 100% of the weapon damage when the mark was applied.
 					'''
-				DisplayName: Amethyst Contract
 			}
 
 			TopazContract: {
+				DisplayName: Topaz Contract
 				Tooltip:
 					'''
 					Topaz unleashes the power of exploding crystals.
 
-					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
 					Hits apply "Topaz Mark" for 5 seconds.
+					Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
 
-					"Topaz Mark": When a minion or sentry attacks the marked target, consumes the mark and releases a Topaz Bolt dealing 100% of the weapon damage when the mark was applied. On hit, it explodes in a 6-tile radius; the explosion deals 50% of the Topaz Bolt's damage.
+					When a minion or sentry attacks a target with "Topaz Mark":
+					Consumes the mark and triggers an explosion dealing 50% of the triggering attack's actual damage.
+					Also releases a Topaz Bolt dealing 100% of the weapon damage when the mark was applied.
+					On hit, it explodes in a 6-tile radius; the explosion deals 50% of the Topaz Bolt's damage.
 					'''
-				DisplayName: Topaz Contract
 			}
 
 			SapphireContract: {
+				DisplayName: Sapphire Contract
 				Tooltip:
 					'''
 					Sapphire dances through defenses.
 
-					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
 					Hits apply "Sapphire Mark" for 5 seconds.
+					Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
 
-					"Sapphire Mark": When a minion or sentry attacks the marked target, consumes the mark and releases 2 Sapphire Bolts. Each deals 60% of the weapon damage when the mark was applied and travels along a double-helix trajectory.
+					When a minion or sentry attacks a target with "Sapphire Mark":
+					Consumes the mark and triggers an explosion dealing 50% of the triggering attack's actual damage.
+					Also releases 2 Sapphire Bolts.
+					Each deals 60% of the weapon damage when the mark was applied and travels along a double-helix trajectory.
 					'''
-				DisplayName: Sapphire Contract
 			}
 
 			EmeraldContract: {
+				DisplayName: Emerald Contract
 				Tooltip:
 					'''
 					Emerald leaves a crystal hunting mark.
 
-					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
 					Hits apply "Emerald Mark" for 5 seconds.
+					Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
 
-					"Emerald Mark": When a minion or sentry attacks the marked target, consumes the mark and releases an Emerald Bolt dealing 100% of the weapon damage when the mark was applied. It can pierce 2 enemies. Hitting a tile creates an Emerald Crystal Cluster lasting 3 seconds.
+					When a minion or sentry attacks a target with "Emerald Mark":
+					Consumes the mark and triggers an explosion dealing 50% of the triggering attack's actual damage.
+					Also releases an Emerald Bolt dealing 100% of the weapon damage when the mark was applied.
+					It can pierce 2 enemies.
+					Hitting a tile creates an Emerald Crystal Cluster lasting 3 seconds.
+					The cluster deals 40% of the Emerald Bolt's damage per activation, up to 3 activations.
 					'''
-				DisplayName: Emerald Contract
 			}
 
 			AmberContract: {
+				DisplayName: Amber Contract
 				Tooltip:
 					'''
 					Amber refracts the attack's trajectory.
 
-					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
 					Hits apply "Amber Mark" for 5 seconds.
+					Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
 
-					"Amber Mark": When a minion or sentry attacks the marked target, consumes the mark and releases an Amber Bolt. It can refract up to 3 times, dealing 20% less damage after each refraction.
+					When a minion or sentry attacks a target with "Amber Mark":
+					Consumes the mark and triggers an explosion dealing 50% of the triggering attack's actual damage.
+					Also releases an Amber Bolt.
+					Its first hit deals 100% of the weapon damage when the mark was applied.
+					It can refract up to 3 times, dealing 20% less damage after each refraction.
 					'''
-				DisplayName: Amber Contract
 			}
 
 			RubyContract: {
@@ -385,24 +419,31 @@ Mods: {
 					'''
 					Ruby releases a crystal barrage.
 
-					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
 					Hits apply "Ruby Mark" for 5 seconds.
+					Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
 
-					"Ruby Mark": When a minion or sentry attacks the marked target, consumes the mark and releases 3 Ruby Bolts in rapid succession. Each deals 50% of the weapon damage when the mark was applied.
+					When a minion or sentry attacks a target with "Ruby Mark":
+					Consumes the mark and triggers an explosion dealing 50% of the triggering attack's actual damage.
+					Also releases 3 Ruby Bolts in rapid succession.
+					Each deals 60% of the weapon damage when the mark was applied.
 					'''
 			}
 
 			DiamondContract: {
+				DisplayName: Diamond Contract
 				Tooltip:
 					'''
 					Diamond gathers pure power.
 
-					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
 					Hits apply "Diamond Mark" for 5 seconds.
+					Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
 
-					"Diamond Mark": When a minion or sentry attacks the marked target, consumes the mark and releases a giant Diamond Bolt dealing 175% of the weapon damage when the mark was applied.
+					When a minion or sentry attacks a target with "Diamond Mark":
+					Consumes the mark and triggers an explosion dealing 50% of the triggering attack's actual damage.
+					Also releases a giant Diamond Bolt dealing 175% of the weapon damage when the mark was applied.
 					'''
-				DisplayName: Diamond Contract
 			}
 
 			OpalContract: {
@@ -411,10 +452,14 @@ Mods: {
 					'''
 					Opal refracts the light of all things.
 
-					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
 					Hits apply "Opal Mark" for 5 seconds.
+					Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
 
-					"Opal Mark": When a minion or sentry attacks the marked target, consumes the mark and releases an Opal Bolt dealing 100% of the weapon damage when the mark was applied. On hit, it splits into 3 crystals, each dealing 35% of the Opal Bolt's damage.
+					When a minion or sentry attacks a target with "Opal Mark":
+					Consumes the mark and triggers an explosion dealing 50% of the triggering attack's actual damage.
+					Also releases an Opal Bolt dealing 100% of the weapon damage when the mark was applied.
+					On hit, it splits into 3 homing crystals, each dealing 35% of the Opal Bolt's damage.
 					'''
 			}
 
@@ -424,10 +469,14 @@ Mods: {
 					'''
 					Aquamarine pierces the battlefield.
 
-					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
 					Hits apply "Aquamarine Mark" for 5 seconds.
+					Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
 
-					"Aquamarine Mark": When a minion or sentry attacks the marked target, consumes the mark and releases an Aquamarine Bolt dealing 120% of the weapon damage when the mark was applied. It can pierce 5 enemies; damage is reduced by 20% after each hit.
+					When a minion or sentry attacks a target with "Aquamarine Mark":
+					Consumes the mark and triggers an explosion dealing 50% of the triggering attack's actual damage.
+					Also releases an Aquamarine Bolt dealing 150% of the weapon damage when the mark was applied.
+					It can pierce 5 enemies; damage is reduced by 20% after each hit.
 					'''
 			}
 
@@ -437,10 +486,13 @@ Mods: {
 					'''
 					Crystalline Amethyst tracks its prey.
 
-					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
 					Hits apply "Crystalline Amethyst Mark" for 5 seconds.
+					Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
 
-					"Crystalline Amethyst Mark": When a minion or sentry attacks the marked target, consumes the mark and releases a homing Crystalline Amethyst Bolt dealing 115% of the weapon damage when the mark was applied, plus 2 Crystalline Shards.
+					When a minion or sentry attacks a target with "Crystalline Amethyst Mark":
+					Consumes the mark and triggers an explosion dealing 100% of the triggering attack's actual damage.
+					Also releases a homing Crystalline Amethyst Bolt dealing 115% of the weapon damage when the mark was applied, plus 2 Crystalline Shards.
 					'''
 			}
 
@@ -450,10 +502,14 @@ Mods: {
 					'''
 					Crystalline Topaz enhances explosions.
 
-					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
 					Hits apply "Crystalline Topaz Mark" for 5 seconds.
+					Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
 
-					"Crystalline Topaz Mark": When a minion or sentry attacks the marked target, consumes the mark and releases a Crystalline Topaz Bolt dealing 115% of the weapon damage when the mark was applied, plus an Enhanced Explosion and 2 Crystalline Shards.
+					When a minion or sentry attacks a target with "Crystalline Topaz Mark":
+					Consumes the mark and triggers an explosion dealing 100% of the triggering attack's actual damage.
+					Also releases a Crystalline Topaz Bolt dealing 115% of the weapon damage when the mark was applied.
+					On hit, it produces a larger Enhanced Explosion dealing 50% of the Crystalline Topaz Bolt's damage, plus 2 Crystalline Shards.
 					'''
 			}
 
@@ -463,10 +519,14 @@ Mods: {
 					'''
 					Crystalline Sapphire dances in pairs.
 
-					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
 					Hits apply "Crystalline Sapphire Mark" for 5 seconds.
+					Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
 
-					"Crystalline Sapphire Mark": When a minion or sentry attacks the marked target, consumes the mark and releases 2 Crystalline Sapphire Bolts. Each deals 70% of the weapon damage when the mark was applied, plus 2 Crystalline Shards.
+					When a minion or sentry attacks a target with "Crystalline Sapphire Mark":
+					Consumes the mark and triggers an explosion dealing 100% of the triggering attack's actual damage.
+					Also releases 2 Crystalline Sapphire Bolts.
+					Each deals 70% of the weapon damage when the mark was applied, plus 2 Crystalline Shards.
 					'''
 			}
 
@@ -476,10 +536,17 @@ Mods: {
 					'''
 					Crystalline Emerald extends the hunting mark.
 
-					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
 					Hits apply "Crystalline Emerald Mark" for 5 seconds.
+					Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
 
-					"Crystalline Emerald Mark": When a minion or sentry attacks the marked target, consumes the mark and releases a Crystalline Emerald Bolt dealing 115% of the weapon damage when the mark was applied. It can pierce 3 enemies. Hitting a tile creates a Crystalline Emerald Cluster lasting 4 seconds, plus 2 Crystalline Shards.
+					When a minion or sentry attacks a target with "Crystalline Emerald Mark":
+					Consumes the mark and triggers an explosion dealing 100% of the triggering attack's actual damage.
+					Also releases a Crystalline Emerald Bolt dealing 115% of the weapon damage when the mark was applied.
+					It can pierce 3 enemies.
+					Hitting a tile creates a Crystalline Emerald Cluster lasting 4 seconds.
+					The cluster deals 40% of the Crystalline Emerald Bolt's damage per activation, up to 4 activations.
+					Plus 2 Crystalline Shards.
 					'''
 			}
 
@@ -489,10 +556,15 @@ Mods: {
 					'''
 					Crystalline Amber refracts repeatedly.
 
-					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
 					Hits apply "Crystalline Amber Mark" for 5 seconds.
+					Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
 
-					"Crystalline Amber Mark": When a minion or sentry attacks the marked target, consumes the mark and releases a Crystalline Amber Bolt dealing 115% of the weapon damage when the mark was applied. It can refract up to 4 times, dealing 20% less damage after each refraction, plus 2 Crystalline Shards.
+					When a minion or sentry attacks a target with "Crystalline Amber Mark":
+					Consumes the mark and triggers an explosion dealing 100% of the triggering attack's actual damage.
+					Also releases a Crystalline Amber Bolt.
+					Its first hit deals 115% of the weapon damage when the mark was applied.
+					It can refract up to 4 times, dealing 20% less damage after each refraction, plus 2 Crystalline Shards.
 					'''
 			}
 
@@ -502,92 +574,36 @@ Mods: {
 					'''
 					Crystalline Ruby releases a continuous barrage.
 
-					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
 					Hits apply "Crystalline Ruby Mark" for 5 seconds.
+					Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
 
-					"Crystalline Ruby Mark": When a minion or sentry attacks the marked target, consumes the mark and releases 4 Crystalline Ruby Bolts in rapid succession. Each deals 50% of the weapon damage when the mark was applied, plus 2 Crystalline Shards.
+					When a minion or sentry attacks a target with "Crystalline Ruby Mark":
+					Consumes the mark and triggers an explosion dealing 100% of the triggering attack's actual damage.
+					Also releases 4 Crystalline Ruby Bolts in rapid succession.
+					Each deals 55% of the weapon damage when the mark was applied, plus 2 Crystalline Shards.
 					'''
 			}
 
 			CrystallineDiamondContract: {
+				DisplayName: Crystalline Diamond Contract
 				Tooltip:
 					'''
 					Crystalline Diamond gathers ultimate power.
 
-					Converts the held magic weapon into a summon weapon with 65% base damage.
+					Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
 					Hits apply "Crystalline Diamond Mark" for 5 seconds.
+					Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
 
-					"Crystalline Diamond Mark": When a minion or sentry attacks the marked target, consumes the mark and releases a giant Crystalline Diamond Bolt dealing 200% of the weapon damage when the mark was applied, plus 2 Crystalline Shards.
+					When a minion or sentry attacks a target with "Crystalline Diamond Mark":
+					Consumes the mark and triggers an explosion dealing 100% of the triggering attack's actual damage.
+					Also releases a giant Crystalline Diamond Bolt dealing 200% of the weapon damage when the mark was applied, plus 2 Crystalline Shards.
 					'''
-				DisplayName: Crystalline Diamond Contract
-			}
-
-			CrystallineOpalContract: {
-				DisplayName: Crystalline Opal Contract
-				Tooltip:
-					'''
-					Crystalline Opal bursts with iridescent color.
-
-					Converts the held magic weapon into a summon weapon with 65% base damage.
-					Hits apply "Crystalline Opal Mark" for 5 seconds.
-
-					"Crystalline Opal Mark": When a minion or sentry attacks the marked target, consumes the mark and releases a Crystalline Opal Bolt dealing 115% of the weapon damage when the mark was applied. On hit, it splits into 4 crystals, each dealing 35% of the Crystalline Opal Bolt's damage, plus 2 Crystalline Shards.
-					'''
-			}
-
-			CrystallineAquamarineContract: {
-				DisplayName: Crystalline Aquamarine Contract
-				Tooltip:
-					'''
-					Crystalline Aquamarine pierces the battlefield.
-
-					Converts the held magic weapon into a summon weapon with 65% base damage.
-					Hits apply "Crystalline Aquamarine Mark" for 5 seconds.
-
-					"Crystalline Aquamarine Mark": When a minion or sentry attacks the marked target, consumes the mark and releases a Crystalline Aquamarine Bolt dealing 130% of the weapon damage when the mark was applied. It can pierce 5 enemies; damage is reduced by 15% after each hit, plus 2 Crystalline Shards.
-					'''
-			}
-
-			LegendaryContract: {
-				Tooltip:
-					'''
-					Nine colors become legendary, resonating with the power of all things.
-
-					While equipped: whip range increased by 10%, maximum minions increased by 1, and maximum sentries increased by 1.
-					Converts the held magic weapon into a summon weapon with 65% base damage.
-					Hits apply 「Legendary Sigil」 for 5 seconds.
-
-					「Legendary Sigil」: When a minion or sentry attacks the marked target, consumes the mark, deals 80% of the weapon damage when the mark was applied, and inflicts 「Legendary Resonance」 for 6 seconds.
-
-					「Legendary Resonance」: Summon attacks gain 20% marked critical strike chance, plus marked critical strike chance equal to 25% of your magic critical strike chance. Marked critical hits drop Rainbow Enhancements.
-
-					Picking up a Rainbow Enhancement grants a random Resonance stack and restores a small amount of life, mana, and inspiration. Up to 9 stacks; each lasts 8 seconds.
-					'''
-				DisplayName: Legendary Contract
 			}
 
 			LegendaryResonancePickupItem: {
-				Tooltip:
-					'''
-					Grants one stack of Legendary Resonance when picked up.
-					Grants the corresponding Resonance effect based on its color.
-					'''
+				Tooltip: ""
 				DisplayName: Legendary Resonance Pickup Item
-			}
-
-			CrystallineRetaliationShield: {
-				Tooltip: ""
-				DisplayName: Crystalline Retaliation Shield
-			}
-
-			TectonicAccumulationShield: {
-				DisplayName: Tectonic Accumulation Shield
-				Tooltip: ""
-			}
-
-			BurstingBarrier: {
-				Tooltip: ""
-				DisplayName: Bursting Barrier
 			}
 
 			VoidmetalRetaliationShield: {
@@ -595,48 +611,338 @@ Mods: {
 				DisplayName: Voidmetal Retaliation Shield
 			}
 
-			PiercingBarrier: {
-				DisplayName: Piercing Barrier
+			TectonicAccumulationShield: {
 				Tooltip: ""
+				DisplayName: Tectonic Accumulation Shield
+			}
+
+			PiercingBarrier: {
+				Tooltip: ""
+				DisplayName: Piercing Barrier
+			}
+
+			CrystallineRetaliationShield: {
+				Tooltip: ""
+				DisplayName: Crystalline Retaliation Shield
+			}
+
+			BurstingBarrier: {
+				Tooltip: ""
+				DisplayName: Bursting Barrier
+			}
+
+			LegendaryContract: {
+				Tooltip: ""
+				DisplayName: Legendary Contract
+			}
+
+			CrystallineOpalContract: {
+				Tooltip: ""
+				DisplayName: Crystalline Opal Contract
+			}
+
+			CrystallineAquamarineContract: {
+				Tooltip: ""
+				DisplayName: Crystalline Aquamarine Contract
+			}
+
+			StyxBloodAnkh: {
+				Tooltip: ""
+				DisplayName: Styx Blood Ankh
+			}
+
+			SpiritFireScythe: {
+				Tooltip: ""
+				DisplayName: Spirit Fire Scythe
+			}
+
+			SoulOfScythe: {
+				Tooltip: ""
+				DisplayName: Soul Of Scythe
+			}
+
+			RadiantHolyAnkh: {
+				Tooltip: ""
+				DisplayName: Radiant Holy Ankh
+			}
+
+			Anubis: {
+				Tooltip: ""
+				DisplayName: Anubis
 			}
 		}
 
+		CrystallineOpalContract: {
+			DisplayName: Crystalline Opal Contract
+			Tooltip:
+				'''
+				Crystalline Opal bursts with iridescent color.
+
+				Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
+				Hits apply "Crystalline Opal Mark" for 5 seconds.
+				Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
+
+				When a minion or sentry attacks a target with "Crystalline Opal Mark":
+				Consumes the mark and triggers an explosion dealing 100% of the triggering attack's actual damage.
+				Also releases a Crystalline Opal Bolt dealing 115% of the weapon damage when the mark was applied.
+				On hit, it splits into 4 Crystalline Opal Crystals, each dealing 35% of the Crystalline Opal Bolt's damage, plus 2 Crystalline Shards.
+				'''
+		}
+
+		CrystallineAquamarineContract: {
+			DisplayName: Crystalline Aquamarine Contract
+			Tooltip:
+				'''
+				Crystalline Aquamarine pierces the battlefield.
+
+				Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
+				Hits apply "Crystalline Aquamarine Mark" for 5 seconds.
+				Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
+
+				When a minion or sentry attacks a target with "Crystalline Aquamarine Mark":
+				Consumes the mark and triggers an explosion dealing 100% of the triggering attack's actual damage.
+				Also releases a Crystalline Aquamarine Bolt dealing 170% of the weapon damage when the mark was applied.
+				It can pierce 5 enemies; damage is reduced by 15% after each hit, plus 2 Crystalline Shards.
+				'''
+		}
+
+		LegendaryContract: {
+			DisplayName: Legendary Contract
+			Tooltip:
+				'''
+				Nine colors become legendary, resonating with the power of all things.
+				Increases whip range by 10%
+				Increases maximum minions by 1
+				Increases maximum sentries by 1
+
+				Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
+				Hits apply "Legendary Mark" for 5 seconds.
+				Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
+
+				When a minion or sentry attacks a target with "Legendary Mark":
+				Consumes the mark, deals 80% of the weapon damage when the mark was applied, and inflicts "Legendary Resonance" for 6 seconds.
+
+				"Legendary Resonance": Summon attacks gain 20% marked critical strike chance, plus additional marked critical strike chance equal to 25% of your magic critical strike chance.
+				Marked critical hits drop Rainbow Enhancements.
+
+				Picking up a Rainbow Enhancement grants 1 random Resonance stack and restores a small amount of life, mana, and inspiration.
+				Legendary Resonance can have up to 9 stacks at once, with each stack lasting 8 seconds.
+				'''
+		}
+
+		LegendaryResonancePickupItem: {
+			Tooltip:
+				'''
+				Grants one stack of Legendary Resonance when picked up.
+				Grants the corresponding Resonance effect based on its color.
+				'''
+			DisplayName: Rainbow Enhancement
+		}
+
+		CrystallineRetaliationShield: {
+			Tooltip: Stores twice the damage you take for your next damaging attack, up to 450 bonus damage.
+			DisplayName: Crystalline Retaliation Shield
+		}
+
+		TectonicAccumulationShield: {
+			DisplayName: Tectonic Accumulation Shield
+			Tooltip:
+				'''
+				Stores twice the damage you take, up to 600 bonus damage
+				While below 50% life, you take 25% less damage and gain a Life Shield equal to 25% of stored damage
+				'''
+		}
+
+		BurstingBarrier: {
+			Tooltip:
+				'''
+				Stores three times the damage you take, up to 1200 bonus damage
+				Enemies are more likely to target you
+				While below 50% life, you take 25% less damage and gain a Life Shield equal to 25% of stored damage (60-second cooldown)
+				When taking fatal damage, unleash a massive explosion dealing 300% of stored damage, lock your life at 1, and gain a Life Shield equal to one quarter of stored damage (120-second cooldown)
+				'''
+			DisplayName: Bursting Barrier
+		}
+
+		VoidmetalRetaliationShield: {
+			Tooltip: Stores twice the damage you take and 15% of the damage you deal, up to 450 total. When fully charged, your next damaging attack unleashes the stored damage.
+			DisplayName: Voidmetal Retaliation Shield
+		}
+
+		PiercingBarrier: {
+			DisplayName: Piercing Barrier
+			Tooltip:
+				'''
+				Stores twice the damage you take and 25% of the damage you deal, up to 600 total. When fully charged, your next damaging attack unleashes the stored damage.
+				Enemies are less likely to target you
+				While at 100% life, you take 200% increased damage, and damage taken cannot exceed 50% of your maximum life.
+				While below 75% life, you deal 15% increased damage and gain 1% life steal
+				'''
+		}
+
+		SoulOfScythe: {
+			DisplayName: Soul of the Scythe
+			Tooltip:
+				'''
+				The Soul of the Scythe.
+
+				While the scythe is spinning, once every second it throws a copy of the scythe directly toward the cursor, dealing 50% of the current scythe's damage.
+				The phantom cannot grant Soul Essence.
+				'''
+		}
+
+		SpiritFireScythe: {
+			DisplayName: Spirit Fire Scythe
+			Tooltip:
+				'''
+				Spirit Fire shines upon life.
+
+				While the scythe is spinning, once every second it throws a copy of the scythe directly toward the cursor, dealing 50% of the current scythe's damage.
+				The phantom cannot grant Soul Essence.
+
+				Killing a target with the scythe's phantom releases a Life Spirit.
+				The Life Spirit seeks the ally with the lowest health and heals them for 2 life.
+				'''
+		}
+
+		Anubis: {
+			DisplayName: Anubis
+			Tooltip:
+				'''
+				The god of death watches the prey.
+
+				While the scythe is spinning, once every second it throws a copy of the scythe directly toward the cursor, dealing 75% of the current scythe's damage.
+				The phantom cannot grant Soul Essence.
+
+				Killing a target with the scythe's phantom restores 3 life.
+				Hitting an enemy with the scythe's phantom inflicts "Holy Wrath".
+				Enemies affected by "Holy Wrath" take 15% increased damage.
+				'''
+		}
+
+		StyxBloodAnkh: {
+			DisplayName: Styx Blood Ankh
+			Tooltip:
+				'''
+				Blood commands the soul.
+
+				While the scythe is spinning, once every second it throws a copy of the scythe directly toward the cursor, dealing 75% of the current scythe's damage.
+				The phantom cannot grant Soul Essence.
+
+				Hitting an enemy with the scythe's phantom inflicts "Holy Wrath".
+				Enemies affected by "Holy Wrath" take 15% increased damage.
+
+				Dealing damage with a scythe grants 1 Blood Charge.
+				At maximum Blood Charge, the scythe's next attack deals double damage and heals you for 20% of the damage dealt.
+
+				Nearby allies gain "Bloodlust", giving their attacks a 1/3 chance to steal 1 life.
+
+				"I've had enough of being human!!"
+				'''
+		}
+
+		RadiantHolyAnkh: {
+			DisplayName: Radiant Holy Ankh
+			Tooltip:
+				'''
+				Radiance illuminates the soul.
+
+				While the scythe is spinning, once every second it throws a radiant phantom of the current scythe directly toward the cursor, dealing 60% of the current scythe's damage.
+				The phantom can grant Soul Essence.
+
+				Hitting an enemy with the scythe's phantom inflicts "Holy Wrath" and "Tuned".
+				Enemies affected by "Holy Wrath" and "Tuned" take 25% increased damage.
+
+				Each time you gain 1 Soul Essence this way, nearby allies gain a Life Shield equal to 1% of their maximum life.
+				When Soul Essence is consumed, nearby allies gain "Bulwark Bubble" for 1 second.
+
+				"Who needs support!"
+				'''
+		}
+
 		Projectiles: {
-			MagicSwordPro.DisplayName: Magic Sword Pro
-			BlastPro.DisplayName: Blast Pro
-			AmethystCrystalProjectile.DisplayName: Amethyst Crystal Projectile
+			MagicSwordProjectile.DisplayName: Magic Sword Projectile
+			MagicSwordExplosionProjectile.DisplayName: Magic Sword Explosion Projectile
 			TopazExplosionProjectile.DisplayName: Topaz Explosion Projectile
 			TopazCrystalProjectile.DisplayName: Topaz Crystal Projectile
 			SapphireCrystalProjectile.DisplayName: Sapphire Crystal Projectile
-			EmeraldCrystalNeedleProjectile.DisplayName: Emerald Crystal Needle Projectile
-			EmeraldCrystalClusterProjectile.DisplayName: Emerald Crystal Cluster Projectile
-			AmberCrystalProjectile.DisplayName: Amber Crystal Projectile
-			EmeraldCrystalProjectile.DisplayName: Emerald Crystal Projectile
 			RubyCrystalProjectile.DisplayName: Ruby Crystal Projectile
 			RubyBurstProjectile.DisplayName: Ruby Burst Projectile
-			DiamondCrystalProjectile.DisplayName: Diamond Crystal Projectile
-			OpalCrystalProjectile.DisplayName: Opal Crystal Projectile
 			OpalShardProjectile.DisplayName: Opal Shard Projectile
-			AquamarineCrystalProjectile.DisplayName: Aquamarine Crystal Projectile
-			CrystallineAmethystCrystalProjectile.DisplayName: Crystalline Amethyst Crystal Projectile
-			CrystalShardProjectile.DisplayName: Crystal Shard Projectile
-			CrystallineShardProjectile.DisplayName: Crystalline Shard Projectile
-			CrystallineTopazCrystalProjectile.DisplayName: Crystalline Topaz Crystal Projectile
-			CrystallineTopazExplosionProjectile.DisplayName: Crystalline Topaz Explosion Projectile
-			CrystallineSapphireCrystalProjectile.DisplayName: Crystalline Sapphire Crystal Projectile
-			CrystallineEmeraldCrystalClusterProjectile.DisplayName: Crystalline Emerald Crystal Cluster Projectile
-			CrystallineEmeraldCrystalProjectile.DisplayName: Crystalline Emerald Crystal Projectile
-			CrystallineAmberCrystalProjectile.DisplayName: Crystalline Amber Crystal Projectile
-			CrystallineRubyBurstProjectile.DisplayName: Crystalline Ruby Burst Projectile
-			CrystallineRubyCrystalProjectile.DisplayName: Crystalline Ruby Crystal Projectile
-			CrystallineDiamondCrystalProjectile.DisplayName: Crystalline Diamond Crystal Projectile
-			CrystallineOpalCrystalProjectile.DisplayName: Crystalline Opal Crystal Projectile
-			CrystallineOpalShardProjectile.DisplayName: Crystalline Opal Shard Projectile
-			CrystallineAquamarineCrystalProjectile.DisplayName: Crystalline Aquamarine Crystal Projectile
+			OpalCrystalProjectile.DisplayName: Opal Crystal Projectile
 			LegendaryResonanceBurstProjectile.DisplayName: Legendary Resonance Burst Projectile
-			MagicSwordProjectile.DisplayName: Magic Sword Projectile
-			MagicSwordExplosionProjectile.DisplayName: Magic Sword Explosion Projectile
+			EmeraldCrystalProjectile.DisplayName: Emerald Crystal Projectile
+			EmeraldCrystalClusterProjectile.DisplayName: Emerald Crystal Cluster Projectile
+			DiamondCrystalProjectile.DisplayName: Diamond Crystal Projectile
+			CrystallineTopazExplosionProjectile.DisplayName: Crystalline Topaz Explosion Projectile
+			CrystallineTopazCrystalProjectile.DisplayName: Crystalline Topaz Crystal Projectile
+			CrystallineShardProjectile.DisplayName: Crystalline Shard Projectile
+			CrystallineSapphireCrystalProjectile.DisplayName: Crystalline Sapphire Crystal Projectile
+			CrystallineRubyCrystalProjectile.DisplayName: Crystalline Ruby Crystal Projectile
+			CrystallineRubyBurstProjectile.DisplayName: Crystalline Ruby Burst Projectile
+			CrystallineOpalShardProjectile.DisplayName: Crystalline Opal Shard Projectile
+			CrystallineOpalCrystalProjectile.DisplayName: Crystalline Opal Crystal Projectile
+			CrystallineEmeraldCrystalProjectile.DisplayName: Crystalline Emerald Crystal Projectile
+			CrystallineEmeraldCrystalClusterProjectile.DisplayName: Crystalline Emerald Crystal Cluster Projectile
+			CrystallineDiamondCrystalProjectile.DisplayName: Crystalline Diamond Crystal Projectile
+			CrystallineAquamarineCrystalProjectile.DisplayName: Crystalline Aquamarine Crystal Projectile
+			CrystallineAmethystCrystalProjectile.DisplayName: Crystalline Amethyst Crystal Projectile
+			CrystallineAmberCrystalProjectile.DisplayName: Crystalline Amber Crystal Projectile
+			AquamarineCrystalProjectile.DisplayName: Aquamarine Crystal Projectile
+			AmethystCrystalProjectile.DisplayName: Amethyst Crystal Projectile
+			AmberCrystalProjectile.DisplayName: Amber Crystal Projectile
 			HellfireExplosionProjectile.DisplayName: Hellfire Explosion Projectile
+			AnubisScytheProjectile.DisplayName: Anubis Scythe Projectile
+			LifeSpiritProjectile.DisplayName: Life Spirit Projectile
+			RadiantHolyAnkhProjectile.DisplayName: Radiant Holy Ankh Projectile
+			SoulScytheProjectile.DisplayName: Soul Scythe Projectile
+			SpiritFireScytheProjectile.DisplayName: Spirit Fire Scythe Projectile
+			StyxBloodAnkhProjectile.DisplayName: Styx Blood Ankh Projectile
 		}
+	}
+
+	Projectiles: {
+		MagicSwordPro.DisplayName: Magic Sword
+		BlastPro.DisplayName: Blast
+		AmethystCrystalProjectile.DisplayName: Amethyst Bolt
+		TopazExplosionProjectile.DisplayName: Topaz Explosion
+		TopazCrystalProjectile.DisplayName: Topaz Bolt
+		SapphireCrystalProjectile.DisplayName: Sapphire Bolt
+		EmeraldCrystalNeedleProjectile.DisplayName: Emerald Crystal Needle
+		EmeraldCrystalClusterProjectile.DisplayName: Emerald Crystal Cluster
+		AmberCrystalProjectile.DisplayName: Amber Bolt
+		EmeraldCrystalProjectile.DisplayName: Emerald Bolt
+		RubyCrystalProjectile.DisplayName: Ruby Bolt
+		RubyBurstProjectile.DisplayName: Ruby Barrage
+		DiamondCrystalProjectile.DisplayName: Diamond Bolt
+		OpalCrystalProjectile.DisplayName: Opal Bolt
+		OpalShardProjectile.DisplayName: Opal Crystal
+		AquamarineCrystalProjectile.DisplayName: Aquamarine Bolt
+		CrystallineAmethystCrystalProjectile.DisplayName: Crystalline Amethyst Bolt
+		CrystalShardProjectile.DisplayName: Crystalline Shard
+		CrystallineShardProjectile.DisplayName: Crystalline Shard
+		CrystallineTopazCrystalProjectile.DisplayName: Crystalline Topaz Bolt
+		CrystallineTopazExplosionProjectile.DisplayName: Crystalline Topaz Explosion
+		CrystallineSapphireCrystalProjectile.DisplayName: Crystalline Sapphire Bolt
+		CrystallineEmeraldCrystalClusterProjectile.DisplayName: Crystalline Emerald Crystal Cluster
+		CrystallineEmeraldCrystalProjectile.DisplayName: Crystalline Emerald Bolt
+		CrystallineAmberCrystalProjectile.DisplayName: Crystalline Amber Bolt
+		CrystallineRubyBurstProjectile.DisplayName: Crystalline Ruby Barrage
+		CrystallineRubyCrystalProjectile.DisplayName: Crystalline Ruby Bolt
+		CrystallineDiamondCrystalProjectile.DisplayName: Crystalline Diamond Bolt
+		CrystallineOpalCrystalProjectile.DisplayName: Crystalline Opal Bolt
+		CrystallineOpalShardProjectile.DisplayName: Crystalline Opal Crystal
+		CrystallineAquamarineCrystalProjectile.DisplayName: Crystalline Aquamarine Bolt
+		LegendaryResonanceBurstProjectile.DisplayName: Legendary Burst
+		MagicSwordProjectile.DisplayName: Magic Sword Projectile
+		MagicSwordExplosionProjectile.DisplayName: Magic Sword Explosion
+		HellfireExplosionProjectile.DisplayName: Hellfire Explosion Projectile
+		SoulScytheSlash.DisplayName: Soul Scythe Slash
+		SoulScytheProjectile.DisplayName: Soul Scythe Phantom
+		AnubisScytheProjectile.DisplayName: Anubis Scythe Phantom
+		LifeSpiritProjectile.DisplayName: Life Spirit
+		RadiantHolyAnkhProjectile.DisplayName: Radiant Holy Ankh Phantom
+		SpiritFireScytheProjectile.DisplayName: Spirit Fire Scythe Phantom
+		StyxBloodAnkhProjectile.DisplayName: Styx Blood Ankh Phantom
 	}
 }

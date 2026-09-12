@@ -3,9 +3,9 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using ThoriumAccessoryExpansion.Players;
 
-namespace ThoriumAccessoryExpansion.Accessories.Warrior;
+namespace ThoriumAccessoryExpansion.Accessories.Warrior.Shield;
 
-public class TectonicAccumulationShield : WarriorShieldBase
+public class BurstingBarrier : WarriorShieldBase
 {
     public override void SetDefaults()
     {
@@ -13,25 +13,27 @@ public class TectonicAccumulationShield : WarriorShieldBase
         Item.height = 32;
 
         Item.accessory = true;
-        Item.defense = 6;
+        Item.defense = 7;
         Item.rare = ItemRarityID.LightRed;
     }
 
-    public override void UpdateAccessory(Player player, bool hideVisual)
+    public override void UpdateAccessory(
+        Player player,
+        bool hideVisual)
     {
         player.GetModPlayer<WarriorShieldPlayer>()
-            .TectonicAccumulationShield = true;
+            .BurstingBarrier = true;
     }
     public override void AddRecipes()
     {
         Mod thorium = ModLoader.GetMod("ThoriumMod");
 
-        int lodeStoneIngotType =
-            thorium.Find<ModItem>("LodeStoneIngot").Type;
+        int blastShieldType =
+            thorium.Find<ModItem>("BlastShield").Type;
 
         CreateRecipe()
-            .AddIngredient<CrystallineRetaliationShield>()
-            .AddIngredient(lodeStoneIngotType, 10)
+            .AddIngredient<TectonicAccumulationShield>()
+            .AddIngredient(blastShieldType)
             .AddTile(TileID.MythrilAnvil)
             .Register();
     }

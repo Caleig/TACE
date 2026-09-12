@@ -36,8 +36,8 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
             return;
 
 
-         GemMarkGlobalNPC mark =
-            target.GetGlobalNPC<GemMarkGlobalNPC>();
+        GemMarkGlobalNPC mark =
+           target.GetGlobalNPC<GemMarkGlobalNPC>();
 
 
 
@@ -157,11 +157,19 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         if (mark.HasGemMark(GemType.Amethyst))
         {
 
-            mark.ConsumeGemMark(target);
+            if (mark.ConsumeGemMark(target))
+            {
+                TriggerGemExplosion(
+                    projectile,
+                    target,
+                    damageDone,
+                    0.5f
+                );
+            }
 
 
             int proj =
-            Projectile.NewProjectile(
+                    Projectile.NewProjectile(
                 projectile.GetSource_FromThis(),
                 spawnPosition,
                 shotVelocity,
@@ -180,7 +188,15 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
         else if (mark.HasGemMark(GemType.CrystallineAmethyst))
         {
-            mark.ConsumeGemMark(target);
+            if (mark.ConsumeGemMark(target))
+            {
+                TriggerGemExplosion(
+                    projectile,
+                    target,
+                    damageDone,
+                    1.0f
+                );
+            }
 
 
             int proj =
@@ -233,7 +249,15 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         else if (mark.HasGemMark(GemType.Topaz))
         {
 
-            mark.ConsumeGemMark(target);
+            if (mark.ConsumeGemMark(target))
+            {
+                TriggerGemExplosion(
+                    projectile,
+                    target,
+                    damageDone,
+                    0.5f
+                );
+            }
 
 
             int proj =
@@ -256,7 +280,15 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
         else if (mark.HasGemMark(GemType.CrystallineTopaz))
         {
-            mark.ConsumeGemMark(target);
+            if (mark.ConsumeGemMark(target))
+            {
+                TriggerGemExplosion(
+                    projectile,
+                    target,
+                    damageDone,
+                    1.0f
+                );
+            }
 
 
             int proj =
@@ -309,7 +341,15 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         else if (mark.HasGemMark(GemType.Sapphire))
         {
 
-            mark.ConsumeGemMark(target);
+            if (mark.ConsumeGemMark(target))
+            {
+                TriggerGemExplosion(
+                    projectile,
+                    target,
+                    damageDone,
+                    0.5f
+                );
+            }
 
 
             Vector2 direction =
@@ -351,7 +391,15 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         else if (mark.HasGemMark(GemType.CrystallineSapphire))
         {
 
-            mark.ConsumeGemMark(target);
+            if (mark.ConsumeGemMark(target))
+            {
+                TriggerGemExplosion(
+                    projectile,
+                    target,
+                    damageDone,
+                    1.0f
+                );
+            }
 
 
             Vector2 direction =
@@ -422,7 +470,15 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         else if (mark.HasGemMark(GemType.Emerald))
         {
 
-            mark.ConsumeGemMark(target);
+            if (mark.ConsumeGemMark(target))
+            {
+                TriggerGemExplosion(
+                    projectile,
+                    target,
+                    damageDone,
+                    0.5f
+                );
+            }
 
 
             Vector2 emeraldVelocity =
@@ -453,7 +509,15 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
         else if (mark.HasGemMark(GemType.CrystallineEmerald))
         {
-            mark.ConsumeGemMark(target);
+            if (mark.ConsumeGemMark(target))
+            {
+                TriggerGemExplosion(
+                    projectile,
+                    target,
+                    damageDone,
+                    1.0f
+                );
+            }
 
 
             Vector2 emeraldVelocity =
@@ -512,7 +576,15 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         else if (mark.HasGemMark(GemType.Amber))
         {
 
-            mark.ConsumeGemMark(target);
+            if (mark.ConsumeGemMark(target))
+            {
+                TriggerGemExplosion(
+                    projectile,
+                    target,
+                    damageDone,
+                    0.5f
+                );
+            }
 
 
             Vector2 amberVelocity =
@@ -543,7 +615,15 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
         else if (mark.HasGemMark(GemType.CrystallineAmber))
         {
-            mark.ConsumeGemMark(target);
+            if (mark.ConsumeGemMark(target))
+            {
+                TriggerGemExplosion(
+                    projectile,
+                    target,
+                    damageDone,
+                    1.0f
+                );
+            }
 
 
             Vector2 amberVelocity =
@@ -601,7 +681,15 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
         else if (mark.HasGemMark(GemType.Ruby))
         {
-            mark.ConsumeGemMark(target);
+            if (mark.ConsumeGemMark(target))
+            {
+                TriggerGemExplosion(
+                    projectile,
+                    target,
+                    damageDone,
+                    0.5f
+                );
+            }
 
 
             Vector2 direction =
@@ -616,7 +704,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
                     spawnPosition,
                     direction * 12f,
                     ModContent.ProjectileType<RubyBurstProjectile>(),
-                    (int)(damage * 0.5f),
+                    (int)(damage * 0.6f),
                     0,
                     projectile.owner
                     );
@@ -629,7 +717,15 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
         else if (mark.HasGemMark(GemType.CrystallineRuby))
         {
-            mark.ConsumeGemMark(target);
+            if (mark.ConsumeGemMark(target))
+            {
+                TriggerGemExplosion(
+                    projectile,
+                    target,
+                    damageDone,
+                    1.0f
+                );
+            }
 
 
             Vector2 direction =
@@ -645,7 +741,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
                     spawnPosition,
                     direction * 12f,
                     ModContent.ProjectileType<CrystallineRubyBurstProjectile>(),
-                    (int)(damage * 0.5f),
+                    (int)(damage * 0.55f),
                     0,
                     projectile.owner
                 );
@@ -689,7 +785,15 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         else if (mark.HasGemMark(GemType.Diamond))
         {
 
-            mark.ConsumeGemMark(target);
+            if (mark.ConsumeGemMark(target))
+            {
+                TriggerGemExplosion(
+                    projectile,
+                    target,
+                    damageDone,
+                    0.5f
+                );
+            }
 
 
             Player player =
@@ -735,7 +839,15 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         else if (mark.HasGemMark(GemType.CrystallineDiamond))
         {
 
-            mark.ConsumeGemMark(target);
+            if (mark.ConsumeGemMark(target))
+            {
+                TriggerGemExplosion(
+                    projectile,
+                    target,
+                    damageDone,
+                    1.0f
+                );
+            }
 
 
             Player player =
@@ -812,7 +924,15 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         else if (mark.HasGemMark(GemType.Opal))
         {
 
-            mark.ConsumeGemMark(target);
+            if (mark.ConsumeGemMark(target))
+            {
+                TriggerGemExplosion(
+                    projectile,
+                    target,
+                    damageDone,
+                    0.5f
+                );
+            }
 
 
             Vector2 velocity =
@@ -844,7 +964,15 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         else if (mark.HasGemMark(GemType.CrystallineOpal))
         {
 
-            mark.ConsumeGemMark(target);
+            if (mark.ConsumeGemMark(target))
+            {
+                TriggerGemExplosion(
+                    projectile,
+                    target,
+                    damageDone,
+                    1.0f
+                );
+            }
 
 
             Vector2 velocity =
@@ -904,7 +1032,15 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
         else if (mark.HasGemMark(GemType.Aquamarine))
         {
 
-            mark.ConsumeGemMark(target);
+            if (mark.ConsumeGemMark(target))
+            {
+                TriggerGemExplosion(
+                    projectile,
+                    target,
+                    damageDone,
+                    0.5f
+                );
+            }
 
 
             Vector2 velocity =
@@ -921,7 +1057,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
                 spawnPosition,
                 velocity,
                 ModContent.ProjectileType<AquamarineCrystalProjectile>(),
-                (int)(damage * 1.2f),
+                (int)(damage * 1.5f),
                 0,
                 projectile.owner
             );
@@ -935,7 +1071,15 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
         else if (mark.HasGemMark(GemType.CrystallineAquamarine))
         {
-            mark.ConsumeGemMark(target);
+            if (mark.ConsumeGemMark(target))
+            {
+                TriggerGemExplosion(
+                    projectile,
+                    target,
+                    damageDone,
+                    1.0f
+                );
+            }
 
 
             Vector2 velocity =
@@ -951,7 +1095,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
                 spawnPosition,
                 velocity,
                 ModContent.ProjectileType<CrystallineAquamarineCrystalProjectile>(),
-                (int)(damage * 1.3f),
+                (int)(damage * 1.7f),
                 0,
                 projectile.owner
             );
@@ -992,6 +1136,34 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
             }
 
         }
+    }
+    private void TriggerGemExplosion(
+        Projectile projectile,
+        NPC target,
+        int damageDone,
+        float multiplier)
+    {
+        int explosionDamage =
+            (int)(damageDone * multiplier);
+
+        if (explosionDamage <= 0)
+            return;
+
+        int hitDirection =
+            target.Center.X >= projectile.Center.X
+                ? 1
+                : -1;
+
+        target.StrikeNPC(
+            new NPC.HitInfo
+            {
+                Damage = explosionDamage,
+                Knockback = 0f,
+                HitDirection = hitDirection,
+                Crit = false,
+                DamageType = DamageClass.Summon
+            }
+        );
     }
     public override void ModifyHitNPC(
     Projectile projectile,

@@ -3,9 +3,9 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using ThoriumAccessoryExpansion.Players;
 
-namespace ThoriumAccessoryExpansion.Accessories.Warrior;
+namespace ThoriumAccessoryExpansion.Accessories.Warrior.Shield;
 
-public class PiercingBarrier : WarriorShieldBase
+public class VoidmetalRetaliationShield : WarriorShieldBase
 {
     public override void SetDefaults()
     {
@@ -13,6 +13,7 @@ public class PiercingBarrier : WarriorShieldBase
         Item.height = 32;
 
         Item.accessory = true;
+        Item.defense = 3;
         Item.rare = ItemRarityID.LightRed;
     }
 
@@ -21,19 +22,18 @@ public class PiercingBarrier : WarriorShieldBase
         bool hideVisual)
     {
         player.GetModPlayer<WarriorShieldPlayer>()
-            .PiercingBarrier = true;
-        player.aggro -= 400;
+            .VoidmetalRetaliationShield = true;
     }
     public override void AddRecipes()
     {
         Mod thorium = ModLoader.GetMod("ThoriumMod");
 
-        int gutWrenchersGauntletType =
-            thorium.Find<ModItem>("GutWrenchersGauntlet").Type;
+        int valadiumIngotType =
+            thorium.Find<ModItem>("ValadiumIngot").Type;
 
         CreateRecipe()
-            .AddIngredient<VoidmetalRetaliationShield>()
-            .AddIngredient(gutWrenchersGauntletType)
+            .AddIngredient<CrystallineRetaliationShield>()
+            .AddIngredient(valadiumIngotType, 10)
             .AddTile(TileID.MythrilAnvil)
             .Register();
     }

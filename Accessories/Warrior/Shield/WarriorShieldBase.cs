@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ModLoader;
 using ThoriumMod.Items.BossBuriedChampion;
 
-namespace ThoriumAccessoryExpansion.Accessories.Warrior
+namespace ThoriumAccessoryExpansion.Accessories.Warrior.Shield
 {
     public abstract class WarriorShieldBase : ModItem
     {

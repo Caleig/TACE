@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using ThoriumAccessoryExpansion.Players;
 
-namespace ThoriumAccessoryExpansion.Accessories.Warrior;
+namespace ThoriumAccessoryExpansion.Accessories.Warrior.Shield;
 
 public class CrystallineRetaliationShield : WarriorShieldBase
 {

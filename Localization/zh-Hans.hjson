@@ -148,7 +148,7 @@ Mods: {
 					'''
 					“谁能似神？”
 					用神圣能量增幅你的光辉攻击
-					你击中的敌怪使你获得更多灵魂精华·
+					你击中的敌怪使你获得更多灵魂精华
 					基于你的额外治疗量提供全面光辉加成
 					最大生命值和魔力值增加10
 					增加20%治疗速度
@@ -327,6 +327,7 @@ Mods: {
 			}
 
 			AmethystContract: {
+				DisplayName: 紫晶灵契
 				Tooltip:
 					'''
 					紫晶寻踪追迹。
@@ -336,12 +337,13 @@ Mods: {
 					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
 
 					仅当召唤物或哨兵攻击带有「紫晶刻印」的单位时：
-					消耗刻印并释放追踪紫晶矢，造成施加刻印时武器伤害的100%。
+					消耗刻印并引爆，造成此次触发攻击实际伤害的50%。
+					同时释放追踪紫晶矢，造成施加刻印时武器伤害的100%。
 					'''
-				DisplayName: 紫晶灵契
 			}
 
 			TopazContract: {
+				DisplayName: 黄玉灵契
 				Tooltip:
 					'''
 					黄玉引爆晶体之力。
@@ -351,13 +353,14 @@ Mods: {
 					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
 
 					仅当召唤物或哨兵攻击带有「黄玉刻印」的单位时：
-					消耗刻印并释放黄玉矢，造成施加刻印时武器伤害的100%。
+					消耗刻印并引爆，造成此次触发攻击实际伤害的50%。
+					同时释放黄玉矢，造成施加刻印时武器伤害的100%。
 					黄玉矢命中后爆炸，范围6格，爆裂造成黄玉矢伤害的50%。
 					'''
-				DisplayName: 黄玉灵契
 			}
 
 			SapphireContract: {
+				DisplayName: 蓝玉灵契
 				Tooltip:
 					'''
 					蓝玉旋舞撕裂防线。
@@ -367,13 +370,14 @@ Mods: {
 					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
 
 					仅当召唤物或哨兵攻击带有「蓝玉刻印」的单位时：
-					消耗刻印并释放2枚蓝玉矢。
+					消耗刻印并引爆，造成此次触发攻击实际伤害的50%。
+					同时释放2枚蓝玉矢。
 					每枚造成施加刻印时武器伤害的60%，沿双螺旋轨迹飞行。
 					'''
-				DisplayName: 蓝玉灵契
 			}
 
 			EmeraldContract: {
+				DisplayName: 翡翠灵契
 				Tooltip:
 					'''
 					翡翠留下晶体猎痕。
@@ -383,14 +387,15 @@ Mods: {
 					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
 
 					仅当召唤物或哨兵攻击带有「翡翠刻印」的单位时：
-					消耗刻印并释放翡翠矢，造成施加刻印时武器伤害的100%，可穿透2个单位。
+					消耗刻印并引爆，造成此次触发攻击实际伤害的50%。
+					同时释放翡翠矢，造成施加刻印时武器伤害的100%，可穿透2个单位。
 					命中物块后形成持续3秒的翡翠晶簇。
 					翡翠晶簇每次造成翡翠矢伤害40%的伤害，最多触发3次。
 					'''
-				DisplayName: 翡翠灵契
 			}
 
 			AmberContract: {
+				DisplayName: 琥珀灵契
 				Tooltip:
 					'''
 					琥珀折射攻击轨迹。
@@ -400,10 +405,10 @@ Mods: {
 					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
 
 					仅当召唤物或哨兵攻击带有「琥珀刻印」的单位时：
-					消耗刻印并释放琥珀矢。
-					首次命中造成施加刻印时武器伤害的100%，最多折射3次，每次折射后伤害降低20%。
+					消耗刻印并引爆，造成此次触发攻击实际伤害的50%。
+					同时释放琥珀矢，琥珀矢首次命中造成施加刻印时武器伤害的100%。
+					同时最多折射3次，每次折射后伤害降低20%。
 					'''
-				DisplayName: 琥珀灵契
 			}
 
 			RubyContract: {
@@ -417,12 +422,14 @@ Mods: {
 					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
 
 					仅当召唤物或哨兵攻击带有「红玉刻印」的单位时：
-					消耗刻印并连续释放3枚红玉矢。
-					每枚造成施加刻印时武器伤害的50%。
+					消耗刻印并引爆，造成此次触发攻击实际伤害的50%。
+					同时连续释放3枚红玉矢。
+					每枚造成施加刻印时武器伤害的60%。
 					'''
 			}
 
 			DiamondContract: {
+				DisplayName: 钻石灵契
 				Tooltip:
 					'''
 					钻石凝聚纯粹之力。
@@ -432,9 +439,9 @@ Mods: {
 					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
 
 					仅当召唤物或哨兵攻击带有「钻石刻印」的单位时：
-					消耗刻印并释放巨型钻石矢，造成施加刻印时武器伤害的175%。
+					消耗刻印并引爆，造成此次触发攻击实际伤害的50%。
+					同时释放巨型钻石矢，造成施加刻印时武器伤害的175%。
 					'''
-				DisplayName: 钻石灵契
 			}
 
 			OpalContract: {
@@ -448,7 +455,8 @@ Mods: {
 					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
 
 					仅当召唤物或哨兵攻击带有「欧珀刻印」的单位时：
-					消耗刻印并释放欧珀矢，造成施加刻印时武器伤害的100%。
+					消耗刻印并引爆，造成此次触发攻击实际伤害的50%。
+					同时释放欧珀矢，造成施加刻印时武器伤害的100%。
 					欧珀矢命中后分裂为3枚追踪晶体，每枚造成欧珀矢伤害的35%。
 					'''
 			}
@@ -464,7 +472,8 @@ Mods: {
 					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
 
 					仅当召唤物或哨兵攻击带有「海蓝刻印」的单位时：
-					消耗刻印并释放海蓝矢，造成施加刻印时武器伤害的120%。
+					消耗刻印并引爆，造成此次触发攻击实际伤害的50%。
+					同时释放海蓝矢，造成施加刻印时武器伤害的150%。
 					可穿透5个单位，每次命中后伤害降低20%。
 					'''
 			}
@@ -480,7 +489,8 @@ Mods: {
 					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
 
 					仅当召唤物或哨兵攻击带有「晶化紫晶刻印」的单位时：
-					消耗刻印并释放追踪晶化紫晶矢，造成施加刻印时武器伤害的115%，并额外释放2枚晶化碎片。
+					消耗刻印并引爆，造成此次触发攻击实际伤害的100%。
+					同时释放追踪晶化紫晶矢，造成施加刻印时武器伤害的115%，并额外释放2枚晶化碎片。
 					'''
 			}
 
@@ -495,7 +505,8 @@ Mods: {
 					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
 
 					仅当召唤物或哨兵攻击带有「晶化黄玉刻印」的单位时：
-					消耗刻印并释放晶化黄玉矢，造成施加刻印时武器伤害的115%。
+					消耗刻印并引爆，造成此次触发攻击实际伤害的100%。
+					同时释放晶化黄玉矢，造成施加刻印时武器伤害的115%。
 					命中后产生范围更大的晶化爆裂，造成晶化黄玉矢伤害的50%，并额外释放2枚晶化碎片。
 					'''
 			}
@@ -511,7 +522,8 @@ Mods: {
 					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
 
 					仅当召唤物或哨兵攻击带有「晶化蓝玉刻印」的单位时：
-					消耗刻印并释放2枚晶化蓝玉矢。
+					消耗刻印并引爆，造成此次触发攻击实际伤害的100%。
+					同时释放2枚晶化蓝玉矢。
 					每枚造成施加刻印时武器伤害的70%，并额外释放2枚晶化碎片。
 					'''
 			}
@@ -527,7 +539,8 @@ Mods: {
 					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
 
 					仅当召唤物或哨兵攻击带有「晶化翡翠刻印」的单位时：
-					消耗刻印并释放晶化翡翠矢，造成施加刻印时武器伤害的115%，可穿透3个单位。
+					消耗刻印并引爆，造成此次触发攻击实际伤害的100%。
+					同时释放晶化翡翠矢，造成施加刻印时武器伤害的115%，可穿透3个单位。
 					命中物块后形成持续4秒的晶化翡翠晶簇。
 					晶簇每次造成晶化翡翠矢伤害40%的伤害，最多触发4次。
 					并额外释放2枚晶化碎片。
@@ -545,7 +558,8 @@ Mods: {
 					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
 
 					仅当召唤物或哨兵攻击带有「晶化琥珀刻印」的单位时：
-					消耗刻印并释放晶化琥珀矢，首次命中造成施加刻印时武器伤害的115%。
+					消耗刻印并引爆，造成此次触发攻击实际伤害的100%。
+					同时释放晶化琥珀矢，首次命中造成施加刻印时武器伤害的115%。
 					最多折射4次，每次折射后伤害降低20%，并额外释放2枚晶化碎片。
 					'''
 			}
@@ -561,12 +575,14 @@ Mods: {
 					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
 
 					仅当召唤物或哨兵攻击带有「晶化红玉刻印」的单位时：
-					消耗刻印并连续释放4枚晶化红玉矢。
-					每枚造成施加刻印时武器伤害的50%，并额外释放2枚晶化碎片。
+					消耗刻印并引爆，造成此次触发攻击实际伤害的100%。
+					同时连续释放4枚晶化红玉矢。
+					每枚造成施加刻印时武器伤害的55%，并额外释放2枚晶化碎片。
 					'''
 			}
 
 			CrystallineDiamondContract: {
+				DisplayName: 晶化钻石灵契
 				Tooltip:
 					'''
 					晶化钻石凝聚极致力量。
@@ -576,41 +592,58 @@ Mods: {
 					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
 
 					仅当召唤物或哨兵攻击带有「晶化钻石刻印」的单位时：
-					消耗刻印并释放巨型晶化钻石矢，造成施加刻印时武器伤害的200%，并额外释放2枚晶化碎片。
-					'''
-				DisplayName: 晶化钻石灵契
-			}
-
-			CrystallineOpalContract: {
-				DisplayName: 晶化欧珀灵契
-				Tooltip:
-					'''
-					晶化欧珀绽放幻彩。
-
-					魔法武器转化为召唤伤害，基础伤害为武器面板×65%。
-					魔法武器命中后施加「晶化欧珀刻印」，持续5秒。
-					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
-
-					仅当召唤物或哨兵攻击带有「晶化欧珀刻印」的单位时：
-					消耗刻印并释放晶化欧珀矢，造成施加刻印时武器伤害的115%。
-					命中后分裂为4枚晶化欧珀晶体，每枚造成晶化欧珀矢伤害的35%，并额外释放2枚晶化碎片。
+					消耗刻印并引爆，造成此次触发攻击实际伤害的100%。
+					同时释放巨型晶化钻石矢，造成施加刻印时武器伤害的200%，并额外释放2枚晶化碎片。
 					'''
 			}
 
-			CrystallineAquamarineContract: {
-				DisplayName: 晶化海蓝灵契
+			LegendaryResonancePickupItem: {
 				Tooltip:
 					'''
-					晶化海蓝贯穿战场。
-
-					魔法武器转化为召唤伤害，基础伤害为武器面板×65%。
-					魔法武器命中后施加「晶化海蓝刻印」，持续5秒。
-					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
-
-					仅当召唤物或哨兵攻击带有「晶化海蓝刻印」的单位时：
-					消耗刻印并释放晶化海蓝矢，造成施加刻印时武器伤害的130%。
-					可穿透5个单位，每次命中后伤害降低15%，并额外释放2枚晶化碎片。
+					拾取后获得一层传奇共鸣。
+					根据其颜色获得对应的共鸣效果。
 					'''
+				DisplayName: 九彩强化物
+			}
+
+			VoidmetalRetaliationShield: {
+				Tooltip: 你所受到的伤害的2倍，与造成伤害的15%将会储存起来最高将会储存450，储存到满值后下次伤害性攻击将会释放出来
+				DisplayName: 虚金的还击之盾
+			}
+
+			TectonicAccumulationShield: {
+				Tooltip:
+					'''
+					你所受伤害的两倍会被存储起来最高可以存储600点伤害加成
+					当血量低于50%时受到伤害减少25%，并且获得储存伤害的25%的生命护盾
+					'''
+				DisplayName: 地脉的累积之盾
+			}
+
+			PiercingBarrier: {
+				Tooltip:
+					'''
+					你所受到的伤害的2倍，与造成伤害的25%将会储存起来最高将会储存600，储存到满值后下次伤害性攻击将会释放出来
+					敌人更不容易瞄准你
+					当你血量为100%时受到伤害将会提高200%，且受到的伤害不会超过最大生命值的50%，当血量低于75%时造成伤害提高15%并获得1%的生命偷取
+					'''
+				DisplayName: 穿击壁障
+			}
+
+			CrystallineRetaliationShield: {
+				Tooltip: 你所受伤害的两倍会被存储到下次伤害性攻击中，最高可以存储450点伤害加成
+				DisplayName: 结晶的反击之盾
+			}
+
+			BurstingBarrier: {
+				Tooltip:
+					'''
+					你所受伤害的三倍会被存储起来最高可以存储1200点伤害加成
+					敌人更容易瞄准你
+					当血量低于50%时受到伤害减少25%，并且获得储存伤害的25%的生命护盾（该效果有60秒冷却）
+					受到伤害致命时将会进行一次大爆炸造成储存伤害的300%，并将血量锁定在1且获得积蓄伤害1/4的生命护盾（120秒冷却）
+					'''
+				DisplayName: 暴裂障壁
 			}
 
 			LegendaryContract: {
@@ -636,92 +669,392 @@ Mods: {
 				DisplayName: 传奇灵契
 			}
 
-			LegendaryResonancePickupItem: {
+			CrystallineOpalContract: {
 				Tooltip:
 					'''
-					拾取后获得一层传奇共鸣。
-					根据其颜色获得对应的共鸣效果。
+					晶化欧珀绽放幻彩。
+
+					魔法武器转化为召唤伤害，基础伤害为武器面板×65%。
+					魔法武器命中后施加「晶化欧珀刻印」，持续5秒。
+					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
+
+					仅当召唤物或哨兵攻击带有「晶化欧珀刻印」的单位时：
+					消耗刻印并引爆，造成此次触发攻击实际伤害的100%。
+					同时释放晶化欧珀矢，造成施加刻印时武器伤害的115%。
+					命中后分裂为4枚晶化欧珀晶体，每枚造成晶化欧珀矢伤害的35%，并额外释放2枚晶化碎片。
 					'''
-				DisplayName: 九彩强化物
+				DisplayName: 晶化欧珀灵契
 			}
 
-			CrystallineRetaliationShield: {
-				Tooltip: 你所受伤害的两倍会被存储到下次伤害性攻击中，最高可以存储450点伤害加成
-				DisplayName: 结晶的反击之盾
-			}
-
-			TectonicAccumulationShield: {
-				DisplayName: 地脉的累积之盾
+			CrystallineAquamarineContract: {
 				Tooltip:
 					'''
-					你所受伤害的两倍会被存储起来最高可以存储600点伤害加成
-					当血量低于50%时受到伤害减少25%，并且获得储存伤害的25%的生命护盾
+					晶化海蓝贯穿战场。
+
+					魔法武器转化为召唤伤害，基础伤害为武器面板×65%。
+					魔法武器命中后施加「晶化海蓝刻印」，持续5秒。
+					灵契刻印同时只能存在一种，新施加的刻印会覆盖已有刻印。
+
+					仅当召唤物或哨兵攻击带有「晶化海蓝刻印」的单位时：
+					消耗刻印并引爆，造成此次触发攻击实际伤害的100%。
+					同时释放晶化海蓝矢，造成施加刻印时武器伤害的170%。
+					可穿透5个单位，每次命中后伤害降低15%，并额外释放2枚晶化碎片。
 					'''
+				DisplayName: 晶化海蓝灵契
 			}
 
-			BurstingBarrier: {
+			StyxBloodAnkh: {
 				Tooltip:
 					'''
-					你所受伤害的三倍会被存储起来最高可以存储1200点伤害加成
-					敌人更容易瞄准你
-					当血量低于50%时受到伤害减少25%，并且获得储存伤害的25%的生命护盾（该效果有60秒冷却）
-					受到伤害致命时将会进行一次大爆炸造成储存伤害的300%，并将血量锁定在1且获得积蓄伤害1/4的生命护盾（120秒冷却）
+					鲜血支配灵魂。
+
+					当镰刀持续旋转时，每过1秒都会向鼠标位置直线投掷一把镰刀的复制品，造成当前镰刀伤害的75%。
+					该幻影无法获得灵魂精华。
+
+					用镰刀的复制品命中敌怪时，给予其「神圣之怒」。
+					受「神圣之怒」影响的敌怪所受伤害增加15%。
+
+					当镰刀造成伤害时会获得1层鲜血充能。
+					达到最大充能时，镰刀的下一次攻击造成两倍伤害，并治疗你造成伤害的20%。
+
+					附近的队友获得「鲜血渴望」，使其攻击有1/3概率偷取1点生命。
+
+					“我不做人啦！！”
 					'''
-				DisplayName: 暴裂障壁
+				DisplayName: 冥河血安卡
 			}
 
-			VoidmetalRetaliationShield: {
-				Tooltip: 你所受到的伤害的2倍，与造成伤害的15%将会储存起来最高将会储存450，储存到满值后下次伤害性攻击将会释放出来
-				DisplayName: 虚金的还击之盾
-			}
-
-			PiercingBarrier: {
-				DisplayName: 穿击壁障
+			SpiritFireScythe: {
 				Tooltip:
 					'''
-					你所受到的伤害的2倍，与造成伤害的25%将会储存起来最高将会储存600，储存到满值后下次伤害性攻击将会释放出来
-					敌人更不容易瞄准你
-					当你血量为100%时受到伤害将会提高200%，且受到的伤害不会超过最大生命值的50%，当血量低于75%时造成伤害提高15%并获得1%的生命偷取
+					灵火照耀生命。
+
+					当镰刀持续旋转时，每过1秒都会向鼠标位置直线投掷一把镰刀的复制品，造成当前镰刀伤害的50%。
+					该幻影无法获得灵魂精华。
+
+					用镰刀的复制品击杀目标时，会释放一个生命灵魂。
+					生命灵魂会寻找生命值最低的队友并治疗其2点生命值。
 					'''
+				DisplayName: 灵火镰刃
 			}
+
+			SoulOfScythe: {
+				Tooltip:
+					'''
+					镰刃之魂。
+
+					当镰刀持续旋转时，每过1秒都会向鼠标位置直线投掷一把镰刀的复制品，造成当前镰刀伤害的50%。
+					该幻影无法获得灵魂精华。
+					'''
+				DisplayName: 镰刃之魂
+			}
+
+			RadiantHolyAnkh: {
+				Tooltip:
+					'''
+					圣光映照灵魂。
+
+					当镰刀持续旋转时，每过1秒都会向鼠标位置直线投掷一把当前镰刀的圣光幻影，造成当前镰刀伤害的60%。
+					该幻影可以获得灵魂精华。
+
+					用镰刀的复制品命中敌怪时，给予其「神圣之怒」与「协调」。
+					受「神圣之怒」与「协调」影响的敌怪所受伤害增加25%。
+
+					每当你以这种方式获得1点灵魂精华时，附近的队友获得相当于其最大生命值1%的生命护盾。
+					消耗灵魂精华时，附近的队友获得1秒的泡泡盾。
+
+					“谁需要支援！”
+					'''
+				DisplayName: 辉光圣安卡
+			}
+
+			Anubis: {
+				Tooltip:
+					'''
+					死神注视着猎物。
+
+					当镰刀持续旋转时，每过1秒都会向鼠标位置直线投掷一把镰刀的复制品，造成当前镰刀伤害的75%。
+					该幻影无法获得灵魂精华。
+
+					用镰刀的复制品击杀目标时，你会恢复3点生命值。
+					用镰刀的复制品命中敌怪时，给予其「神圣之怒」。
+					受「神圣之怒」影响的敌怪所受伤害增加15%。
+					'''
+				DisplayName: 阿努比斯
+			}
+		}
+
+		CrystallineOpalContract: {
+			// DisplayName: Crystalline Opal Contract
+			/* Tooltip:
+				'''
+				Crystalline Opal bursts with iridescent color.
+
+				Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
+				Hits apply "Crystalline Opal Mark" for 5 seconds.
+				Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
+
+				When a minion or sentry attacks a target with "Crystalline Opal Mark":
+				Consumes the mark and triggers an explosion dealing 100% of the triggering attack's actual damage.
+				Also releases a Crystalline Opal Bolt dealing 115% of the weapon damage when the mark was applied.
+				On hit, it splits into 4 Crystalline Opal Crystals, each dealing 35% of the Crystalline Opal Bolt's damage, plus 2 Crystalline Shards.
+				''' */
+		}
+
+		CrystallineAquamarineContract: {
+			// DisplayName: Crystalline Aquamarine Contract
+			/* Tooltip:
+				'''
+				Crystalline Aquamarine pierces the battlefield.
+
+				Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
+				Hits apply "Crystalline Aquamarine Mark" for 5 seconds.
+				Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
+
+				When a minion or sentry attacks a target with "Crystalline Aquamarine Mark":
+				Consumes the mark and triggers an explosion dealing 100% of the triggering attack's actual damage.
+				Also releases a Crystalline Aquamarine Bolt dealing 170% of the weapon damage when the mark was applied.
+				It can pierce 5 enemies; damage is reduced by 15% after each hit, plus 2 Crystalline Shards.
+				''' */
+		}
+
+		LegendaryContract: {
+			// DisplayName: Legendary Contract
+			/* Tooltip:
+				'''
+				Nine colors become legendary, resonating with the power of all things.
+				Increases whip range by 10%
+				Increases maximum minions by 1
+				Increases maximum sentries by 1
+
+				Converts the held magic weapon into summon damage, with base damage equal to 65% of the weapon's displayed damage.
+				Hits apply "Legendary Mark" for 5 seconds.
+				Only one Contract Mark can exist at a time; applying a new mark replaces the existing one.
+
+				When a minion or sentry attacks a target with "Legendary Mark":
+				Consumes the mark, deals 80% of the weapon damage when the mark was applied, and inflicts "Legendary Resonance" for 6 seconds.
+
+				"Legendary Resonance": Summon attacks gain 20% marked critical strike chance, plus additional marked critical strike chance equal to 25% of your magic critical strike chance.
+				Marked critical hits drop Rainbow Enhancements.
+
+				Picking up a Rainbow Enhancement grants 1 random Resonance stack and restores a small amount of life, mana, and inspiration.
+				Legendary Resonance can have up to 9 stacks at once, with each stack lasting 8 seconds.
+				''' */
+		}
+
+		LegendaryResonancePickupItem: {
+			/* Tooltip:
+				'''
+				Grants one stack of Legendary Resonance when picked up.
+				Grants the corresponding Resonance effect based on its color.
+				''' */
+			// DisplayName: Rainbow Enhancement
+		}
+
+		CrystallineRetaliationShield: {
+			// Tooltip: Stores twice the damage you take for your next damaging attack, up to 450 bonus damage.
+			// DisplayName: Crystalline Retaliation Shield
+		}
+
+		TectonicAccumulationShield: {
+			// DisplayName: Tectonic Accumulation Shield
+			/* Tooltip:
+				'''
+				Stores twice the damage you take, up to 600 bonus damage
+				While below 50% life, you take 25% less damage and gain a Life Shield equal to 25% of stored damage
+				''' */
+		}
+
+		BurstingBarrier: {
+			/* Tooltip:
+				'''
+				Stores three times the damage you take, up to 1200 bonus damage
+				Enemies are more likely to target you
+				While below 50% life, you take 25% less damage and gain a Life Shield equal to 25% of stored damage (60-second cooldown)
+				When taking fatal damage, unleash a massive explosion dealing 300% of stored damage, lock your life at 1, and gain a Life Shield equal to one quarter of stored damage (120-second cooldown)
+				''' */
+			// DisplayName: Bursting Barrier
+		}
+
+		VoidmetalRetaliationShield: {
+			// Tooltip: Stores twice the damage you take and 15% of the damage you deal, up to 450 total. When fully charged, your next damaging attack unleashes the stored damage.
+			// DisplayName: Voidmetal Retaliation Shield
+		}
+
+		PiercingBarrier: {
+			// DisplayName: Piercing Barrier
+			/* Tooltip:
+				'''
+				Stores twice the damage you take and 25% of the damage you deal, up to 600 total. When fully charged, your next damaging attack unleashes the stored damage.
+				Enemies are less likely to target you
+				While at 100% life, you take 200% increased damage, and damage taken cannot exceed 50% of your maximum life.
+				While below 75% life, you deal 15% increased damage and gain 1% life steal
+				''' */
+		}
+
+		SoulOfScythe: {
+			// DisplayName: Soul of the Scythe
+			/* Tooltip:
+				'''
+				The Soul of the Scythe.
+
+				While the scythe is spinning, once every second it throws a copy of the scythe directly toward the cursor, dealing 50% of the current scythe's damage.
+				The phantom cannot grant Soul Essence.
+				''' */
+		}
+
+		SpiritFireScythe: {
+			// DisplayName: Spirit Fire Scythe
+			/* Tooltip:
+				'''
+				Spirit Fire shines upon life.
+
+				While the scythe is spinning, once every second it throws a copy of the scythe directly toward the cursor, dealing 50% of the current scythe's damage.
+				The phantom cannot grant Soul Essence.
+
+				Killing a target with the scythe's phantom releases a Life Spirit.
+				The Life Spirit seeks the ally with the lowest health and heals them for 2 life.
+				''' */
+		}
+
+		Anubis: {
+			// DisplayName: Anubis
+			/* Tooltip:
+				'''
+				The god of death watches the prey.
+
+				While the scythe is spinning, once every second it throws a copy of the scythe directly toward the cursor, dealing 75% of the current scythe's damage.
+				The phantom cannot grant Soul Essence.
+
+				Killing a target with the scythe's phantom restores 3 life.
+				Hitting an enemy with the scythe's phantom inflicts "Holy Wrath".
+				Enemies affected by "Holy Wrath" take 15% increased damage.
+				''' */
+		}
+
+		StyxBloodAnkh: {
+			// DisplayName: Styx Blood Ankh
+			/* Tooltip:
+				'''
+				Blood commands the soul.
+
+				While the scythe is spinning, once every second it throws a copy of the scythe directly toward the cursor, dealing 75% of the current scythe's damage.
+				The phantom cannot grant Soul Essence.
+
+				Hitting an enemy with the scythe's phantom inflicts "Holy Wrath".
+				Enemies affected by "Holy Wrath" take 15% increased damage.
+
+				Dealing damage with a scythe grants 1 Blood Charge.
+				At maximum Blood Charge, the scythe's next attack deals double damage and heals you for 20% of the damage dealt.
+
+				Nearby allies gain "Bloodlust", giving their attacks a 1/3 chance to steal 1 life.
+
+				"I've had enough of being human!!"
+				''' */
+		}
+
+		RadiantHolyAnkh: {
+			// DisplayName: Radiant Holy Ankh
+			/* Tooltip:
+				'''
+				Radiance illuminates the soul.
+
+				While the scythe is spinning, once every second it throws a radiant phantom of the current scythe directly toward the cursor, dealing 60% of the current scythe's damage.
+				The phantom can grant Soul Essence.
+
+				Hitting an enemy with the scythe's phantom inflicts "Holy Wrath" and "Tuned".
+				Enemies affected by "Holy Wrath" and "Tuned" take 25% increased damage.
+
+				Each time you gain 1 Soul Essence this way, nearby allies gain a Life Shield equal to 1% of their maximum life.
+				When Soul Essence is consumed, nearby allies gain "Bulwark Bubble" for 1 second.
+
+				"Who needs support!"
+				''' */
 		}
 
 		Projectiles: {
-			MagicSwordPro.DisplayName: 蕴魔剑
-			BlastPro.DisplayName: 爆炸弹幕
-			AmethystCrystalProjectile.DisplayName: 紫晶矢
+			MagicSwordProjectile.DisplayName: 蕴魔剑射弹
+			MagicSwordExplosionProjectile.DisplayName: 蕴魔剑爆炸
 			TopazExplosionProjectile.DisplayName: 黄玉爆裂
 			TopazCrystalProjectile.DisplayName: 黄玉矢
 			SapphireCrystalProjectile.DisplayName: 蓝玉矢
-			EmeraldCrystalNeedleProjectile.DisplayName: 翡翠晶针
-			EmeraldCrystalClusterProjectile.DisplayName: 翡翠晶簇
-			AmberCrystalProjectile.DisplayName: 琥珀矢
-			EmeraldCrystalProjectile.DisplayName: 翡翠矢
 			RubyCrystalProjectile.DisplayName: 红玉矢
 			RubyBurstProjectile.DisplayName: 红玉连射
-			DiamondCrystalProjectile.DisplayName: 钻石矢
-			OpalCrystalProjectile.DisplayName: 欧珀矢
 			OpalShardProjectile.DisplayName: 欧珀晶体
-			AquamarineCrystalProjectile.DisplayName: 海蓝矢
-			CrystallineAmethystCrystalProjectile.DisplayName: 晶化紫晶矢
-			CrystalShardProjectile.DisplayName: 晶化碎片
-			CrystallineShardProjectile.DisplayName: 晶化碎片
-			CrystallineTopazCrystalProjectile.DisplayName: 晶化黄玉矢
-			CrystallineTopazExplosionProjectile.DisplayName: 晶化黄玉爆裂
-			CrystallineSapphireCrystalProjectile.DisplayName: 晶化蓝玉矢
-			CrystallineEmeraldCrystalClusterProjectile.DisplayName: 晶化翡翠晶簇
-			CrystallineEmeraldCrystalProjectile.DisplayName: 晶化翡翠矢
-			CrystallineAmberCrystalProjectile.DisplayName: 晶化琥珀矢
-			CrystallineRubyBurstProjectile.DisplayName: 晶化红玉连射
-			CrystallineRubyCrystalProjectile.DisplayName: 晶化红玉矢
-			CrystallineDiamondCrystalProjectile.DisplayName: 晶化钻石矢
-			CrystallineOpalCrystalProjectile.DisplayName: 晶化欧珀矢
-			CrystallineOpalShardProjectile.DisplayName: 晶化欧珀晶体
-			CrystallineAquamarineCrystalProjectile.DisplayName: 晶化海蓝矢
+			OpalCrystalProjectile.DisplayName: 欧珀矢
 			LegendaryResonanceBurstProjectile.DisplayName: 传奇爆破
-			MagicSwordProjectile.DisplayName: 蕴魔剑射弹
-			MagicSwordExplosionProjectile.DisplayName: 蕴魔剑爆炸
+			EmeraldCrystalProjectile.DisplayName: 翡翠矢
+			EmeraldCrystalClusterProjectile.DisplayName: 翡翠晶簇
+			DiamondCrystalProjectile.DisplayName: 钻石矢
+			CrystallineTopazExplosionProjectile.DisplayName: 晶化黄玉爆裂
+			CrystallineTopazCrystalProjectile.DisplayName: 晶化黄玉矢
+			CrystallineShardProjectile.DisplayName: 晶化碎片
+			CrystallineSapphireCrystalProjectile.DisplayName: 晶化蓝玉矢
+			CrystallineRubyCrystalProjectile.DisplayName: 晶化红玉矢
+			CrystallineRubyBurstProjectile.DisplayName: 晶化红玉连射
+			CrystallineOpalShardProjectile.DisplayName: 晶化欧珀晶体
+			CrystallineOpalCrystalProjectile.DisplayName: 晶化欧珀矢
+			CrystallineEmeraldCrystalProjectile.DisplayName: 晶化翡翠矢
+			CrystallineEmeraldCrystalClusterProjectile.DisplayName: 晶化翡翠晶簇
+			CrystallineDiamondCrystalProjectile.DisplayName: 晶化钻石矢
+			CrystallineAquamarineCrystalProjectile.DisplayName: 晶化海蓝矢
+			CrystallineAmethystCrystalProjectile.DisplayName: 晶化紫晶矢
+			CrystallineAmberCrystalProjectile.DisplayName: 晶化琥珀矢
+			AquamarineCrystalProjectile.DisplayName: 海蓝矢
+			AmethystCrystalProjectile.DisplayName: 紫晶矢
+			AmberCrystalProjectile.DisplayName: 琥珀矢
 			HellfireExplosionProjectile.DisplayName: 狱火爆炸射弹
+			AnubisScytheProjectile.DisplayName: 阿努比斯镰刃幻影
+			LifeSpiritProjectile.DisplayName: 生命灵魂
+			RadiantHolyAnkhProjectile.DisplayName: 辉光圣安卡幻影
+			SoulScytheProjectile.DisplayName: 镰刃之魂幻影
+			SpiritFireScytheProjectile.DisplayName: 灵火镰刃幻影
+			StyxBloodAnkhProjectile.DisplayName: 冥河血安卡幻影
 		}
+	}
+
+	Projectiles: {
+		// MagicSwordPro.DisplayName: Magic Sword
+		// BlastPro.DisplayName: Blast
+		// AmethystCrystalProjectile.DisplayName: Amethyst Bolt
+		// TopazExplosionProjectile.DisplayName: Topaz Explosion
+		// TopazCrystalProjectile.DisplayName: Topaz Bolt
+		// SapphireCrystalProjectile.DisplayName: Sapphire Bolt
+		// EmeraldCrystalNeedleProjectile.DisplayName: Emerald Crystal Needle
+		// EmeraldCrystalClusterProjectile.DisplayName: Emerald Crystal Cluster
+		// AmberCrystalProjectile.DisplayName: Amber Bolt
+		// EmeraldCrystalProjectile.DisplayName: Emerald Bolt
+		// RubyCrystalProjectile.DisplayName: Ruby Bolt
+		// RubyBurstProjectile.DisplayName: Ruby Barrage
+		// DiamondCrystalProjectile.DisplayName: Diamond Bolt
+		// OpalCrystalProjectile.DisplayName: Opal Bolt
+		// OpalShardProjectile.DisplayName: Opal Crystal
+		// AquamarineCrystalProjectile.DisplayName: Aquamarine Bolt
+		// CrystallineAmethystCrystalProjectile.DisplayName: Crystalline Amethyst Bolt
+		// CrystalShardProjectile.DisplayName: Crystalline Shard
+		// CrystallineShardProjectile.DisplayName: Crystalline Shard
+		// CrystallineTopazCrystalProjectile.DisplayName: Crystalline Topaz Bolt
+		// CrystallineTopazExplosionProjectile.DisplayName: Crystalline Topaz Explosion
+		// CrystallineSapphireCrystalProjectile.DisplayName: Crystalline Sapphire Bolt
+		// CrystallineEmeraldCrystalClusterProjectile.DisplayName: Crystalline Emerald Crystal Cluster
+		// CrystallineEmeraldCrystalProjectile.DisplayName: Crystalline Emerald Bolt
+		// CrystallineAmberCrystalProjectile.DisplayName: Crystalline Amber Bolt
+		// CrystallineRubyBurstProjectile.DisplayName: Crystalline Ruby Barrage
+		// CrystallineRubyCrystalProjectile.DisplayName: Crystalline Ruby Bolt
+		// CrystallineDiamondCrystalProjectile.DisplayName: Crystalline Diamond Bolt
+		// CrystallineOpalCrystalProjectile.DisplayName: Crystalline Opal Bolt
+		// CrystallineOpalShardProjectile.DisplayName: Crystalline Opal Crystal
+		// CrystallineAquamarineCrystalProjectile.DisplayName: Crystalline Aquamarine Bolt
+		// LegendaryResonanceBurstProjectile.DisplayName: Legendary Burst
+		// MagicSwordProjectile.DisplayName: Magic Sword Projectile
+		// MagicSwordExplosionProjectile.DisplayName: Magic Sword Explosion
+		// HellfireExplosionProjectile.DisplayName: Hellfire Explosion Projectile
+		// SoulScytheSlash.DisplayName: Soul Scythe Slash
+		// SoulScytheProjectile.DisplayName: Soul Scythe Phantom
+		// AnubisScytheProjectile.DisplayName: Anubis Scythe Phantom
+		// LifeSpiritProjectile.DisplayName: Life Spirit
+		// RadiantHolyAnkhProjectile.DisplayName: Radiant Holy Ankh Phantom
+		// SpiritFireScytheProjectile.DisplayName: Spirit Fire Scythe Phantom
+		// StyxBloodAnkhProjectile.DisplayName: Styx Blood Ankh Phantom
 	}
 }
