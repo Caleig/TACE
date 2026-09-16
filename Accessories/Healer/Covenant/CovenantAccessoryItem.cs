@@ -1,0 +1,30 @@
+using Terraria;
+using Terraria.ModLoader;
+using ThoriumMod.Items;
+
+namespace ThoriumAccessoryExpansion.Accessories.Healer.Covenant;
+
+public abstract class CovenantAccessoryItem : ThoriumItem
+{
+    public override void SetDefaults()
+    {
+        isHealer = true;
+    }
+
+    public override bool CanEquipAccessory(
+        Player player,
+        int slot,
+        bool modded)
+    {
+        for (int i = 3; i < player.armor.Length; i++)
+        {
+            if (i == slot)
+                continue;
+
+            if (player.armor[i].ModItem is CovenantAccessoryItem)
+                return false;
+        }
+
+        return true;
+    }
+}

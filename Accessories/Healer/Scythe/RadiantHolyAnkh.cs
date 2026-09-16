@@ -24,10 +24,6 @@ public class RadiantHolyAnkh : ScytheAccessoryItem
     {
         player.GetModPlayer<SoulOfScythePlayer>()
             .RadiantHolyAnkh = true;
-
-        player.GetDamage(
-            ThoriumMod.HealerDamage.Instance
-        ) += 15f;
     }
     public override void AddRecipes()
     {

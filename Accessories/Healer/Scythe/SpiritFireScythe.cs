@@ -24,10 +24,6 @@ public class SpiritFireScythe : ScytheAccessoryItem
     {
         player.GetModPlayer<SoulOfScythePlayer>()
             .SpiritFireScythe = true;
-
-        player.GetDamage(
-            ThoriumMod.HealerDamage.Instance
-        ) += 15f;
     }
     public override void AddRecipes()
     {

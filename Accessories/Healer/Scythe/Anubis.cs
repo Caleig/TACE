@@ -24,10 +24,6 @@ public class Anubis : ScytheAccessoryItem
     {
         player.GetModPlayer<SoulOfScythePlayer>()
             .Anubis = true;
-
-        player.GetDamage(
-            ThoriumMod.HealerDamage.Instance
-        ) += 15f;
     }
     public override void AddRecipes()
     {

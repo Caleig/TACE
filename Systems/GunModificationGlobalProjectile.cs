@@ -132,57 +132,55 @@ public class GunModificationGlobalProjectile : GlobalProjectile
 
 
     public override void OnHitNPC(
-        Projectile projectile,
-        NPC target,
-        NPC.HitInfo hit,
-        int damageDone)
+    Projectile projectile,
+    NPC target,
+    NPC.HitInfo hit,
+    int damageDone)
     {
-
-        if (
-            !heatOverloadProjectile
-        )
-        {
+        if (!heatOverloadProjectile)
             return;
-        }
-
 
         Player player =
             GetOwner(projectile);
 
-
-        if (
-            player == null
-        )
-        {
+        if (player == null)
             return;
-        }
-
 
         GunModificationPlayerState modification =
             player.GetModPlayer<
                 GunModificationPlayerState
             >();
 
-        if (
-            !modification.TryConsumeHeatForHit()
-        )
+        if (!modification.TryConsumeHeatForHit())
         {
             heatOverloadProjectile = false;
-
             return;
         }
-        int extraDamage =
-            modification.HeatOverloadDamage;
 
+        int extraDamage = 0;
+
+        if (modification.HeatOverloadDamage > 0)
+        {
+            extraDamage +=
+                modification.HeatOverloadDamage;
+        }
 
         if (
-            extraDamage > 0
+            modification.HeatOverloadDamagePercent > 0f
         )
+        {
+            extraDamage +=
+                (int)(
+                    projectile.damage *
+                    modification.HeatOverloadDamagePercent
+                );
+        }
+
+        if (extraDamage > 0)
         {
             bool crit =
                 modification.HeatOverloadCanCrit &&
                 hit.Crit;
-
 
             target.SimpleStrikeNPC(
                 extraDamage,
@@ -191,30 +189,28 @@ public class GunModificationGlobalProjectile : GlobalProjectile
                 projectile.knockBack
             );
         }
-        if (
-            modification.HasHellstoneGunMod
-        )
+
+        if (modification.HasHellstoneGunMod)
         {
             target.AddBuff(
                 BuffID.OnFire3,
                 600
             );
 
-
             SpawnExplosion(
                 projectile,
                 target
             );
         }
-        if (
-            modification.HasGreenDragonGunMod
-        )
+
+        if (modification.HasGreenDragonGunMod)
         {
             target.AddBuff(
                 BuffID.CursedInferno,
                 600
             );
         }
+
         if (
             modification.HasFleshGunMod ||
             modification.HasFleshTrigger

@@ -29,7 +29,7 @@ public class FleshTrigger
 
         player.GetAttackSpeed(
             DamageClass.Ranged
-        ) += 0.20f;
+        ) += 0.23f;
     }
     public override void AddRecipes()
     {

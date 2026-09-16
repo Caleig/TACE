@@ -29,11 +29,11 @@ public class FleshGunMod
 
         player.GetAttackSpeed(
             DamageClass.Ranged
-        ) += 0.08f;
+        ) += 0.12f;
 
         player.GetCritChance(
             DamageClass.Ranged
-        ) += 12f;
+        ) += 8f;
     }
     public override void AddRecipes()
     {

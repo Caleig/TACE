@@ -12,19 +12,13 @@ public class GunModificationPlayer : ModPlayer
     public bool HasTitanGunMod;
     public bool HasDreadQuiver;
 
-
     private int heat;
-
     private bool heatOverloaded;
-
     private bool pendingOverloadAttack;
-
     private ulong pendingOverloadTick;
-
 
     public int Heat =>
         heat;
-
 
     public int HeatMaximum
     {
@@ -40,18 +34,15 @@ public class GunModificationPlayer : ModPlayer
         }
     }
 
-
     public bool HasHeatModification =>
         HasHellstoneGunMod ||
         HasGreenDragonGunMod ||
         HasFleshGunMod ||
         HasFleshTrigger;
 
-
     public bool IsOverloading =>
         HasHeatModification &&
         heatOverloaded;
-
 
     public int HeatGainPerAttack
     {
@@ -65,7 +56,6 @@ public class GunModificationPlayer : ModPlayer
                 : 0;
         }
     }
-
 
     public int HeatOverloadCost
     {
@@ -87,20 +77,10 @@ public class GunModificationPlayer : ModPlayer
         }
     }
 
-
     public int HeatOverloadDamage
     {
         get
         {
-            if (HasGreenDragonGunMod)
-                return 10;
-
-            if (HasFleshTrigger)
-                return 10;
-
-            if (HasFleshGunMod)
-                return 6;
-
             if (HasHellstoneGunMod)
                 return 5;
 
@@ -108,10 +88,26 @@ public class GunModificationPlayer : ModPlayer
         }
     }
 
+    public float HeatOverloadDamagePercent
+    {
+        get
+        {
+            if (HasGreenDragonGunMod)
+                return 0.20f;
+
+            if (HasFleshTrigger)
+                return 0.30f;
+
+            if (HasFleshGunMod)
+                return 0.15f;
+
+            return 0f;
+        }
+    }
 
     public bool HeatOverloadCanCrit =>
-        HasFleshTrigger;
-
+        !HasHellstoneGunMod &&
+        HeatOverloadDamagePercent > 0f;
 
     public override void ResetEffects()
     {
@@ -122,7 +118,6 @@ public class GunModificationPlayer : ModPlayer
         HasTitanGunMod = false;
         HasDreadQuiver = false;
     }
-
 
     public override void PostUpdate()
     {
@@ -136,15 +131,16 @@ public class GunModificationPlayer : ModPlayer
 
             return;
         }
+
         if (
             pendingOverloadAttack &&
-            pendingOverloadTick !=
-                Main.GameUpdateCount
+            pendingOverloadTick != Main.GameUpdateCount
         )
         {
             pendingOverloadAttack = false;
             pendingOverloadTick = 0;
         }
+
         if (
             !heatOverloaded &&
             heat >= HeatMaximum
@@ -153,12 +149,12 @@ public class GunModificationPlayer : ModPlayer
             heat = HeatMaximum;
             heatOverloaded = true;
         }
-        if (
-            heat > HeatMaximum
-        )
+
+        if (heat > HeatMaximum)
         {
             heat = HeatMaximum;
         }
+
         if (
             heatOverloaded &&
             heat <= 0
@@ -180,17 +176,13 @@ public class GunModificationPlayer : ModPlayer
             return;
         }
 
-
         heat =
             System.Math.Min(
                 HeatMaximum,
                 heat + amount
             );
 
-
-        if (
-            heat >= HeatMaximum
-        )
+        if (heat >= HeatMaximum)
         {
             heat = HeatMaximum;
             heatOverloaded = true;
@@ -201,7 +193,6 @@ public class GunModificationPlayer : ModPlayer
     {
         if (!IsOverloading)
             return;
-
 
         pendingOverloadAttack = true;
 
@@ -227,10 +218,7 @@ public class GunModificationPlayer : ModPlayer
             return false;
         }
 
-
-        if (
-            heat <= 0
-        )
+        if (heat <= 0)
         {
             heat = 0;
             heatOverloaded = false;
@@ -238,31 +226,24 @@ public class GunModificationPlayer : ModPlayer
             return false;
         }
 
-
         heat =
             System.Math.Max(
                 0,
                 heat - HeatOverloadCost
             );
 
-
-        if (
-            heat <= 0
-        )
+        if (heat <= 0)
         {
             heat = 0;
             heatOverloaded = false;
         }
 
-
         return true;
     }
-
 
     public override void UpdateDead()
     {
         heat = 0;
-
         heatOverloaded = false;
 
         pendingOverloadAttack = false;
