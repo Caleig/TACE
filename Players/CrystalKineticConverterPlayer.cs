@@ -1,13 +1,12 @@
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
-using ThoriumMod.Items;
-using ThoriumMod.Utilities;
 using ThoriumAccessoryExpansion.Buffs;
 
 namespace ThoriumAccessoryExpansion.Players;
 
-public class CrystalKineticConverterPlayer : ModPlayer
+public class CrystalKineticConverterPlayer
+    : ModPlayer
 {
     public const int StorageMaximum = 1500;
     public const int ActiveDuration = 1800;
@@ -17,12 +16,33 @@ public class CrystalKineticConverterPlayer : ModPlayer
 
     private int storedSonicDamage;
 
+    private int conversionTimer;
+
     public int StoredSonicDamage =>
         storedSonicDamage;
+
+    public bool IsConversionActive =>
+        conversionTimer > 0;
 
     public override void ResetEffects()
     {
         HasCrystalKineticConverter = false;
+    }
+
+    public override void UpdateEquips()
+    {
+        if (conversionTimer <= 0)
+            return;
+
+        conversionTimer--;
+
+        Player.GetDamage(
+            DamageClass.Generic
+        ) += 0.15f;
+
+        Player.GetArmorPenetration(
+            DamageClass.Generic
+        ) += 10f;
     }
 
     public void AddSonicDamage(int damage)
@@ -67,12 +87,10 @@ public class CrystalKineticConverterPlayer : ModPlayer
 
             if (target == Player)
             {
-                target.AddBuff(
-                    ModContent.BuffType<
-                        CrystalKineticConversionBuff
-                    >(),
-                    ActiveDuration
-                );
+                target.GetModPlayer<
+                    CrystalKineticConverterPlayer
+                >().conversionTimer =
+                    ActiveDuration;
 
                 continue;
             }
@@ -97,12 +115,10 @@ public class CrystalKineticConverterPlayer : ModPlayer
                 continue;
             }
 
-            target.AddBuff(
-                ModContent.BuffType<
-                    CrystalKineticConversionBuff
-                >(),
-                ActiveDuration
-            );
+            target.GetModPlayer<
+                CrystalKineticConverterPlayer
+            >().conversionTimer =
+                ActiveDuration;
         }
     }
 
@@ -154,5 +170,6 @@ public class CrystalKineticConverterPlayer : ModPlayer
     public override void UpdateDead()
     {
         storedSonicDamage = 0;
+        conversionTimer = 0;
     }
 }

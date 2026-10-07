@@ -826,6 +826,11 @@ Mods: {
 					'''
 				DisplayName: 水晶动能转换装置
 			}
+
+			SoulMachineSigil: {
+				// Tooltip: ""
+				// DisplayName: Soul Machine Sigil
+			}
 		}
 
 		Projectiles: {

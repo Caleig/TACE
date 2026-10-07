@@ -1,7 +1,7 @@
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 using ThoriumMod;
+using ThoriumMod.Projectiles.Bard;
 using ThoriumAccessoryExpansion.Players;
 
 namespace ThoriumAccessoryExpansion.Systems;
@@ -16,14 +16,6 @@ public class CrystalKineticConverterGlobalProjectile
         int damageDone)
     {
         if (
-            Main.netMode ==
-            NetmodeID.MultiplayerClient
-        )
-        {
-            return;
-        }
-
-        if (
             projectile.owner < 0 ||
             projectile.owner >= Main.maxPlayers
         )
@@ -34,9 +26,16 @@ public class CrystalKineticConverterGlobalProjectile
         if (damageDone <= 0)
             return;
 
+        bool isBardProjectile =
+            projectile.ModProjectile is BardProjectile;
+
+        bool hasBardDamage =
+            projectile.DamageType ==
+            BardDamage.Instance;
+
         if (
-            projectile.DamageType !=
-            ModContent.GetInstance<BardDamage>()
+            !isBardProjectile &&
+            !hasBardDamage
         )
         {
             return;

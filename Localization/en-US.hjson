@@ -832,6 +832,11 @@ Mods: {
 					'''
 				DisplayName: Crystal Kinetic Converter
 			}
+
+			SoulMachineSigil: {
+				Tooltip: ""
+				DisplayName: Soul Machine Sigil
+			}
 		}
 
 		Projectiles: {

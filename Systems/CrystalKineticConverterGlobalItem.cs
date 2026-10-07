@@ -1,7 +1,6 @@
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
-using ThoriumMod;
+using ThoriumMod.Items;
 using ThoriumAccessoryExpansion.Players;
 
 namespace ThoriumAccessoryExpansion.Systems;
@@ -16,21 +15,8 @@ public class CrystalKineticConverterGlobalItem
         NPC.HitInfo hit,
         int damageDone)
     {
-        if (
-            Main.netMode ==
-            NetmodeID.MultiplayerClient
-        )
-        {
+        if (item.ModItem is not BardItem)
             return;
-        }
-
-        if (
-            item.DamageType !=
-            ModContent.GetInstance<BardDamage>()
-        )
-        {
-            return;
-        }
 
         if (damageDone <= 0)
             return;
