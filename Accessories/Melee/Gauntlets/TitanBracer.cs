@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using ThoriumAccessoryExpansion.Players;
 
-namespace ThoriumAccessoryExpansion.Accessories.Melee.TitanBracer;
+namespace ThoriumAccessoryExpansion.Accessories.Melee.Gauntlets;
 
 public class TitanBracer : ModItem
 {
@@ -11,6 +11,7 @@ public class TitanBracer : ModItem
     {
         Item.width = 32;
         Item.height = 32;
+
         Item.accessory = true;
     }
 
@@ -32,16 +33,18 @@ public class TitanBracer : ModItem
             ModLoader.GetMod("ThoriumMod");
 
         int titanicBarType =
-            thorium.Find<ModItem>("TitanicBar").Type;
+            thorium.Find<ModItem>(
+                "TitanicBar"
+            ).Type;
 
         int arcaneDustType =
-            thorium.Find<ModItem>("ArcaneDust").Type;
+            thorium.Find<ModItem>(
+                "ArcaneDust"
+            ).Type;
 
         CreateRecipe()
             .AddIngredient(
-                ModContent.ItemType<
-                    ThoriumAccessoryExpansion.Accessories.Melee.SoulHunterGlove.SoulHunterGlove
-                >()
+                ModContent.ItemType<SoulHunterGlove>()
             )
             .AddIngredient(
                 titanicBarType,

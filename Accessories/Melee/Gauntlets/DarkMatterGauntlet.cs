@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using ThoriumAccessoryExpansion.Players;
 
-namespace ThoriumAccessoryExpansion.Accessories.Melee.DarkMatterGauntlet;
+namespace ThoriumAccessoryExpansion.Accessories.Melee.Gauntlets;
 
 public class DarkMatterGauntlet : ModItem
 {

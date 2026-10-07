@@ -1,8 +1,9 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using ThoriumAccessoryExpansion.Players;
 
-namespace ThoriumAccessoryExpansion.Accessories.Melee.SoulHunterGlove;
+namespace ThoriumAccessoryExpansion.Accessories.Melee.Gauntlets;
 
 public class SoulHunterGlove : ModItem
 {
@@ -18,9 +19,11 @@ public class SoulHunterGlove : ModItem
         Player player,
         bool hideVisual)
     {
-        player.GetModPlayer<
-            Players.MeleeGauntletPlayer
-        >().HasSoulHunterGlove = true;
+        MeleeGauntletPlayer gauntlet =
+            player.GetModPlayer<MeleeGauntletPlayer>();
+
+        gauntlet.HasSoulHunterGlove = true;
+
         player.statDefense += 1;
     }
 
@@ -35,17 +38,9 @@ public class SoulHunterGlove : ModItem
             ).Type;
 
         CreateRecipe()
-            .AddIngredient(
-                ItemID.Leather,
-                5
-            )
-            .AddIngredient(
-                spiritDropletType,
-                5
-            )
-            .AddTile(
-                TileID.TinkerersWorkbench
-            )
+            .AddIngredient(ItemID.Leather, 5)
+            .AddIngredient(spiritDropletType, 5)
+            .AddTile(TileID.TinkerersWorkbench)
             .Register();
     }
 }

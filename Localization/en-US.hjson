@@ -837,6 +837,26 @@ Mods: {
 				Tooltip: ""
 				DisplayName: Soul Machine Sigil
 			}
+
+			DarkMatterGauntlet: {
+				DisplayName: Dark Matter Gauntlet
+				Tooltip: ""
+			}
+
+			DemonBloodGauntlet: {
+				DisplayName: Demon Blood Gauntlet
+				Tooltip: ""
+			}
+
+			SoulHunterGlove: {
+				DisplayName: Soul Hunter Glove
+				Tooltip: ""
+			}
+
+			TitanBracer: {
+				DisplayName: Titan Bracer
+				Tooltip: ""
+			}
 		}
 
 		Projectiles: {
