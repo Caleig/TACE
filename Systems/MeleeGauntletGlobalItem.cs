@@ -1,5 +1,4 @@
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 using ThoriumAccessoryExpansion.Players;
 
@@ -25,8 +24,11 @@ public class MeleeGauntletGlobalItem : GlobalItem
             return;
         }
 
-        int tier = gauntlet.GetKineticTier();
-        scale *= 1f + tier * 0.05f;
+        int tier =
+            gauntlet.GetKineticTier();
+        scale *=
+            1f +
+            tier * 0.05f;
     }
 
     public override void ModifyHitNPC(
@@ -45,7 +47,7 @@ public class MeleeGauntletGlobalItem : GlobalItem
 
         if (gauntlet.HasTitanBracer)
         {
-            modifiers.CritDamage *= 1.25f;
+            modifiers.CritDamage += 0.25f;
         }
     }
 
@@ -69,10 +71,6 @@ public class MeleeGauntletGlobalItem : GlobalItem
         MeleeGauntletPlayer gauntlet =
             player.GetModPlayer<MeleeGauntletPlayer>();
         gauntlet.RegisterMeleeHit();
-        if (Main.netMode == NetmodeID.MultiplayerClient)
-        {
-            return;
-        }
         if (
             gauntlet.HasSoulHunterGlove &&
             Main.rand.Next(100) < 15

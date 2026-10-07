@@ -38,9 +38,17 @@ public class SoulHunterGlove : ModItem
             ).Type;
 
         CreateRecipe()
-            .AddIngredient(ItemID.Leather, 5)
-            .AddIngredient(spiritDropletType, 5)
-            .AddTile(TileID.TinkerersWorkbench)
+            .AddIngredient(
+                ItemID.Leather,
+                5
+            )
+            .AddIngredient(
+                spiritDropletType,
+                5
+            )
+            .AddTile(
+                TileID.TinkerersWorkbench
+            )
             .Register();
     }
 }

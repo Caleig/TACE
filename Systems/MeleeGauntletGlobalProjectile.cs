@@ -1,5 +1,4 @@
 using Terraria;
-using Terraria.ID;
 using Terraria.ModLoader;
 using ThoriumAccessoryExpansion.Players;
 
@@ -12,7 +11,11 @@ public class MeleeGauntletGlobalProjectile : GlobalProjectile
         NPC target,
         ref NPC.HitModifiers modifiers)
     {
-        if (!projectile.DamageType.CountsAsClass(DamageClass.Melee))
+        if (
+            !projectile.DamageType.CountsAsClass(
+                DamageClass.Melee
+            )
+        )
         {
             return;
         }
@@ -25,9 +28,13 @@ public class MeleeGauntletGlobalProjectile : GlobalProjectile
             return;
         }
 
-        Player player = Main.player[projectile.owner];
+        Player player =
+            Main.player[projectile.owner];
 
-        if (!player.active || player.dead)
+        if (
+            !player.active ||
+            player.dead
+        )
         {
             return;
         }
@@ -37,7 +44,7 @@ public class MeleeGauntletGlobalProjectile : GlobalProjectile
 
         if (gauntlet.HasTitanBracer)
         {
-            modifiers.CritDamage *= 1.25f;
+            modifiers.CritDamage += 0.25f;
         }
     }
 
@@ -47,7 +54,11 @@ public class MeleeGauntletGlobalProjectile : GlobalProjectile
         NPC.HitInfo hit,
         int damageDone)
     {
-        if (!projectile.DamageType.CountsAsClass(DamageClass.Melee))
+        if (
+            !projectile.DamageType.CountsAsClass(
+                DamageClass.Melee
+            )
+        )
         {
             return;
         }
@@ -65,9 +76,13 @@ public class MeleeGauntletGlobalProjectile : GlobalProjectile
             return;
         }
 
-        Player player = Main.player[projectile.owner];
+        Player player =
+            Main.player[projectile.owner];
 
-        if (!player.active || player.dead)
+        if (
+            !player.active ||
+            player.dead
+        )
         {
             return;
         }
@@ -75,10 +90,6 @@ public class MeleeGauntletGlobalProjectile : GlobalProjectile
         MeleeGauntletPlayer gauntlet =
             player.GetModPlayer<MeleeGauntletPlayer>();
         gauntlet.RegisterMeleeHit();
-        if (Main.netMode == NetmodeID.MultiplayerClient)
-        {
-            return;
-        }
         if (
             gauntlet.HasSoulHunterGlove &&
             Main.rand.Next(100) < 15

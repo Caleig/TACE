@@ -37,11 +37,6 @@ public class TitanBracer : ModItem
                 "TitanicBar"
             ).Type;
 
-        int arcaneDustType =
-            thorium.Find<ModItem>(
-                "ArcaneDust"
-            ).Type;
-
         CreateRecipe()
             .AddIngredient(
                 ModContent.ItemType<SoulHunterGlove>()
@@ -51,7 +46,7 @@ public class TitanBracer : ModItem
                 5
             )
             .AddIngredient(
-                arcaneDustType,
+                ItemID.Ectoplasm,
                 10
             )
             .AddTile(
