@@ -5,13 +5,12 @@ using ThoriumAccessoryExpansion.Players;
 
 namespace ThoriumAccessoryExpansion.Accessories.Melee.Gauntlets;
 
-public class TitanBracer : ModItem
+public class TitanBracer : MeleeGauntletBase
 {
     public override void SetDefaults()
     {
         Item.width = 32;
         Item.height = 32;
-
         Item.accessory = true;
     }
 

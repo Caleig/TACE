@@ -5,13 +5,12 @@ using ThoriumAccessoryExpansion.Players;
 
 namespace ThoriumAccessoryExpansion.Accessories.Melee.Gauntlets;
 
-public class SoulHunterGlove : ModItem
+public class SoulHunterGlove : MeleeGauntletBase
 {
     public override void SetDefaults()
     {
         Item.width = 32;
         Item.height = 32;
-
         Item.accessory = true;
     }
 
@@ -38,17 +37,9 @@ public class SoulHunterGlove : ModItem
             ).Type;
 
         CreateRecipe()
-            .AddIngredient(
-                ItemID.Leather,
-                5
-            )
-            .AddIngredient(
-                spiritDropletType,
-                5
-            )
-            .AddTile(
-                TileID.TinkerersWorkbench
-            )
+            .AddIngredient(ItemID.Leather, 5)
+            .AddIngredient(spiritDropletType, 5)
+            .AddTile(TileID.TinkerersWorkbench)
             .Register();
     }
 }

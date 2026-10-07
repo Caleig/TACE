@@ -11,7 +11,6 @@ public class DarkMatterKineticBar : UIElement
 {
     private const int BarWidth = 90;
     private const int BarHeight = 28;
-
     private const int FillSourceX = 26;
     private const int FillSourceY = 6;
     private const int FillSourceWidth = 62;
@@ -34,7 +33,8 @@ public class DarkMatterKineticBar : UIElement
         ).Value;
     }
 
-    protected override void DrawSelf(SpriteBatch spriteBatch)
+    protected override void DrawSelf(
+        SpriteBatch spriteBatch)
     {
         Player player = Main.LocalPlayer;
 
@@ -45,7 +45,6 @@ public class DarkMatterKineticBar : UIElement
 
         MeleeGauntletPlayer gauntlet =
             player.GetModPlayer<MeleeGauntletPlayer>();
-
         if (!gauntlet.HasDarkMatterGauntlet)
         {
             return;
@@ -53,13 +52,11 @@ public class DarkMatterKineticBar : UIElement
 
         Rectangle barRectangle =
             GetInnerDimensions().ToRectangle();
-
         spriteBatch.Draw(
             _emptyTexture,
             barRectangle,
             Color.White
         );
-
         float progress =
             MathHelper.Clamp(
                 gauntlet.DarkMatterKinetic / 100f,
@@ -79,7 +76,6 @@ public class DarkMatterKineticBar : UIElement
         {
             return;
         }
-
         Rectangle sourceRectangle =
             new Rectangle(
                 FillSourceX,
@@ -87,7 +83,6 @@ public class DarkMatterKineticBar : UIElement
                 fillWidth,
                 FillSourceHeight
             );
-
         Rectangle destinationRectangle =
             new Rectangle(
                 barRectangle.X + FillSourceX,

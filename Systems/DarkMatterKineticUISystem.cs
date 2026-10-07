@@ -1,46 +1,54 @@
-using System.Collections.Generic;
 using Microsoft.Xna.Framework;
+using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.UI;
+using ThoriumAccessoryExpansion.Players;
 using ThoriumAccessoryExpansion.UI.DarkMatter;
 
 namespace ThoriumAccessoryExpansion.Systems;
 
+[Autoload(Side = ModSide.Client)]
 public class DarkMatterKineticUISystem : ModSystem
 {
-    private DarkMatterKineticUI? _uiState;
     private UserInterface? _userInterface;
+    private DarkMatterKineticUI? _uiState;
 
     public override void Load()
     {
-        if (Main.dedServ)
-        {
-            return;
-        }
+        _uiState =
+            new DarkMatterKineticUI();
 
-        _uiState = new DarkMatterKineticUI();
+        _userInterface =
+            new UserInterface();
 
-        _userInterface = new UserInterface();
-        _userInterface.SetState(_uiState);
+        _userInterface.SetState(
+            _uiState
+        );
     }
 
     public override void Unload()
     {
-        _uiState = null;
         _userInterface = null;
+        _uiState = null;
     }
 
-    public override void UpdateUI(GameTime gameTime)
+    public override void UpdateUI(
+        GameTime gameTime)
     {
-        if (Main.dedServ)
+        if (
+            _userInterface == null ||
+            _uiState == null
+        )
         {
             return;
         }
 
-        _userInterface?.Update(gameTime);
-
         UpdatePosition();
+
+        _userInterface.Update(
+            gameTime
+        );
     }
 
     private void UpdatePosition()
@@ -50,13 +58,49 @@ public class DarkMatterKineticUISystem : ModSystem
             return;
         }
 
+        Player player =
+            Main.LocalPlayer;
+
+        if (
+            !player.active ||
+            player.dead
+        )
+        {
+            return;
+        }
+
+        MeleeGauntletPlayer gauntlet =
+            player.GetModPlayer<
+                Players.MeleeGauntletPlayer
+            >();
+
+        if (!gauntlet.HasDarkMatterGauntlet)
+        {
+            return;
+        }
+        Vector2 playerBottom =
+            player.Bottom +
+            new Vector2(
+                0f,
+                player.gfxOffY
+            ) -
+            Main.screenPosition;
+        const float barWidth = 90f;
+
+        float x =
+            playerBottom.X -
+            barWidth / 2f;
+        float y =
+            playerBottom.Y +
+            8f;
+
         _uiState.KineticBar.Left.Set(
-            Main.screenWidth - 110f,
+            x,
             0f
         );
 
         _uiState.KineticBar.Top.Set(
-            120f,
+            y,
             0f
         );
     }
@@ -69,21 +113,21 @@ public class DarkMatterKineticUISystem : ModSystem
             return;
         }
 
-        int resourceBarsIndex =
+        int index =
             layers.FindIndex(
                 layer =>
                     layer.Name.Equals(
-                        "Vanilla: Resource Bars"
+                        "Vanilla: Mouse Text"
                     )
             );
 
-        if (resourceBarsIndex == -1)
+        if (index == -1)
         {
             return;
         }
 
         layers.Insert(
-            resourceBarsIndex + 1,
+            index,
             new LegacyGameInterfaceLayer(
                 "ThoriumAccessoryExpansion: Dark Matter Kinetic",
                 () =>
@@ -95,7 +139,7 @@ public class DarkMatterKineticUISystem : ModSystem
 
                     return true;
                 },
-                InterfaceScaleType.UI
+                InterfaceScaleType.Game
             )
         );
     }

@@ -5,13 +5,12 @@ using ThoriumAccessoryExpansion.Players;
 
 namespace ThoriumAccessoryExpansion.Accessories.Melee.Gauntlets;
 
-public class DarkMatterGauntlet : ModItem
+public class DarkMatterGauntlet : MeleeGauntletBase
 {
     public override void SetDefaults()
     {
         Item.width = 32;
         Item.height = 32;
-
         Item.accessory = true;
     }
 
@@ -27,7 +26,8 @@ public class DarkMatterGauntlet : ModItem
         player.GetKnockback(DamageClass.Melee) += 1f;
         player.GetDamage(DamageClass.Melee) += 0.15f;
 
-        int tier = gauntlet.GetKineticTier();
+        int tier =
+            gauntlet.GetKineticTier();
         player.GetAttackSpeed(DamageClass.Melee) +=
             0.15f + tier * 0.03f;
 
@@ -50,16 +50,9 @@ public class DarkMatterGauntlet : ModItem
             ).Type;
 
         CreateRecipe()
-            .AddIngredient(
-                ItemID.FireGauntlet
-            )
-            .AddIngredient(
-                darkMatterType,
-                5
-            )
-            .AddTile(
-                TileID.TinkerersWorkbench
-            )
+            .AddIngredient(ItemID.FireGauntlet)
+            .AddIngredient(darkMatterType, 5)
+            .AddTile(TileID.TinkerersWorkbench)
             .Register();
     }
 }

@@ -8,7 +8,8 @@ public class DarkMatterKineticUI : UIState
 
     public override void OnInitialize()
     {
-        KineticBar = new DarkMatterKineticBar();
+        KineticBar =
+            new DarkMatterKineticBar();
 
         Append(KineticBar);
     }

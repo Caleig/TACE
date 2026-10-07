@@ -5,7 +5,7 @@ using ThoriumAccessoryExpansion.Players;
 
 namespace ThoriumAccessoryExpansion.Accessories.Melee.Gauntlets;
 
-public class DemonBloodGauntlet : ModItem
+public class DemonBloodGauntlet : MeleeGauntletBase
 {
     public override void SetDefaults()
     {
