@@ -12,6 +12,7 @@ public class TitanBracer : ModItem
         Item.width = 32;
         Item.height = 32;
         Item.accessory = true;
+        Item.rare = ItemRarityID.Yellow;
     }
 
     public override void UpdateAccessory(

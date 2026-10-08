@@ -5,13 +5,14 @@ using ThoriumAccessoryExpansion.Players;
 
 namespace ThoriumAccessoryExpansion.Accessories.Melee.Gauntlets;
 
-public class SoulHunterGlove : MeleeGauntletBase
+public class SoulHunterGlove : ModItem
 {
     public override void SetDefaults()
     {
         Item.width = 32;
         Item.height = 32;
         Item.accessory = true;
+        Item.rare = ItemRarityID.LightRed;
     }
 
     public override void UpdateAccessory(

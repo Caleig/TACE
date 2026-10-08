@@ -12,6 +12,7 @@ public class DarkMatterGauntlet : MeleeGauntletBase
         Item.width = 32;
         Item.height = 32;
         Item.accessory = true;
+        Item.rare = ItemRarityID.Pink;
     }
 
     public override void UpdateAccessory(

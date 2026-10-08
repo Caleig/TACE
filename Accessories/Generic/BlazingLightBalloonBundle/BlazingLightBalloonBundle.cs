@@ -59,11 +59,29 @@ namespace ThoriumAccessoryExpansion.Accessories.Generic.BlazingLightBalloonBundl
 
         public override void AddRecipes()
         {
+            Mod thorium =
+                ModLoader.GetMod("ThoriumMod");
+
+            int bloomWeaveType =
+                thorium.Find<ModItem>(
+                    "BloomWeave"
+                ).Type;
+
             CreateRecipe()
-                .AddIngredient(ModContent.ItemType<IncandescentAlacrity>(), 1)
-                .AddIngredient(ModContent.ItemType<TerrariumCore>(), 5)
-                .AddIngredient(5331)
-                .AddTile(TileID.TinkerersWorkbench)
+                .AddIngredient(
+                    ModContent.ItemType<IncandescentAlacrity>(),
+                    1
+                )
+                .AddIngredient(
+                    bloomWeaveType,
+                    5
+                )
+                .AddIngredient(
+                    5331
+                )
+                .AddTile(
+                    TileID.TinkerersWorkbench
+                )
                 .Register();
         }
     }

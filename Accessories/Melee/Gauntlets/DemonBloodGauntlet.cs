@@ -13,6 +13,7 @@ public class DemonBloodGauntlet : MeleeGauntletBase
         Item.height = 32;
 
         Item.accessory = true;
+        Item.rare = ItemRarityID.Pink;
     }
 
     public override void UpdateAccessory(
