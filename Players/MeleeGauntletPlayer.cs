@@ -82,6 +82,11 @@ public class MeleeGauntletPlayer : ModPlayer
         {
             return false;
         }
-        return Main.rand.Next(100) < 20;
+        if (Main.rand.Next(100) >= 20)
+        {
+            return false;
+        }
+        Player.Heal(info.Damage);
+        return true;
     }
 }

@@ -5,7 +5,7 @@ using ThoriumAccessoryExpansion.Players;
 
 namespace ThoriumAccessoryExpansion.Accessories.Melee.Gauntlets;
 
-public class TitanBracer : MeleeGauntletBase
+public class TitanBracer : ModItem
 {
     public override void SetDefaults()
     {
