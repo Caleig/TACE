@@ -828,28 +828,64 @@ Mods: {
 			}
 
 			SoulMachineSigil: {
-				// Tooltip: ""
-				// DisplayName: Soul Machine Sigil
+				Tooltip:
+					'''
+					鞭子长度提高15%
+					最大哨兵数提高
+					最大仆从数降低
+					使用鞭子命中敌人后，对其施加特殊标记
+					哨兵的下一次攻击命中被标记目标时，额外造成25%的伤害
+					'''
+				DisplayName: 魂械徽记
 			}
 
 			DarkMatterGauntlet: {
-				// DisplayName: Dark Matter Gauntlet
-				// Tooltip: ""
+				Tooltip:
+					'''
+					提高近战击退力
+					近战伤害提高15%
+					近战速度提高15%
+					近战武器和鞭子可自动挥舞，并加大近战武器的尺寸
+					近战造成伤害时积累动能，最多100点
+					每25点动能使近战速度提高3%，并使近战武器尺寸提高5%
+					动能达到100点时，近战伤害额外提高15%
+					每5秒未造成近战伤害则减少25点动能
+					'''
+				DisplayName: 暗物质拳套
 			}
 
 			DemonBloodGauntlet: {
-				// DisplayName: Demon Blood Gauntlet
-				// Tooltip: ""
+				Tooltip:
+					'''
+					防御力提高9点
+					伤害减免提高5%
+					提高近战击退力
+					近战速度提高15%
+					近战武器和鞭子可自动挥舞，并加大近战武器的尺寸
+					大幅提高敌人以你为目标的倾向
+					即将受到的非致命攻击有20%概率不造成伤害，并将该伤害转化为等量的治疗
+					'''
+				DisplayName: 魔血拳套
 			}
 
 			SoulHunterGlove: {
-				// DisplayName: Soul Hunter Glove
-				// Tooltip: ""
+				Tooltip:
+					'''
+					防御力提高1点
+					近战武器攻击有15%的概率额外造成一次伤害
+					'''
+				DisplayName: 猎魂手套
 			}
 
 			TitanBracer: {
-				// DisplayName: Titan Bracer
-				// Tooltip: ""
+				Tooltip:
+					'''
+					防御力提高3点
+					近战武器挥砍时有25%的概率额外造成一次伤害
+					该效果无法通过投射物触发
+					近战武器暴击时额外造成25%的伤害
+					'''
+				DisplayName: 泰坦护腕
 			}
 		}
 

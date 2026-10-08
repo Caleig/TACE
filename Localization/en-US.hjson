@@ -834,28 +834,64 @@ Mods: {
 			}
 
 			SoulMachineSigil: {
-				Tooltip: ""
+				Tooltip:
+					'''
+					Increases whip range by 15%
+					Increases maximum sentry slots
+					Decreases maximum minion slots
+					Hitting an enemy with a whip applies a special mark to them
+					The next sentry attack against a marked target deals an additional 25% damage
+					'''
 				DisplayName: Soul Machine Sigil
 			}
 
 			DarkMatterGauntlet: {
+				Tooltip:
+					'''
+					Increases melee knockback
+					Increases melee damage by 15%
+					Increases melee speed by 15%
+					Enables melee weapons and whips to auto-swing and increases melee weapon size
+					Dealing melee damage builds Kinetic, up to 100
+					Every 25 Kinetic increases melee speed by 3% and melee weapon size by 5%
+					At 100 Kinetic, increases melee damage by an additional 15%
+					Loses 25 Kinetic every 5 seconds without dealing melee damage
+					'''
 				DisplayName: Dark Matter Gauntlet
-				Tooltip: ""
 			}
 
 			DemonBloodGauntlet: {
+				Tooltip:
+					'''
+					Increases defense by 9
+					Reduces damage taken by 5%
+					Increases melee knockback
+					Increases melee speed by 15%
+					Enables melee weapons and whips to auto-swing and increases melee weapon size
+					Greatly increases enemy aggro toward you
+					Non-lethal incoming attacks have a 20% chance to deal no damage and instead heal you for that amount
+					'''
 				DisplayName: Demon Blood Gauntlet
-				Tooltip: ""
 			}
 
 			SoulHunterGlove: {
+				Tooltip:
+					'''
+					Increases defense by 1
+					Melee weapon attacks have a 15% chance to deal an additional instance of damage
+					'''
 				DisplayName: Soul Hunter Glove
-				Tooltip: ""
 			}
 
 			TitanBracer: {
+				Tooltip:
+					'''
+					Increases defense by 3
+					Melee weapon swings have a 25% chance to deal an additional instance of damage
+					This effect cannot be triggered by projectiles
+					Melee weapon critical hits deal an additional 25% damage
+					'''
 				DisplayName: Titan Bracer
-				Tooltip: ""
 			}
 		}
 
