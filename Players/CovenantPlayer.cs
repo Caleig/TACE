@@ -63,9 +63,6 @@ namespace ThoriumAccessoryExpansion.Players
                 FallenRadianceStacks = 0;
                 FallenRadianceTimer = 0;
             }
-
-            if (!HeresyHasCovenant)
-                HeresyLifeRegenTimer = 0;
         }
 
         public int GetMaxStacks() => GlobalMaxStacks;
@@ -161,10 +158,11 @@ namespace ThoriumAccessoryExpansion.Players
                 _boneLastDisplayedHealBonus = int.MinValue;
             }
 
-            if (
-                HeresyHasCovenant &&
-                HeresyLifeRegenTimer > 0
-            )
+            if (!HeresyHasCovenant)
+            {
+                HeresyLifeRegenTimer = 0;
+            }
+            else if (HeresyLifeRegenTimer > 0)
             {
                 HeresyLifeRegenTimer--;
 

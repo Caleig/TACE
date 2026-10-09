@@ -8,6 +8,10 @@ namespace ThoriumAccessoryExpansion.NPCs;
 
 public class HeresyCovenantGlobalNPC : GlobalNPC
 {
+    public override bool InstancePerEntity => true;
+
+    private int _heresyDamageTimer;
+
     private static bool AnyPlayerHas()
     {
         for (int i = 0; i < Main.maxPlayers; i++)
@@ -27,6 +31,13 @@ public class HeresyCovenantGlobalNPC : GlobalNPC
         return false;
     }
 
+    private static bool HasHeresyDebuff(NPC npc)
+    {
+        return
+            npc.HasBuff(BuffID.ShadowFlame) ||
+            npc.HasBuff(ModContent.BuffType<LightCurse>());
+    }
+
     public override void OnHitByItem(
         NPC npc,
         Player player,
@@ -34,36 +45,20 @@ public class HeresyCovenantGlobalNPC : GlobalNPC
         NPC.HitInfo hit,
         int damageDone)
     {
-        bool hasShadowFlame =
-            AnyNPCHasBuff(BuffID.ShadowFlame);
+        if (!player.active)
+            return;
 
-        bool hasLightCurse =
-            AnyNPCHasBuff(
-                ModContent.BuffType<LightCurse>()
-            );
-
-        if (hasShadowFlame || hasLightCurse)
+        if (
+            !player.GetModPlayer<CovenantPlayer>()
+                .HeresyHasCovenant
+        )
+        {
+            return;
+        }
+        if (HasHeresyDebuff(npc))
         {
             player.lifeRegen += 5;
         }
-    }
-
-    public static bool AnyNPCHasBuff(int buffType)
-    {
-        for (int i = 0; i < Main.maxNPCs; i++)
-        {
-            NPC npc = Main.npc[i];
-
-            if (
-                npc.active &&
-                npc.HasBuff(buffType)
-            )
-            {
-                return true;
-            }
-        }
-
-        return false;
     }
 
     public override void OnHitByProjectile(
@@ -72,24 +67,29 @@ public class HeresyCovenantGlobalNPC : GlobalNPC
         NPC.HitInfo hit,
         int damageDone)
     {
-        bool hasShadowFlame =
-            AnyNPCHasBuff(BuffID.ShadowFlame);
-
-        bool hasLightCurse =
-            AnyNPCHasBuff(
-                ModContent.BuffType<LightCurse>()
-            );
-
-        if (hasShadowFlame || hasLightCurse)
+        if (
+            projectile.owner < 0 ||
+            projectile.owner >= Main.maxPlayers
+        )
         {
-            if (
-                projectile.owner >= 0 &&
-                projectile.owner < Main.maxPlayers
-            )
-            {
-                Main.player[projectile.owner]
-                    .lifeRegen += 5;
-            }
+            return;
+        }
+
+        Player player = Main.player[projectile.owner];
+
+        if (!player.active)
+            return;
+
+        if (
+            !player.GetModPlayer<CovenantPlayer>()
+                .HeresyHasCovenant
+        )
+        {
+            return;
+        }
+        if (HasHeresyDebuff(npc))
+        {
+            player.lifeRegen += 5;
         }
     }
 
@@ -99,37 +99,29 @@ public class HeresyCovenantGlobalNPC : GlobalNPC
             return;
 
         if (!AnyPlayerHas())
+        {
+            _heresyDamageTimer = 0;
             return;
-
-        bool hasShadowFlame =
-            npc.HasBuff(BuffID.ShadowFlame);
-
-        bool hasLightCurse =
-            npc.HasBuff(
-                ModContent.BuffType<LightCurse>()
-            );
-
-        if (hasShadowFlame || hasLightCurse)
-        {
-            npc.localAI[0]++;
-
-            if (npc.localAI[0] >= 30)
-            {
-                npc.localAI[0] = 0;
-
-                int extraDamage = 5;
-
-                npc.SimpleStrikeNPC(
-                    extraDamage,
-                    0,
-                    false,
-                    0
-                );
-            }
         }
-        else
+
+        if (!HasHeresyDebuff(npc))
         {
-            npc.localAI[0] = 0;
+            _heresyDamageTimer = 0;
+            return;
+        }
+
+        _heresyDamageTimer++;
+
+        if (_heresyDamageTimer >= 30)
+        {
+            _heresyDamageTimer = 0;
+
+            npc.SimpleStrikeNPC(
+                5,
+                0,
+                false,
+                0
+            );
         }
     }
 }

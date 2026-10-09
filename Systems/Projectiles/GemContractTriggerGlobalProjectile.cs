@@ -1218,7 +1218,7 @@ public class GemContractTriggerGlobalProjectile : GlobalProjectile
 
 
         float resonanceCrit =
-            20f
+            10f
             +
             magicCrit * 0.25f;
 

@@ -385,14 +385,7 @@ public class LegendaryResonancePickupItem : ModItem
             type
         );
 
-        int lifeRestore =
-            Math.Max(
-                1,
-                (int)(
-                    player.statLifeMax2
-                    * 0.05f
-                )
-            );
+        const int lifeRestore = 10;
 
 
 

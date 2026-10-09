@@ -118,7 +118,7 @@ public class GunModificationGlobalItem
 
         if (
             modification.HasTitanGunMod &&
-            item.useTime <
+            item.useTime >
                 TitanSlowGunUseTime
         )
         {
