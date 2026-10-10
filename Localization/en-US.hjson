@@ -676,7 +676,7 @@ Mods: {
 					When a minion or sentry attacks a target with "Legendary Mark":
 					Consumes the mark, deals 80% of the weapon damage when the mark was applied, and inflicts "Legendary Resonance" for 6 seconds.
 
-					"Legendary Resonance": Summon attacks gain 20% marked critical strike chance, plus additional marked critical strike chance equal to 25% of your magic critical strike chance.
+					"Legendary Resonance": Summon attacks gain 10% marked critical strike chance, plus additional marked critical strike chance equal to 25% of your magic critical strike chance.
 					Marked critical hits drop Rainbow Enhancements.
 
 					Picking up a Rainbow Enhancement grants 1 random Resonance stack and restores a small amount of life, mana, and inspiration.
