@@ -1,5 +1,6 @@
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
 using ThoriumAccessoryExpansion.Projectiles.Scythe;
 using ThoriumMod;
@@ -22,7 +23,6 @@ public class SoulOfScythePlayer : ModPlayer
 
     public const int MaxBloodCharge = 4;
 
-
     public override void ResetEffects()
     {
         SoulOfScythe = false;
@@ -32,14 +32,12 @@ public class SoulOfScythePlayer : ModPlayer
         RadiantHolyAnkh = false;
     }
 
-
     public override void UpdateDead()
     {
         soulScytheTimer = 0;
         lastSoulEssence = -1;
         BloodCharge = 0;
     }
-
 
     public override void PostUpdate()
     {
@@ -61,7 +59,6 @@ public class SoulOfScythePlayer : ModPlayer
                 TriggerSoulEssenceBubble();
             }
 
-
             lastSoulEssence =
                 thoriumPlayer.soulEssence;
         }
@@ -74,7 +71,6 @@ public class SoulOfScythePlayer : ModPlayer
             soulScytheTimer--;
         }
 
-
         if (!HasScytheAccessory())
         {
             return;
@@ -84,22 +80,17 @@ public class SoulOfScythePlayer : ModPlayer
             Projectile projectile =
                 Main.projectile[i];
 
-
             if (!projectile.active)
                 continue;
-
 
             if (projectile.owner != Player.whoAmI)
                 continue;
 
-
             if (projectile.ModProjectile is not ScythePro)
                 continue;
 
-
             if (soulScytheTimer > 0)
                 return;
-
 
             int projectileType;
             float damageMultiplier;
@@ -149,21 +140,16 @@ public class SoulOfScythePlayer : ModPlayer
                 damageMultiplier = 0.50f;
             }
 
-
             if (Main.myPlayer != Player.whoAmI)
                 return;
-
 
             Vector2 direction =
                 Main.MouseWorld - Player.Center;
 
-
             if (direction.LengthSquared() <= 0.001f)
                 return;
 
-
             direction.Normalize();
-
 
             Projectile.NewProjectile(
                 Player.GetSource_Misc(
@@ -185,7 +171,6 @@ public class SoulOfScythePlayer : ModPlayer
         }
     }
 
-
     private bool HasScytheAccessory()
     {
         return
@@ -197,58 +182,38 @@ public class SoulOfScythePlayer : ModPlayer
     }
     private void TriggerSoulEssenceBubble()
     {
+        if (Main.netMode == NetmodeID.Server || Player.whoAmI != Main.myPlayer)
+            return;
         if (Player.team == 0)
             return;
 
-
-        Mod thorium =
-            ModLoader.GetMod("ThoriumMod");
-
-
-        int bubbleBuff =
-            thorium.Find<ModBuff>(
-                "BulwarkBubble"
-            ).Type;
-
+        Mod thorium = ModLoader.GetMod("ThoriumMod");
+        int bubbleBuff = thorium.Find<ModBuff>("BubbleBulwarkWandBuff").Type;
 
         for (int i = 0; i < Main.maxPlayers; i++)
         {
-            Player ally =
-                Main.player[i];
-
-
-            if (!ally.active)
+            Player ally = Main.player[i];
+            if (!ally.active || ally.dead || ally.whoAmI == Player.whoAmI)
                 continue;
-
-
-            if (ally.dead)
-                continue;
-
-
-            if (ally.whoAmI == Player.whoAmI)
-                continue;
-
-
             if (ally.team != Player.team)
                 continue;
-
-
-            if (
-                Vector2.DistanceSquared(
-                    Player.Center,
-                    ally.Center
-                ) > 800f * 800f
-            )
-            {
+            if (Vector2.DistanceSquared(Player.Center, ally.Center) > 800f * 800f)
                 continue;
-            }
 
-
-            ally.AddBuff(
-                bubbleBuff,
-                60
-            );
+            ApplySoulEssenceBubble(ally, bubbleBuff, 60, true, false);
         }
+    }
+    private static void ApplySoulEssenceBubble(Player ally, int buff, int time,
+        bool quiet, bool foodHack)
+    {
+        if (Main.netMode == NetmodeID.MultiplayerClient)
+        {
+            NetMessage.SendData(MessageID.AddPlayerBuff, -1, -1, null,
+                ally.whoAmI, buff, time);
+            return;
+        }
+
+        ally.AddBuff(buff, time, true, false);
     }
     public void GiveSoulShield(
         int soulEssenceAmount)
@@ -256,36 +221,28 @@ public class SoulOfScythePlayer : ModPlayer
         if (!RadiantHolyAnkh)
             return;
 
-
         if (soulEssenceAmount <= 0)
             return;
 
-
         if (Player.team == 0)
             return;
-
 
         for (int i = 0; i < Main.maxPlayers; i++)
         {
             Player ally =
                 Main.player[i];
 
-
             if (!ally.active)
                 continue;
-
 
             if (ally.dead)
                 continue;
 
-
             if (ally.whoAmI == Player.whoAmI)
                 continue;
 
-
             if (ally.team != Player.team)
                 continue;
-
 
             if (
                 Vector2.DistanceSquared(
@@ -296,7 +253,6 @@ public class SoulOfScythePlayer : ModPlayer
             {
                 continue;
             }
-
 
             int shieldAmount =
                 (int)(
@@ -305,29 +261,23 @@ public class SoulOfScythePlayer : ModPlayer
                     soulEssenceAmount
                 );
 
-
             if (shieldAmount <= 0)
                 continue;
-
 
             ThoriumPlayer allyThoriumPlayer =
                 ally.GetThoriumPlayer();
 
-
             int available =
                 ThoriumPlayer.ShieldHealthMax -
                 allyThoriumPlayer.shieldHealth;
-
 
             int actualAmount =
                 shieldAmount < available
                     ? shieldAmount
                     : available;
 
-
             if (actualAmount <= 0)
                 continue;
-
 
             allyThoriumPlayer.shieldHealth +=
                 actualAmount;

@@ -1,4 +1,4 @@
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -20,15 +20,12 @@ public class SoulScytheGlobalProjectile : GlobalProjectile
         if (!IsScythe(projectile))
             return;
 
-
         SoulOfScythePlayer player =
             Main.player[projectile.owner]
                 .GetModPlayer<SoulOfScythePlayer>();
 
-
         if (!player.StyxBloodAnkh)
             return;
-
 
         if (
             player.BloodCharge <
@@ -40,7 +37,6 @@ public class SoulScytheGlobalProjectile : GlobalProjectile
         modifiers.FinalDamage *= 2f;
     }
 
-
     public override void OnHitNPC(
         Projectile projectile,
         NPC target,
@@ -50,16 +46,13 @@ public class SoulScytheGlobalProjectile : GlobalProjectile
         if (!IsScythe(projectile))
             return;
 
-
         if (damageDone <= 0)
             return;
-
 
         SoulOfScythePlayer player =
             Main.player[projectile.owner]
                 .GetModPlayer<SoulOfScythePlayer>();
         int mode = -1;
-
 
         if (
             projectile.ModProjectile
@@ -94,7 +87,6 @@ public class SoulScytheGlobalProjectile : GlobalProjectile
                 target
             );
 
-
             if (
                 target.life <= 0 &&
                 Main.netMode !=
@@ -124,7 +116,6 @@ public class SoulScytheGlobalProjectile : GlobalProjectile
                 target
             );
 
-
             GrantRadiantSoulEssence(
                 projectile,
                 target
@@ -139,10 +130,8 @@ public class SoulScytheGlobalProjectile : GlobalProjectile
             {
                 player.BloodCharge = 0;
 
-
                 int healAmount =
                     (int)(damageDone * 0.20f);
-
 
                 if (
                     healAmount > 0 &&
@@ -158,7 +147,6 @@ public class SoulScytheGlobalProjectile : GlobalProjectile
             {
                 player.BloodCharge++;
             }
-
 
             GiveBloodBoost(
                 projectile
@@ -183,12 +171,10 @@ public class SoulScytheGlobalProjectile : GlobalProjectile
         Mod thorium =
             ModLoader.GetMod("ThoriumMod");
 
-
         int buff =
             thorium.Find<ModBuff>(
                 "HolyGlare"
             ).Type;
-
 
         target.AddBuff(
             buff,
@@ -203,12 +189,10 @@ public class SoulScytheGlobalProjectile : GlobalProjectile
         Mod thorium =
             ModLoader.GetMod("ThoriumMod");
 
-
         int buff =
             thorium.Find<ModBuff>(
                 "Tuned"
             ).Type;
-
 
         target.AddBuff(
             buff,
@@ -216,75 +200,28 @@ public class SoulScytheGlobalProjectile : GlobalProjectile
         );
     }
 
-    private static void GrantRadiantSoulEssence(
-        Projectile projectile,
-        NPC target)
+    private static void GrantRadiantSoulEssence(Projectile projectile, NPC target)
     {
-        if (
-            projectile.ModProjectile
-            is not SoulScytheProjectile
-        )
-        {
+        if (Main.netMode == NetmodeID.Server || projectile.owner != Main.myPlayer)
             return;
-        }
 
+        if (projectile.ModProjectile is not SoulScytheProjectile)
+            return;
         if (projectile.localAI[0] != 0f)
             return;
 
-
-        int originalProjectileType =
-            (int)projectile.ai[0];
-
-
-        int scytheCharge =
-            ThoriumMod.Items.HealerItems.ScytheItem
-                .GetScytheChargeFromPro(
-                    originalProjectileType
-                );
-
-
-        if (scytheCharge <= 0)
+        int originalProjectileType = (int)projectile.ai[0];
+        int scytheCharge = ThoriumMod.Items.HealerItems.ScytheItem
+            .GetScytheChargeFromPro(originalProjectileType);
+        if (scytheCharge <= 0 || !target.CanBeChasedBy())
             return;
-
-
-        if (!target.CanBeChasedBy())
-            return;
-
 
         projectile.localAI[0] = 1f;
-
-
-        Player player =
-            Main.player[projectile.owner];
-
-
-        ThoriumPlayer thoriumPlayer =
-            player.GetThoriumPlayer();
-
-
-        if (
-            Main.netMode !=
-            NetmodeID.MultiplayerClient
-        )
-        {
-            player.AddBuff(
-                ModContent.BuffType<
-                    ThoriumMod.Buffs.Healer.SoulEssence
-                >(),
-                1800
-            );
-
-
-            thoriumPlayer.soulEssence +=
-                scytheCharge;
-        }
-
-
-        player.GetModPlayer<
-            SoulOfScythePlayer
-        >().GiveSoulShield(
-            scytheCharge
-        );
+        Player player = Main.player[projectile.owner];
+        ThoriumPlayer thoriumPlayer = player.GetThoriumPlayer();
+        player.AddBuff(ModContent.BuffType<ThoriumMod.Buffs.Healer.SoulEssence>(), 1800);
+        thoriumPlayer.soulEssence += scytheCharge;
+        player.GetModPlayer<SoulOfScythePlayer>().GiveSoulShield(scytheCharge);
     }
     private static void GiveBloodBoost(
         Projectile projectile)
@@ -292,42 +229,33 @@ public class SoulScytheGlobalProjectile : GlobalProjectile
         Player owner =
             Main.player[projectile.owner];
 
-
         if (owner.team == 0)
             return;
 
-
         Mod thorium =
             ModLoader.GetMod("ThoriumMod");
-
 
         int bloodBoost =
             thorium.Find<ModBuff>(
                 "BloodBoost"
             ).Type;
 
-
         for (int i = 0; i < Main.maxPlayers; i++)
         {
             Player ally =
                 Main.player[i];
 
-
             if (!ally.active)
                 continue;
-
 
             if (ally.dead)
                 continue;
 
-
             if (ally.whoAmI == owner.whoAmI)
                 continue;
 
-
             if (ally.team != owner.team)
                 continue;
-
 
             if (
                 Vector2.DistanceSquared(
@@ -338,7 +266,6 @@ public class SoulScytheGlobalProjectile : GlobalProjectile
             {
                 continue;
             }
-
 
             ally.AddBuff(
                 bloodBoost,
