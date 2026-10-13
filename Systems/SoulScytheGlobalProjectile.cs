@@ -221,7 +221,7 @@ public class SoulScytheGlobalProjectile : GlobalProjectile
         ThoriumPlayer thoriumPlayer = player.GetThoriumPlayer();
         player.AddBuff(ModContent.BuffType<ThoriumMod.Buffs.Healer.SoulEssence>(), 1800);
         thoriumPlayer.soulEssence += scytheCharge;
-        player.GetModPlayer<SoulOfScythePlayer>().GiveSoulShield(scytheCharge);
+        player.GetModPlayer<SoulOfScythePlayer>().GiveSoulHealing(scytheCharge);
     }
     private static void GiveBloodBoost(
         Projectile projectile)

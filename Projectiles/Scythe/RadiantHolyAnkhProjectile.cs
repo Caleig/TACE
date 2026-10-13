@@ -35,6 +35,6 @@ public class RadiantHolyAnkhProjectile : SoulScytheProjectile
         int buff = ModLoader.GetMod("ThoriumMod").Find<ModBuff>("SoulEssence").Type;
         player.AddBuff(buff, 1800);
         player.GetThoriumPlayer().soulEssence += scytheCharge;
-        player.GetModPlayer<SoulOfScythePlayer>().GiveSoulShield(scytheCharge);
+        player.GetModPlayer<SoulOfScythePlayer>().GiveSoulHealing(scytheCharge);
     }
 }

@@ -200,7 +200,7 @@ public class SoulOfScythePlayer : ModPlayer
             if (Vector2.DistanceSquared(Player.Center, ally.Center) > 800f * 800f)
                 continue;
 
-            ApplySoulEssenceBubble(ally, bubbleBuff, 60, true, false);
+            ApplySoulEssenceBubble(ally, bubbleBuff, 300, true, false);
         }
     }
     private static void ApplySoulEssenceBubble(Player ally, int buff, int time,
@@ -215,8 +215,8 @@ public class SoulOfScythePlayer : ModPlayer
 
         ally.AddBuff(buff, time, true, false);
     }
-    public void GiveSoulShield(
-        int soulEssenceAmount)
+    public void GiveSoulHealing(
+    int soulEssenceAmount)
     {
         if (!RadiantHolyAnkh)
             return;
@@ -227,10 +227,12 @@ public class SoulOfScythePlayer : ModPlayer
         if (Player.team == 0)
             return;
 
+
         for (int i = 0; i < Main.maxPlayers; i++)
         {
             Player ally =
                 Main.player[i];
+
 
             if (!ally.active)
                 continue;
@@ -241,8 +243,10 @@ public class SoulOfScythePlayer : ModPlayer
             if (ally.whoAmI == Player.whoAmI)
                 continue;
 
+
             if (ally.team != Player.team)
                 continue;
+
 
             if (
                 Vector2.DistanceSquared(
@@ -254,36 +258,21 @@ public class SoulOfScythePlayer : ModPlayer
                 continue;
             }
 
-            int shieldAmount =
+
+            int healAmount =
                 (int)(
                     ally.statLifeMax2 *
-                    0.01f *
-                    soulEssenceAmount
+                    0.01f
                 );
 
-            if (shieldAmount <= 0)
+
+            if (healAmount <= 0)
                 continue;
 
-            ThoriumPlayer allyThoriumPlayer =
-                ally.GetThoriumPlayer();
 
-            int available =
-                ThoriumPlayer.ShieldHealthMax -
-                allyThoriumPlayer.shieldHealth;
-
-            int actualAmount =
-                shieldAmount < available
-                    ? shieldAmount
-                    : available;
-
-            if (actualAmount <= 0)
-                continue;
-
-            allyThoriumPlayer.shieldHealth +=
-                actualAmount;
-
-            ally.statLife +=
-                actualAmount;
+            ally.Heal(
+                healAmount
+            );
         }
     }
 }
