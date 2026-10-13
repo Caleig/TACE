@@ -1,4 +1,4 @@
-displayName = 瑟银的简单饰品扩展
+displayName = 瑟银的简单饰品扩展 | Thorium Accessory Expansion
 author = Caleigh，迷途，BlackCrystal，龙冰/离霜/塔西娅
 version = 1.9.2
 modReferences = ThoriumMod

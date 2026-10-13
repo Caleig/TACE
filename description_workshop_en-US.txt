@@ -1,65 +1,106 @@
 [h1]Thorium Accessory Expansion[/h1]
-An accessory add-on for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2909886416]Thorium[/url], focused on Dark-Healer progression with magic, ranged, summon, and general accessories.
+
+An add-on for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2909886416]Thorium[/url] that expands accessory progression across multiple classes. Most of the current content focuses on the Healer's dark branch, alongside accessories for other classes.
 
 [h2]General[/h2]
 [list]
-[*]Blazing Light Balloon Bundle: quadruple jump and spirit-flame dash.
+[*]Foxfire Spirit Orbs: four extra jumps, faster acceleration, no fall damage, and a spirit-flame dash.
 [/list]
 
 [h2]Healer[/h2]
 [list]
-[*]Cursed Covenant: radiant power for life and Fallen Charge.
-[*]Bone Covenant: less healing, higher radiant damage.
-[*]Fallen Covenant: life cost and radiant critical bonuses.
-[*]Heresy Covenant: radiant damage and Shadowflame amplification.
-[*]Karma Covenant: healing fuels radiant damage and shared healing.
-[*]Eternal Bulwark: absorb team damage; bubble at low life.
-[*]Michaela's Aid: bonus healing grants radiant power.
+[*]Cursed Covenant: empowers radiant attacks at the cost of life while building Fallen Charge.
+[*]Bone Covenant: trades healing for a higher radiant damage cap.
+[*]Fallen Covenant: higher life costs and radiant damage, with a critical strike bonus at full charge.
+[*]Sin of Heresy: greatly boosts radiant damage and critical strike chance, and amplifies Shadowflame and Light Curse.
+[*]Karmic Covenant: your healing streak fuels a crucible for lasting radiant damage, and healing is shared with allies.
+[*]Eternal Bulwark: absorbs damage for teammates and forms a protective bubble at low life.
+[*]Michael's Aid: bonus healing grants radiant bonuses, and your healing becomes more efficient.
+[/list]
+
+[h2]Scythe Accessories[/h2]
+[list]
+[*]Soul of the Scythe: spinning a scythe hurls phantom copies at your cursor.
+[*]Spirit Fire Scythe: phantom kills release life spirits that heal allies.
+[*]Anubis: phantom hits inflict Holy Glare, and phantom kills restore life.
+[*]Styx Blood Ankh: Blood Charge for double-damage hits, and Blood Boost for nearby allies.
+[*]Radiant Holy Ankh: phantoms generate soul essence and protect nearby allies.
 [/list]
 
 [h2]Magic Sheaths[/h2]
 [list]
-[*]Magic Sheath: mana-powered swords restore mana.
-[*]Spirit Magic Sheath: more swords and magic damage.
-[*]Terra Magic Sheath: homing swords, damage, and defense.
-[*]Spirit Blade: magic damage and sword piercing.
-[*]Blazing Scroll: sword area damage and ignition.
-[*]Energy Scroll: granite energy increases damage taken.
-[*]Geode Scroll: sunder increases damage taken.
-[*]Holy Scroll: Holy Glare increases damage taken.
-[*]Soul Scroll: sword hits drain life.
+[*]Mana Sheath: spending mana conjures spellblades whose hits restore mana.
+[*]Champion's Spellblade Sheath: more spellblades and extra magic damage.
+[*]Terra Spellblade Sheath: homing spellblades that grant damage and defense.
+[*]Champion's Broken Blade: more magic damage and piercing spellblades.
+[*]Blazing Blade Pact: spellblade hits explode and set enemies ablaze.
+[*]Energy Blade Pact: spellblades inflict Granite Surge, increasing damage taken.
+[*]Lodestone Blade Pact: spellblades inflict Sundered, increasing damage taken.
+[*]Holy Blade Pact: spellblades inflict Holy Glare, increasing damage taken.
+[*]Spectral Blade Pact: spellblade hits drain life from enemies.
 [/list]
 
 [h2]Ranged[/h2]
 [list]
-[*]Hellstone Gun Modification: heat grants speed and bonus damage.
-[*]Green Dragon Gun Modification: crit, speed, and Cursed Inferno.
-[*]Flesh Gun Modification: speed, crit, and Ichor.
-[*]Titan Gun Modification: trade speed and defense for damage.
-[*]Flesh Trigger: rapid heat and critical bonus damage.
-[*]Dread Quiver: arrow damage, crit, velocity, and stealth.
+[*]Hellstone Gun Mod: guns build heat; at full heat they fire faster and deal extra damage.
+[*]Green Dragon Gun Mod: high crit and fire rate; full heat inflicts Cursed Inferno.
+[*]Flesh Gun Mod: more fire rate and crit; full heat inflicts Ichor.
+[*]Titan Gun Mod: trades attack speed and durability for heavy gun damage and critical strikes.
+[*]Flesh Trigger: builds heat quickly; full-heat attacks deal extra damage that can crit.
+[*]Dread Quiver: more arrow damage, crit and speed, and enemies are less likely to target you.
+[/list]
+
+[h2]Warrior Shields[/h2]
+[list]
+[*]Crystal Rebuttal: stores twice the damage you take for your next attack.
+[*]Valadium Riposte: also stores part of the damage you deal.
+[*]Lodestone Accumulator: larger storage, plus damage reduction and a life shield at low life.
+[*]Piercing Barrier: high-risk storage with bonus damage and life steal at low life.
+[*]Bursting Barrier: triple storage and a volatile explosion that saves you from fatal damage.
+[/list]
+
+[h2]Melee[/h2]
+[list]
+[*]Soul Hunter Glove: melee attacks have a chance to strike twice.
+[*]Titan Bracer: extra strikes on swings and stronger melee critical hits.
+[*]Dark Matter Gauntlet: build kinetic energy for bigger, faster melee attacks.
+[*]Demon Blood Gauntlet: a sturdy gauntlet that can turn incoming hits into healing.
+[/list]
+
+[h2]Bard[/h2]
+[list]
+[*]Wireless Inspiration Headset: empowerments speed you up, and spending inspiration grants Overflowing Inspiration.
+[*]Conductor's Score: symphonic bonuses plus extra damage when attacking alongside allies.
+[*]Crystal Shock Absorber: stores symphonic damage to empower you and nearby allies.
 [/list]
 
 [h2]Gem Contracts[/h2]
 [list]
 [*]Amethyst Contract: homing Amethyst Bolts.
 [*]Topaz Contract: explosive Topaz Bolts.
-[*]Sapphire Contract: double-helix Bolts.
-[*]Emerald Contract: piercing Bolts and crystal clusters.
-[*]Amber Contract: refracting Bolts.
-[*]Ruby Contract: Bolt barrage.
-[*]Diamond Contract: giant high-damage Bolt.
-[*]Opal Contract: Bolts split into crystals.
-[*]Aquamarine Contract: piercing Bolts.
-[*]Crystalline Amethyst Contract: homing Bolts and shards.
-[*]Crystalline Topaz Contract: explosive Bolts and shards.
-[*]Crystalline Sapphire Contract: paired Bolts and shards.
-[*]Crystalline Emerald Contract: clusters and shards.
-[*]Crystalline Amber Contract: repeated refraction.
-[*]Crystalline Ruby Contract: extended barrage and shards.
-[*]Crystalline Diamond Contract: devastating giant Bolt.
-[*]Crystalline Opal Contract: crystal split and shards.
-[*]Crystalline Aquamarine Contract: piercing and shards.
-[*]Legendary Contract: nine-color resonance.
-[*]Rainbow Enhancement: random resonance stack.
+[*]Sapphire Contract: double-helix Sapphire Bolts.
+[*]Emerald Contract: piercing Emerald Bolts that leave crystal clusters.
+[*]Amber Contract: Amber Bolts that refract repeatedly.
+[*]Ruby Contract: a barrage of Ruby Bolts.
+[*]Diamond Contract: a giant, high-damage Diamond Bolt.
+[*]Opal Contract: Opal Bolts that split on hit.
+[*]Aquamarine Contract: Aquamarine Bolts that pierce multiple enemies.
+[*]Crystalline Amethyst Contract: stronger homing bolts plus Crystalline Shards.
+[*]Crystalline Topaz Contract: stronger explosive bolts plus Crystalline Shards.
+[*]Crystalline Sapphire Contract: paired Crystalline Sapphire Bolts and shards.
+[*]Crystalline Emerald Contract: longer-lasting clusters plus Crystalline Shards.
+[*]Crystalline Amber Contract: Crystalline Amber Bolts that refract even more.
+[*]Crystalline Ruby Contract: a longer Crystalline Ruby barrage.
+[*]Crystalline Diamond Contract: a devastating giant Crystalline Diamond Bolt.
+[*]Crystalline Opal Contract: splits into more crystals and releases shards.
+[*]Crystalline Aquamarine Contract: stronger piercing plus Crystalline Shards.
+[*]Legendary Contract: gathers nine-hued resonance, empowering summon attacks and dropping Prismatic Motes.
+[*]Prismatic Mote: grants a random stack of Legendary Resonance.
 [/list]
+
+[h2]Summoner[/h2]
+[list]
+[*]Soul Machine Sigil (test accessory): whip hits mark enemies to empower your sentries' next attack.
+[/list]
+
+Subscriptions and feedback are always welcome!

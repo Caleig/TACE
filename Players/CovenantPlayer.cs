@@ -304,9 +304,9 @@ namespace ThoriumAccessoryExpansion.Players
 
                 other.Hurt(
                     PlayerDeathReason.ByCustomReason(
-                        NetworkText.FromLiteral(
-                            other.name +
-                            " 被永恒壁垒吸收伤害"
+                        NetworkText.FromKey(
+                            "Mods.ThoriumAccessoryExpansion.DeathMessages.EternalBulwarkAbsorb",
+                            other.name
                         )
                     ),
                     absorbed,

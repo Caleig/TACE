@@ -770,8 +770,8 @@ Mods: {
 					用镰刀的复制品命中敌怪时，给予其「神圣之怒」与「协调」。
 					受「神圣之怒」与「协调」影响的敌怪所受伤害增加25%。
 
-					每当你以这种方式获得1点灵魂精华时，附近的队友获得相当于其最大生命值1%的生命护盾。
-					消耗灵魂精华时，附近的队友获得1秒的泡泡盾。
+					每当你以这种方式获得灵魂精华时，附近的队友恢复相当于其最大生命值1%的生命值。
+					消耗灵魂精华时，附近的队友获得5秒的泡泡盾。
 
 					“谁需要支援！”
 					'''
@@ -927,6 +927,10 @@ Mods: {
 			SoulScytheProjectile.DisplayName: 镰刃之魂幻影
 			SpiritFireScytheProjectile.DisplayName: 灵火镰刃幻影
 			StyxBloodAnkhProjectile.DisplayName: 冥河血安卡幻影
+		}
+
+		DeathMessages: {
+			EternalBulwarkAbsorb: "{0} 被永恒壁垒吸收伤害"
 		}
 	}
 }
